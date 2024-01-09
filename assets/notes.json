@@ -1,0 +1,64 @@
+// name of alan1 in english
+- Land Price
+- City of Location
+- District of location
+- Square meters
+- Price per square meter
+- Island no.
+- Sheet no.
+- Plot number
+- Images
+
+// camel case of alan1
+landPrice
+cityLocation
+districtLocation
+squareMeters
+pricePerSquareMeter
+islandNo
+sheetNo
+plotNumber
+imgURL
+
+// name of alan2 in english
+- Distance to Istanbul
+- Distance to Ankara
+- Distance to City Center
+- Distance to the nearest settlement
+- Distance to the airport
+- Land sales rate of the region
+- Region real estate value in the last 5 years
+- Valuation rate of regional lands (Annual) 
+- Distance of the land to the industrial zone
+
+// camel case of alan2
+istanbulDistance
+ankaraDistance
+cityCenterDistance
+nearestSettlementDistance
+airportDistance
+landSalesRate
+realEstateValueLast5Years
+regionalLandsValuationRate
+landToIndustrialZoneDistance
+
+Alan 1
+- Arazi Fiyatı
+- Bulunduğu Şehir
+- Bulunduğu İlçe
+- Metrekare
+- Metrekare fiyatı
+- Ada no
+- Pafta no
+- Parsel no
+  gorseller
+- İstanbul'a olan uzaklık
+- Ankaraya olan uzaklık
+- Şehir Merkezine olan uzaklık
+- En yakın yerleşim yerine olan uzaklık
+- Havaalanına olan uzaklık
+- Bölgenin arsa satış oranı
+- Son 5 Yıldaki bölge emlak değeri
+- Bölge arazilerinin değerlenme oranı (Yıllık)
+- Arsanın sanayı bölgesine uzaklığı
+Alan 2

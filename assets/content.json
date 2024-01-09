@@ -1,0 +1,515 @@
+{
+  "features": [
+    {
+      "title": "Hemen Tapu Teslim",
+      "icon": "solar:document-text-bold",
+      "text": "Satış işlemlerini adım adım takip etmeniz ile EKSLAND güvencesiyle tapu teslimi artık çok kolay."
+    },
+    {
+      "title": "%100 Gerçek Değer",
+      "icon": "streamline:money-graph-bar-increase-up-product-performance-increase-arrow-graph-business-chart",
+      "text": "Bizimle yatırımlarınıza güvenin. Sizlere %100 gerçek değer vadediyoruz."
+    },
+    {
+      "title": "Kolay ve Hızlı İşlem",
+      "icon": "akar-icons:paper-airplane",
+      "text": "Her adımda çok kolay ve hızlı işlemler EKSLAND ile mümkün."
+    },
+    {
+      "title": "Fırsat Araziler",
+      "icon": "material-symbols:map-outline-rounded",
+      "text": "Eşsiz portföyümüz ile sizlere fırsat arazileri sunuyor ve yatırımlarınızı sağlamlaştırıyoruz."
+    }
+  ],
+  "steps": [
+    {
+      "img": "step-1",
+      "title": "Bizimle İletişime Geçin",
+      "ps": [
+        "İletişim formumuzu doldurmanız ",
+        "zoom toplantısı planlayıp sizleri",
+        "daha yakından tanımamız için yeterli olacaktır."
+      ]
+    },
+    {
+      "img": "step-2",
+      "title": "Evrakları hazırlayın",
+      "ps": [
+        "Yatırım yapmak istediğiniz arsa için depozito göndermeniz ve yaşadığınız ülkenin ",
+        "büyük elçiliğinden satış için gerekli evrakları ",
+        "hazırlamanız gerekmektedir."
+      ]
+    },
+    {
+      "img": "step-3",
+      "title": "Tapu sahibi olun",
+      "ps": [
+        "Tapu dairesinde işlemler sonrası tapunuzu sizlere teslim edeceğiz.  Arazi yatırımı yapmak işte bu kadar kolay!",
+        "Şimdi form doldurun!"
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "title": "Sayfalar",
+      "url": "",
+      "links": [
+        {
+          "name": "Anasayfa",
+          "url": ""
+        },
+        {
+          "name": "Arsa&Araziler",
+          "url": "listings"
+        },
+        {
+          "name": "Nasıl yatırım yapabilirim",
+          "url": "invest"
+        },
+        {
+          "name": "Neden Eskişehir",
+          "url": "whyeskisehir"
+        }
+      ]
+    },
+    {
+      "title": "Hakkımızda",
+      "url": "aboutus",
+      "links": [
+        {
+          "name": "Biz kimiz?",
+          "url": "aboutus#bizKimiz"
+        },
+        {
+          "name": "Sıkça Sorulan Sorular",
+          "url": "faq"
+        },
+        {
+          "name": "Gizlilik Politikamız",
+          "url": "policy"
+        },
+        {
+          "name": "Bize Ulaşın",
+          "url": "contact"
+        }
+      ]
+    }
+  ],
+  "icon": [
+    { "name": "ic:baseline-wechat", "url": "" },
+    { "name": "logos:telegram", "url": "" },
+    { "name": "logos:whatsapp-icon", "url": "" }
+  ],
+  "socials": [
+    { "name": "ic:baseline-facebook", "url": "" },
+    { "name": "ph:instagram-logo-fill", "url": "" },
+    { "name": "entypo-social:linkedin-with-circle", "url": "" }
+  ],
+  "invests": [
+    {
+      "title": "Tecrübemizden İlham alın",
+      "icon": "teenyicons:tick-circle-solid",
+      "p": "50 yılı aşkın tecrübelerimiz, onlarca projelerimiz ile sizlere fırsatlar oluşturuyoruz."
+    },
+    {
+      "title": "Portföyümüzü inceleyin",
+      "icon": "ic:sharp-window",
+      "p": "Türkiye’de sizlere sunduğumuz yüzlerce yatırım fırsatı ile seçenekleri çeşitlendiriyoruz."
+    },
+    {
+      "title": "Yatırımlarınızı çeşitlendirin",
+      "icon": "typcn:plus",
+      "p": "Geleceğinizi güvence altına almak ve kazançlarınızı çeşitlendirmek için şimdi bizimle yatırım yapın."
+    },
+    {
+      "title": "Hizmetlerimizden faydalanın",
+      "icon": "typcn:plus",
+      "p": "Hizmetlerimizle yatırımınızı yönlendirin ve hedeflerinize daha hızlı ulaşın; başarıya giden yolda size rehberlik ediyoruz."
+    }
+  ],
+  "faq": [
+    {
+      "label": "Hizmetlerimizden faydalanın",
+      "defaultOpen": true,
+      "content": "Hizmetlerimizle yatırımınızı yönlendirin ve hedeflerinize daha hızlı ulaşın; başarıya giden yolda size rehberlik ediyoruz."
+    },
+    {
+      "label": "Installation",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate."
+    },
+    {
+      "label": "Theming",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate."
+    },
+    {
+      "label": "Layouts",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate."
+    },
+    {
+      "label": "Components",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate."
+    },
+    {
+      "label": "Utilities",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate."
+    }
+  ],
+  "honorableMentions": [
+    {
+      "label": "Termal Kaynaklar",
+      "defaultOpen": true,
+      "content": "Eskişehir, bulunduğu yerleşim yeri itibariyle sıcak su kaynaklarının tam üzerinde bulunmaktadır. Şehir merkezinde, \"Sıcak Sular\" olarak isimlendiren bölgede, doğal termal kaynaklar bulunmakta, çok sayıda hamam hizmet vermektedir. "
+    },
+    {
+      "label": "Installation",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate."
+    },
+    {
+      "label": "Theming",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate."
+    }
+  ],
+  "sliders": [
+    {
+      "icon": "bxs:plane-land",
+      "param": "Havaalanına Uzaklık"
+    },
+    {
+      "icon": "fa6-solid:map-location-dot",
+      "param": "Son 5 Yılda Emlak Değeri"
+    },
+    {
+      "icon": "wpf:statistics",
+      "param": "Bölge Arazilerinin Değerlenme Oranı"
+    },
+    {
+      "icon": "material-symbols:factory",
+      "param": "Sanayi Bölgesine Uzaklık"
+    },
+    {
+      "icon": "mdi:city",
+      "param": "İstanbul"
+    },
+    {
+      "icon": "vaadin:road",
+      "param": "Ankara"
+    },
+    {
+      "icon": "mdi:city",
+      "param": "Şehir Merkezi"
+    },
+    {
+      "icon": "game-icons:village",
+      "param": "En Yakin Yerleşim Yeri"
+    },
+    {
+      "icon": "mdi:cloud-percent",
+      "param": "Arsa Satış Oranı"
+    }
+  ],
+  "eskisehirSlide": [
+    {
+      "img": "eskisehir-swiper-1"
+    },
+    {
+      "img": "old1"
+    },
+    {
+      "img": "eskisehir-swiper-1"
+    },
+    {
+      "img": "eskisehir-swiper-1"
+    },
+    {
+      "img": "eskisehir-swiper-1"
+    },
+    {
+      "img": "eskisehir-swiper-1"
+    },
+    {
+      "img": "eskisehir-swiper-1"
+    }
+  ],
+  "lookcloser": [
+    {
+      "title": "Fotoğraf Galerisi",
+      "subtitle": "Eksland ile arazi ayrıntılarını inceleyin.",
+      "text": [
+        "Eşsiz doğal güzellikleri ve stratejik konumuyla bu arazi, hayalinizdeki mükemmel yatırımı sunuyor. 10 dönümlük bu arazi, yatırım fırsatını kaçırmamak ve aynı zamanda şehre kolay erişim sağlamak isteyenler için ideal bir seçenek sunmaktadır. ",
+        "Yemyeşil ormanlar ve panoramik dağ manzaraları, bu araziyi bir cennet gibi yapmaktadır. Ayrıca, su kaynaklarına erişim imkanı sunan bu arazi, tarım veya bahçecilik için büyük bir potansiyele sahiptir. "
+      ]
+    }
+  ],
+  "minerals": [
+    {
+      "title": "01. Eskişehir",
+      "subtitle": "Madenleri ile zengin şehir",
+      "text": [
+        "Eskişehir, maden potansiyeli açısından oldukça zengin bir bölge olarak bilinir. Özellikle linyit kömürü, bor, manyezit, talk, zeolit ve trona gibi çeşitli maden kaynaklarına sahiptir. Şehir bünyesinde 75 firma faaliyet göstermekte yaklaşık 3.800 çalışan bulunmaktadır.",
+        "Türkiye’de rezerv açısından en çok bulunan bor cevherleri tinkal ve kolemanit’tir. Türkiye’de önemli tinkal yatakları Seyitgazi’ye bağlı Kırka’da bulunuyor."
+      ],
+      "img1": "mineral-1",
+      "img2": ["mineral-2", "mineral-3"]
+    }
+  ],
+  "oldpics": [
+    {
+      "img": "old1",
+      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
+    },
+    {
+      "img": "old1",
+      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
+    },
+    {
+      "img": "old1",
+      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
+    },
+    {
+      "img": "old1",
+      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
+    },
+    {
+      "img": "old1",
+      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
+    },
+    {
+      "img": "old1",
+      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
+    },
+    {
+      "img": "old1",
+      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
+    }
+  ],
+  "transport": [
+    {
+      "img": "airport",
+      "label": "Eskişehir'deki Hüseyin Polatkan Havaalanı, şehrin hava ulaşımını kolaylaştıran önemli bir ulaşım merkezidir. Havaalanı, iç hat uçuşlarına hizmet vermektedir ve Eskişehir'in diğer büyük şehirlere bağlantısını sağlar."
+    },
+    {
+      "img": "metro",
+      "label": "metro??"
+    },
+    {
+      "img": "metro2",
+      "label": "another metro"
+    },
+    {
+      "img": "old1",
+      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
+    },
+    {
+      "img": "old1",
+      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
+    },
+    {
+      "img": "old1",
+      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
+    },
+    {
+      "img": "old1",
+      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
+    }
+  ],
+  "contactDetails": [
+    {
+      "title": "Adres",
+      "adres": "Lorem ipsum dolor sit amet consectetur. Rhoncus dictum erat ult"
+    },
+    {
+      "title": "E-Mail",
+      "adres": "destek@eksland.com.tr"
+    },
+    {
+      "title": "iletişim Numarası",
+      "adres": "0555 555 55 55"
+    }
+  ],
+  "cards1": [
+    {
+      "icon": "typcn:location",
+      "title": "Konum",
+      "details": "Arsanın gelecekteki değer artışı potansiyelini de düşünün. Yakın gelecekte gelişmesi beklenen bölgelere yatırım yapmak daha karlı olabilir."
+    },
+    {
+      "icon": "iconamoon:flag-light",
+      "title": "Arazi ve Topografya",
+      "details": "Arsanın toprak yapısını ve zemin etüdünü inceletmek, inşaat maliyetlerini ve yapılacak projenin dayanıklılığını etkileyen faktörlerdir."
+    },
+    {
+      "icon": "file-icons:service-fabric",
+      "title": "Alt yapı ve Hizmetler",
+      "details": "Elektrik, su, kanalizasyon gibi altyapı hizmetlerinin arsa üzerinde bulunup bulunmadığını ve bu hizmetlerin maliyetini göz önünde bulundurmalısınız."
+    }
+  ],
+  "cards2": [
+    {
+      "icon": "fluent:road-cone-16-filled",
+      "title": "Erişim Yolları",
+      "details": "Erişim yolları, arsanıza ulaşmanın ne kadar kolay veya zor olduğunu belirler. İyi bir erişim yolu, arsanıza ulaşımı daha rahat ve hızlı hale getirirken, kötü bir erişim yolu arazinizi değersizleştirebilir."
+    },
+    {
+      "icon": "ph:tag-fill",
+      "title": "Fiyat Değerlendirmesi",
+      "details": "Arsanın gelecekteki değer artışı potansiyelini de düşünün. Yakın gelecekte gelişmesi beklenen bölgelere yatırım yapmak daha karlı olabilir."
+    },
+    {
+      "icon": "icon-park-outline:target-one",
+      "title": "Piyasa Değeri",
+      "details": "Arsanın piyasa değerini belirlemek için bölgeyi araştırmalı ve benzer arsa satışlarına bakmalısınız."
+    }
+  ],
+  "table": {
+    "header": [
+      "Yatırım Araçları",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "Şu an"
+    ],
+    "body": [
+      [
+        { "icon": "logos:bitcoin", "name": "Bitcoin", "color": "inherit" },
+        { "name": 3.88 },
+        { "name": 10.2 },
+        { "name": 36.67 },
+        { "name": 20.55 },
+        { "name": 25.12 },
+        { "name": 41.98 }
+      ],
+      [
+        {
+          "icon": "lucide:land-plot",
+          "name": "Arazi/Arsa",
+          "color": "greenDark"
+        },
+        { "name": 457 },
+        { "name": 482 },
+        { "name": 693 },
+        { "name": 1.086 },
+        { "name": 2.209 },
+        { "name": 3.636 }
+      ],
+      [
+        { "icon": "mdi:gold", "name": "Altın", "color": "gold" },
+        { "name": 217 },
+        { "name": 290 },
+        { "name": 453 },
+        { "name": 761 },
+        { "name": 1.117 },
+        { "name": 1.889 }
+      ],
+      [
+        {
+          "icon": "cryptocurrency-color:usd",
+          "name": "Dolar Kuru",
+          "color": "dolar"
+        },
+        { "name": 5.67 },
+        { "name": 6.86 },
+        { "name": 8.65 },
+        { "name": 16.8 },
+        { "name": 25.93 },
+        { "name": 28.86 }
+      ],
+      [
+        { "icon": "solar:euro-bold", "name": "Euro Kuru", "color": "euro" },
+        { "name": 6.58 },
+        { "name": 7.7 },
+        { "name": 10.29 },
+        { "name": 17.46 },
+        { "name": 28.22 },
+        { "name": 31.49 }
+      ]
+    ]
+  },
+  "clientHeader": ["ID", "name", "mail", "telephone", "country"],
+  "ilanHeader": [
+    "ID",
+    "Arazi Fiyatı €",
+    "Bulunduğu Şehir",
+    "Bulunduğu İlçe",
+    "Metrekare",
+    "Metrekare fiyatı",
+    "Ada no",
+    "Pafta no",
+    "Parsel no",
+    "daha goster"
+  ],
+  "eskisehirDistricts": [
+    "Eskişehir",
+    "Bursa",
+    "İstanbul",
+    "Kocaeli",
+    "Kütahya",
+    "Afyon",
+    "Kırklareli",
+    "Trabzon",
+    "Rize",
+    "Yalova"
+  ],
+  "sort": [
+    {
+      "text": "Fiyat (önce en yüksek)",
+      "obj": {
+        "col": "landPrice",
+        "asc": false
+      }
+    },
+    {
+      "text": "Fiyat (önce en Düşük)",
+      "obj": {
+        "col": "landPrice",
+        "asc": true
+      }
+    },
+    {
+      "text": "Metrekare (önce en yüksek)",
+      "obj": {
+        "col": "squareMeters",
+        "asc": false
+      }
+    },
+    {
+      "text": "Metrekare (önce en Düşük)",
+      "obj": {
+        "col": "squareMeters",
+        "asc": true
+      }
+    }
+  ],
+  "params": [
+    "Bulunduğu Şehir",
+    "Bulunduğu İlçe",
+    "Metrekare",
+    "Metrekare fiyatı",
+    "Ada no",
+    "Pafta no",
+    "Parsel no"
+  ],
+  "fullParams": [
+    "id",
+    "created_at",
+    "Arazi Fiyatı",
+    "Bulunduğu Şehir",
+    "Bulunduğu İlçe",
+    "Metrekare",
+    "Metrekare fiyatı",
+    "Ada no",
+    "Pafta no",
+    "Parsel no",
+    "imgURL",
+    "İstanbul'a olan uzaklık",
+    "Ankaraya olan uzaklık",
+    "Şehir Merkezine olan uzaklık",
+    "En yakın yerleşim yerine olan uzaklık",
+    "Havaalanına olan uzaklık",
+    "Bölgenin arsa satış oranı",
+    "Son 5 Yıldaki bölge emlak değeri",
+    "Bölge arazilerinin değerlenme oranı (Yıllık)",
+    "Arsanın sanayı bölgesine uzaklığı"
+  ]
+}

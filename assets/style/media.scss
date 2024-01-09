@@ -1,0 +1,868 @@
+@import "./variables";
+@media screen and (max-width: 445px) {
+  .pagination {
+    width: 100%;
+    padding: 18px 7px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .smallScreenHide {
+    display: none !important;
+  }
+
+  .listings {
+    .filter-listing-row {
+      .listing {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 10px;
+        .lands {
+          .land {
+            .text {
+              gap: 10px;
+              max-width: 100%;
+            }
+            .buttons {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .home {
+    section {
+      .table {
+        table {
+          .icon {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .slider {
+    .slide {
+      .img {
+        width: 275px;
+        height: 240px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1110px) {
+  body {
+    zoom: 1;
+  }
+  //reusables
+  .gap {
+    gap: 70px;
+  }
+  .logo {
+    font-size: 21.8px;
+  }
+  .navbar {
+    position: fixed;
+    z-index: 100;
+    .header {
+      justify-content: center !important;
+      height: $navHeightMob !important;
+      .hamburger {
+        display: block !important;
+        font-size: 30px;
+        margin-right: auto;
+        position: absolute;
+        left: 10px;
+      }
+    }
+  }
+  .mobile-hide {
+    display: none !important;
+  }
+  .mobile-show {
+    display: flex !important;
+  }
+  .onetwolayout {
+    margin-block: 0;
+    h3 {
+      margin-bottom: 0;
+    }
+    .imgH {
+      height: 264px;
+    }
+    .imgs {
+      .imgV {
+        height: 150px;
+      }
+    }
+    .text {
+      .p1 {
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+
+  .features {
+    .swiper {
+      height: 280px;
+    }
+
+    .t2 {
+      font-size: 15px;
+    }
+    hr {
+      margin-block: 7px !important;
+    }
+    h4 {
+      font-size: 20px;
+      line-height: normal;
+    }
+
+    // .swiper-button-next {
+    //   top: 260px;
+    //   right: 10px;
+    // }
+    // .frame {
+    //   width: 40px !important;
+    //   height: 36px !important;
+    //   .icon {
+    //     font-size: 29px !important;
+    //     padding: 6px !important;
+    //   }
+    // }
+  }
+  .mpi {
+    padding-inline: 33px;
+  }
+  .mpb {
+    padding-bottom: 16px;
+  }
+  .container {
+    overflow: hidden;
+  }
+  //pages
+  .contact {
+    .contact-details {
+      .details {
+        gap: 20px;
+        div {
+          h3 {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .home {
+    .swiper-wrapper {
+      padding-inline: 33px;
+    }
+    section {
+      .feature-cards {
+        gap: 20px;
+        // margin-top: 50px;
+      }
+      .popular-ads {
+        .top {
+          .header {
+            h1 {
+              margin-bottom: 0px;
+            }
+            .sub-title {
+              font-size: 10px;
+              margin-bottom: 21px;
+            }
+          }
+        }
+        .landSlider {
+          .landWrapper {
+            .land {
+              .text {
+                .buttons {
+                  button {
+                    padding-block: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .why-Eskisehir {
+        .text {
+          gap: 18px;
+        }
+      }
+    }
+  }
+  .whyeskisehir {
+    .display {
+      margin-bottom: 25px;
+    }
+    .population {
+      gap: 20px;
+      padding-bottom: 0px;
+      .title {
+        flex-direction: column;
+        align-items: flex-start;
+        .display {
+          margin-bottom: 20px;
+          max-width: 226px;
+          width: 100%;
+        }
+        .p1 {
+          width: 100%;
+        }
+      }
+      .img {
+        height: unset;
+      }
+      .text {
+        flex-direction: column;
+        gap: 20px;
+        .p1 {
+          width: 100%;
+        }
+      }
+    }
+    .onetwolayout {
+      gap: 10px;
+      .imgH,
+      .imgV {
+        height: 112px;
+      }
+      .imgs {
+        gap: 10px;
+      }
+      h1 {
+        margin-bottom: 12px;
+      }
+    }
+    .young {
+      margin-block: 0;
+      .display {
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+      .columns {
+        flex-direction: column;
+        gap: 50px;
+        .column {
+          width: 100%;
+          gap: 10px;
+          .p2 {
+            margin-block: 19px;
+          }
+        }
+      }
+    }
+    .transport {
+      padding-block: 0;
+      .slider {
+        .p1 {
+          margin-top: 25px;
+        }
+      }
+    }
+    .increase {
+      gap: 30px;
+      .display {
+        margin-bottom: 20px;
+        max-width: 652px;
+      }
+      .columns {
+        // flex-direction: column;
+        .column {
+          width: 100%;
+          .roi {
+            .text {
+              text-align: center;
+            }
+          }
+          .link {
+            font-size: 12px;
+            margin-top: 20px;
+          }
+        }
+        .text {
+          text-align: left;
+          .bolder {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+    .manufacture {
+      gap: 20px;
+      .display {
+        margin-bottom: 25px;
+      }
+      .text {
+        width: 100%;
+        gap: 15px;
+        h1 {
+          margin-bottom: 10px;
+        }
+      }
+      .img {
+        width: 100%;
+        height: 310px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 20px;
+        margin-bottom: 12px;
+      }
+    }
+    .honorable-mentions {
+      h1 {
+        margin-bottom: 25px;
+      }
+      .white-bg {
+        height: 460px;
+        display: flex;
+        align-items: center;
+        .content {
+          padding-inline: 0;
+          .faqwrapper {
+            .Faqcontainer {
+              height: unset;
+              max-width: unset;
+              .faq-wrapper {
+                padding-block: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact-us-form {
+    height: 550px;
+  }
+  .listings {
+    padding-inline: 11px;
+    margin-top: 24px;
+    .top {
+      .land-count {
+        font-size: 13px;
+      }
+      .p2 {
+        font-size: 10px;
+      }
+      .sort {
+        .p2 {
+          width: max-content;
+        }
+      }
+    }
+    .filter-listing-row {
+      gap: 20px;
+      .filter {
+        .filter-inner {
+          .t2 {
+            font-size: 14px;
+          }
+          button {
+            font-size: 12px;
+          }
+          input {
+            height: 36px;
+            text-align: end;
+            padding-inline: 12px;
+          }
+        }
+      }
+      .listing {
+        .lands {
+          .land {
+            // height: 66px !important;
+            height: fit-content;
+            .img-wrapper {
+              .land-img {
+                width: 91px !important;
+                object-fit: cover;
+              }
+            }
+            .text {
+              font-size: 8px !important;
+              padding-block: 15px;
+              .p2 {
+                // font-size: 8px;
+              }
+              .title,
+              .details {
+                margin-inline: 9px !important;
+              }
+              .details {
+                .param {
+                  min-width: 47px !important;
+                  padding-inline: 4px;
+                }
+              }
+            }
+            .buttons {
+              font-size: 10px;
+              margin: 0 10px !important;
+              min-width: 81px;
+              max-width: 121px;
+
+              button {
+                padding: 5px 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .listing-details {
+    h4 {
+      font-weight: 600;
+    }
+    .details {
+      gap: 35px;
+      .imgDiv {
+        .img {
+          height: 265px;
+        }
+      }
+      .textDiv {
+        .p2 {
+          font-weight: 400;
+        }
+
+        hr {
+          margin-block: 36px;
+        }
+        .button {
+          margin-top: 20px;
+        }
+      }
+    }
+    .closer-look {
+      h1 {
+        text-align: center;
+      }
+
+      .swiper {
+        .slide {
+          .img {
+            height: 260px;
+          }
+        }
+      }
+    }
+    .rich-history {
+      .swiper {
+        height: 262px;
+      }
+      .swiper-button-next {
+        bottom: 10px !important;
+        &:after {
+          font-size: 15px;
+        }
+      }
+      .title {
+        .display {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .hero {
+    overflow: hidden;
+    .landing-image {
+      // height: 1300px;
+      // margin-top: -300px !important;
+      filter: brightness(0.7);
+    }
+    .landing-page {
+      // height: 100vh;
+      gap: 80px;
+      justify-content: center !important;
+      padding-top: calc($navHeight + 50px);
+      padding-bottom: 50px;
+      .landing-text {
+        // margin-top: 175px !important;
+        text-align: center;
+      }
+      .form-bg {
+        backdrop-filter: none;
+        background-color: #85858552;
+        button {
+          padding-inline: 0;
+        }
+      }
+    }
+  }
+  .invest {
+    .gap {
+      gap: 30px;
+    }
+    overflow: hidden;
+    .titles {
+      padding-bottom: 30px;
+      .p1 {
+        margin-bottom: 0;
+      }
+      // h3 {
+      //   max-width: 300px;
+      //   margin-top: 30px;
+      // }
+    }
+    .number {
+      font-size: 7rem;
+    }
+    .firststep {
+      gap: 35px;
+      .social {
+        gap: 9px;
+      }
+      h4 {
+        text-align: center;
+      }
+      .number {
+        font-size: 4rem;
+        top: -20px;
+        left: 20px;
+      }
+      .zoom {
+        gap: 60px;
+        .p1 {
+          width: 100%;
+        }
+        .btns {
+          width: 100%;
+          max-width: 327px;
+          flex-direction: row;
+          .icon {
+            font-size: clamp(0.9375rem, 0.841rem + 0.5149vw, 1.25rem);
+          }
+
+          button {
+            font-size: 12px;
+            padding: 11px 15px;
+          }
+        }
+      }
+      .img {
+        height: 150px;
+        object-fit: cover;
+        object-position: right;
+      }
+    }
+    .secondstep {
+      padding-block: 14px;
+      .part1 {
+        margin-bottom: 30px;
+        .display {
+          margin-bottom: 30px;
+        }
+      }
+      .number {
+        font-size: 16rem;
+        top: -50px;
+      }
+    }
+    .big-container {
+      padding-block: 30px;
+      .thirdstep {
+        gap: 10px;
+        justify-content: space-between;
+        height: fit-content;
+        padding-inline: 20px;
+
+        .sector,
+        .sector2 {
+          display: flex;
+          justify-content: flex-start;
+          width: 29.6%;
+          .img {
+            height: 80px;
+          }
+        }
+        .sector {
+          padding: 0;
+          .p1 {
+            margin-block: 12px;
+          }
+        }
+        .sector2 {
+          // height: fit-content;
+        }
+        .sector3 {
+          height: fit-content;
+          width: 22.4%;
+          margin-right: 20px;
+          .three {
+            font-size: 12rem;
+            margin-top: -70px;
+            margin-bottom: -110px;
+          }
+        }
+      }
+      .text-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-left: 20px;
+        .p1 {
+          width: 64%;
+        }
+      }
+    }
+    .decks {
+      margin-top: 50px;
+      width: 80%;
+      .deck {
+        margin-block: 20px;
+        width: 100%;
+        .subtitle {
+          margin-top: 20px;
+        }
+        .cards {
+          .card {
+          }
+        }
+      }
+    }
+  }
+  .about {
+    .office {
+      .img {
+        height: 177px;
+      }
+      .p1 {
+        padding-block: 27px;
+      }
+    }
+    .services {
+      .cols {
+        flex-wrap: wrap;
+        gap: 31px;
+        .column {
+          width: 100%;
+          // gap: ;
+          .p1 {
+            .h {
+              line-height: 3.8;
+            }
+          }
+        }
+      }
+      .img {
+        margin-bottom: 0;
+        height: 236px;
+      }
+      h4 {
+        margin-block: 20px;
+      }
+    }
+    .bizkimiz {
+      .p1 {
+        margin-bottom: 57px;
+      }
+      .content {
+        padding: 10px 0;
+        .cols {
+          gap: 59px;
+          .column {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .we-are-here {
+      .content {
+        padding: 33px;
+        .slider {
+          .swiper {
+            .swiper-wrapper {
+              .slide {
+                .img {
+                  height: 200px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .title {
+          font-size: 25px;
+          width: 100%;
+        }
+        .text {
+          .p1 {
+            text-align: start !important;
+          }
+          .half {
+            width: 100%;
+            text-align: center;
+            .p1 {
+              margin-top: 76px;
+              color: #424242;
+              font-size: 15px;
+              text-align: center !important;
+            }
+          }
+        }
+        .exp {
+          margin-block: 50px;
+        }
+      }
+    }
+  }
+  .form-inner {
+    .form {
+      .inputWrapper {
+        position: unset;
+      }
+      .error {
+        display: none;
+      }
+    }
+  }
+
+  .faq-wrapper {
+    .faq {
+      .t2,
+      .p2 {
+        // font-size: 10px;
+      }
+      .question {
+        .t2 {
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .faq {
+    h1 {
+      width: max-content;
+      margin-bottom: 26px;
+    }
+    .white-bg {
+      background-color: transparent;
+      padding: 0;
+    }
+    .up {
+      right: 10px;
+    }
+    .titles {
+      .nav {
+        gap: 14px;
+        a {
+          padding: 7px 15px;
+        }
+      }
+    }
+  }
+
+  .footer-bg {
+    footer {
+      gap: 20px;
+      .text {
+        width: 100% !important;
+      }
+      .links {
+        width: 100% !important;
+      }
+    }
+  }
+  //compnonet
+  .tapu-steps {
+    padding-block: 41px;
+    gap: 0;
+    .steps-img-container {
+      padding: 0;
+      h1 {
+        margin-top: 0;
+        margin-bottom: 36px;
+      }
+      border-radius: 0 !important;
+      // padding-block: 12px;
+      .images {
+        flex-wrap: nowrap;
+        div {
+          width: 50%;
+          .img {
+            height: 117px;
+            flex-grow: 1;
+          }
+        }
+      }
+      .thirdImage {
+        width: 100%;
+        height: 179px;
+        object-fit: cover;
+        object-position: right bottom;
+      }
+    }
+    .steps {
+      .step {
+        padding-top: 20px;
+        max-width: 100%;
+        text-align: left;
+        h6 {
+          margin-bottom: 10px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .footer-fillform {
+    margin-top: 90px;
+  }
+  .graph1 {
+    .display {
+      padding-block: 12px;
+    }
+    padding-block: 40px;
+    h4 {
+      // margin-block: -12px;
+    }
+    .footer {
+      justify-content: center;
+      gap: 40px;
+    }
+    .roi {
+      gap: 10px;
+      padding: 10px;
+    }
+  }
+  .padded-form {
+    width: 100% !important;
+  }
+  .slider {
+    .swiper {
+      padding-block: 0;
+    }
+    .swiper-slide {
+      // width: 90% !important;
+    }
+    .swiper-wrapper {
+      padding-bottom: 0;
+    }
+    .slide {
+      .p1 {
+        width: 300px;
+      }
+      .img {
+        width: 300px;
+        height: 165px;
+      }
+    }
+  }
+}
