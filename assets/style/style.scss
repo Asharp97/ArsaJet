@@ -11,7 +11,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   body {
-    zoom: 0.75;
     background-color: $offwhite;
     color: black;
 
@@ -106,7 +105,7 @@
 .navbar {
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   top: 0;
   width: 100%;
@@ -301,6 +300,7 @@
   gap: 22px;
   z-index: 10;
   .text {
+    color: white;
     .p2 {
       margin-block: 12px;
     }
@@ -561,27 +561,133 @@
 .home {
   overflow: hidden;
   section {
-    .feature-cards {
-      display: flex;
-      justify-content: space-between;
-      gap: 17px;
-      flex-wrap: wrap;
-      // margin-top: 32px;
-      .card {
-        flex: 1 0 200px;
-        border-radius: 7px;
-        background: white;
-        padding: 20px;
-        // width: 304px;
+    .video-hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      .video-src {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .hero-content {
+        position: relative;
         display: flex;
-        flex-direction: column;
-        gap: 19px;
-        .title {
+        align-items: flex-end;
+        height: 100%;
+        z-index: 2;
+        padding-bottom: 78px;
+        // padding-left: 168px;
+        color: white;
+        div {
+          .display {
+            max-width: 491px;
+          }
+        }
+      }
+      .wellcall {
+        background-color: white;
+        border-radius: 0px 0px 7px 7px;
+        cursor: pointer;
+        padding: 5px 22px;
+        // transform: rotateX(90deg);
+        rotate: 90deg;
+        z-index: 4;
+        position: absolute;
+        right: -65px;
+        top: 50%;
+        font-size: 20px;
+      }
+      .callyou-form {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        right: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.393);
+        .form-bg {
+          border-radius: 14px;
+          padding: 24px 42px;
+          width: fit-content;
+          z-index: 9;
+          max-width: 451px;
+          backdrop-filter: blur(55.5px);
+        }
+      }
+    }
+    .why-recomended {
+      max-width: 783px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-inline: auto;
+      align-items: flex-start;
+      .img {
+        width: 100%;
+      }
+      .invert-green {
+        background-color: $darkGray;
+        color: white;
+        padding-inline: 30px;
+        border-radius: 5px;
+        line-height: 32px;
+      }
+    }
+
+    .bg-feature-future {
+      background-color: $green;
+      .feature-future {
+        padding-block: 76px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        flex-wrap: wrap;
+        gap: 30px;
+        .feature {
           display: flex;
-          align-items: center;
-          justify-content: space-between;
-          .icons {
-            font-size: 30px;
+          flex-wrap: wrap;
+          gap: 30px;
+          // min-width: 635.5px;
+          width: 100%;
+          max-width: 550px;
+          .card {
+            max-width: 257px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .title {
+              .icons {
+                font-size: 50px;
+                margin-bottom: 25px;
+              }
+            }
+            h5,
+            .p4 {
+              color: black;
+            }
+          }
+        }
+        .future {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          max-width: 376px;
+          h1 {
+            max-width: 376px;
+            color: black;
+            margin-bottom: 50px;
           }
         }
       }
@@ -1925,7 +2031,7 @@
 .container {
   width: 99%;
   margin-inline: auto;
-  max-width: 1271px;
+  max-width: 1176px;
 }
 .big-container {
   width: 100%;

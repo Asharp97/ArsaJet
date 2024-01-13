@@ -1,8 +1,7 @@
 <template>
   <div>
     <NuxtLayout>
-      <!-- <NuxtPage /> -->
-      yaga
+      <NuxtPage />
     </NuxtLayout>
   </div>
 </template>

@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   image: {
     provider: "imagekit",
     imagekit: {
-      baseURL: "https://ik.imagekit.io/sharp/eks/",
+      baseURL: "https://ik.imagekit.io/sharp/arsajet/",
       modifiers: {
         format: "webp",
       },
