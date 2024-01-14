@@ -2,19 +2,20 @@
   <div class="home">
     <section>
       <div class="video-hero">
-        <video autoplay muted loop class="video-src">
-          <source src="https://ik.imagekit.io/sharp/arsajet/video.mp4" type="video/mp4">
+        <video autoplay muted loop class="video-src" src="https://ik.imagekit.io/sharp/arsajet/video.mp4">
         </video>
+
         <div class="hero-content container">
           <div>
             <div class="p1">ARSAJET ile</div>
             <div class="display">Değerini Kaybetmeyen Yatırım: Toprak!</div>
           </div>
         </div>
-        <button @click="openWellCall()">
 
+        <button @click="openWellCall()">
           <div class="wellcall"> Sizi Arayalım </div>
         </button>
+
         <div class="callyou-form" @click.self="openWellCall()" v-if="wellcall">
           <div class="form-bg">
             <FormComponent title="Hemen Bize Ulaşın" subtitle="Ücretsiz bilgi edinin." />
@@ -51,16 +52,27 @@
         </div>
       </section>
 
-      <section >
+      <section>
         <div class="why-recomended">
-
           <div class="p1">
             ARSAJET olarak
           </div>
           <h1>Neden Arazi Yatırımı Tavsiye Ediyoruz?</h1>
           <div class="p1 invert-green">SON 5 YIL İÇİNDE</div>
           <nuxt-img class="img" src="695.png" />
-          
+
+        </div>
+      </section>
+
+      <section>
+        <div class="`why-recomended`">
+          <div class="p1">
+            ARSAJET olarak
+          </div>
+          <h1>Neden Arazi Yatırımı Tavsiye Ediyoruz?</h1>
+          <div class="p1 invert-green">SON 5 YIL İÇİNDE</div>
+          <nuxt-img class="img" src="695.png" />
+
         </div>
       </section>
 
