@@ -65,13 +65,238 @@
       </section>
 
       <section>
-        <div class="`why-recomended`">
-          <div class="p1">
-            ARSAJET olarak
+        <div class="increase-slide">
+          <div v-for="(inc, n) in  increase " :class="{ 'final': n == increase.length - 1 }">
+            <h3 v-if="n != increase.length - 1">
+              {{ 2019 + n }}
+            </h3>
+            <h3 v-else>
+              Şu an
+            </h3>
+            <div class="p2">
+              {{ inc }} ₺
+            </div>
+
           </div>
-          <h1>Neden Arazi Yatırımı Tavsiye Ediyoruz?</h1>
-          <div class="p1 invert-green">SON 5 YIL İÇİNDE</div>
-          <nuxt-img class="img" src="695.png" />
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="threesteps">
+          <nuxt-img class="img" src="3adim.png" />
+          <div class="text">
+            <h1>
+              3 Adımda ARSAJET ile Yatırımınızı Gerçekleştirin
+            </h1>
+            <ol>
+              <li>
+                <div class="p3sb">
+                  İletişim formumuzu doldurmanız zoom toplantısı planlayıp sizleri daha yakından tanımamız için yeterli
+                  olacaktır.
+                </div>
+              </li>
+              <li>
+                <div class="p3sb">Yatırım yapmak istediğiniz arsa için depozito göndermeniz ve yaşadığınız ülkenin büyük
+                  elçiliğinden satış için gerekli evrakları hazırlamanız gerekmektedir. </div>
+              </li>
+              <li>
+                <div class="p3sb">
+                  Tapu dairesinde işlemler sonrası tapunuzu sizlere teslim edeceğiz. Arazi yatırımı yapmak işte bu kadar
+                  kolay! Şimdi form doldurun!</div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="smooth-img-slide">
+          <nuxt-img class="img" src="dog.png" v-for="n in 12" />
+        </div>
+      </section>
+
+      <section>
+        <div class="value-from-land small-container">
+          <div class="p1">ARSAJET yatırımlarınıza yön veriyoruz.</div>
+          <h1>Topraktan Gelen Değerler, Döviz ve Arazi </h1>
+          <swiper class="mySwiper">
+            <swiper-slide class="slide">
+              <nuxt-img class="img" src="gold.png" />
+              <div class="text">
+                <h2>Altın mı Arazi mi?</h2>
+                <div class="p3m">Altın doğrudan topraktan çıkan bir madendir. Topraktan çıkan bu değerli maden yatırım
+                  araçlarından biridir. Ama uzun vadede, tarım arazilerine yapılan yatırımların, uzun vadede daha fazla
+                  kazanç potansiyeli sunabilir.</div>
+                <div class="p3sb">Son 5 yıldaki değişiklikler</div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th v-for="n in 6">
+                        <h4 v-if="n < 6">{{ 2018 + n }}</h4>
+                        <h4 v-else>Şu an</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td v-for="n in gold">
+                        <div class="p1">
+                          {{ n }} ₺
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </swiper-slide>
+          </swiper>
+          <div class="pagination">
+            <div class="dots" v-for="(pag, n) in  5" :class="{ 'active-pagination': n == 1 }">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="time-value small-container">
+          <div class="p1">ARSAJET olarak kaygılarınızı anlıyoruz. </div>
+          <h1>Ne Zaman Değerlenir? Ne kadar Değerlenir? </h1>
+          <div class="ro">
+            <div class="text">
+              <div class="num">
+                01
+              </div>
+
+              <h2>Kaygılarınızı Anlıyoruz.</h2>
+              <div class="p3m">Hisseli arazi yatırımlarını önermiyoruz çünkü orta ve uzun vadede diğer hissedarların
+                vefatı
+                durumunda izale-i şuyu süreciyle karşılaşabilirsiniz, bu da tüm paydaşların maddi ve manevi zarar
+                görmesine
+                neden olabilir.
+              </div>
+            </div>
+            <div class="text">
+              <div class="num">
+                02
+              </div>
+              <h2>Ne Zaman Değerlenir?</h2>
+              <div class="p3m">Türkiye ve dünya genelinde nüfus planlaması her 5/10 yılda bir değişiyor. Arazi her zaman
+                sınırlı bir kaynak ve Türkiye'de metrekare arazi miktarı sabit. Nüfus arttıkça, arz-talep dengesi
+                değişiyor. Öngörülerimize göre, Türkiye'de arazi fiyatları her 5/10 yılda bir yükselişe geçiyor.</div>
+            </div>
+
+          </div>
+
+          <div class="ro">
+            <div class="text">
+              <div class="num">
+                03
+              </div>
+
+              <h2>Ne Kadar Değerlenir?</h2>
+              <div class="p3m">Aldığımız arazi, doğru yerden ve doğru fiyattan alındığında, orta ve uzun vadede yıllık
+                enflasyon, döviz ve altın bazında 1x1 ile 1x3 arasında değişkenlik gösteriyor.
+              </div>
+            </div>
+            <div class="text">
+              <div class="num">
+                04
+              </div>
+              <h2>Gelecek Burada!</h2>
+              <div class="p3m">Arazi yatırımı, gelecekte değer artışı ve talep artışı potansiyeliyle birlikte gelerek uzun
+                vadeli karlılık sağlar. Aynı zamanda, kentsel gelişim, tarım veya endüstriyel projeler gibi çeşitli
+                kullanım seçenekleriyle yatırımcılara çeşitlendirme fırsatı sunar.</div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="youtube-videos container">
+          <iframe width="364" height="224" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+          <iframe width="364" height="224" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+          <iframe width="364" height="224" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+        </div>
+      </section>
+
+      <section>
+        <div class="smooth-city-slide">
+          <div v-for="x in 2">
+            <div class="city" v-for="n in city">
+              <h3> •</h3>
+              <h3>{{ n }}</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="investment-choice small-container">
+          <div class="p1">
+            Tüm arazilerimiz 5.000 € ile 20.000 € arasında değişmektedir.
+          </div>
+
+          <swiper class="mySwiper">
+            <swiper-slide class="slide">
+              <h1>Min. 160.000 Maks. 640.000 ₺’ye <br> Geleceğe Yatırım Yapabilirsiniz. Ya da İsterseniz...</h1>
+              <nuxt-img class="img" src="clio.png" />
+              <div class="text">
+                <h2>
+                  <span> 212.000 ₺ </span>
+                  ekstra ekleyip ortalama bir hatchback araca sahip olabilirsiniz...
+                </h2>
+                <div class="p3m">
+                  Ayrıca aldığınız araç ile yatırım yaparken aracınızın sigorta, kasko, vergi, yakıt, bakımları, değer
+                  kayıplarını da unutmayınız.
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper>
+
+          <div class="pagination">
+            <div class="dots" v-for="(pag, n) in  5" :class="{ 'active-pagination': n == 1 }"> </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <div class="city-grid">
+          
+        </div>
+      </section>
+
+      <section>
+        <div class="decks big-container">
+          <div class="deck">
+            <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards">
+              <swiper-slide class="card" v-for="card in cards1">
+                <Icon :name="`${card.icon}`" class="icon" />
+                <div class="p1">{{ card.title }}</div>
+                <div class="p2">{{ card.details }}</div>
+              </swiper-slide>
+            </swiper>
+            <div class="p2 subtitle">
+              Arazi yatırımı, uzun vadeli bir yatırım stratejisi olarak dikkat çekiyor. Doğru seçilen bir arazi, <b>
+                gelecekte değer kazanabilir ve farklı kullanım amaçlarına hizmet edebilir.</b>
+            </div>
+          </div>
+          <div class="deck">
+            <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards">
+              <swiper-slide class="card card2" v-for="card in cards2">
+                <Icon :name="`${card.icon}`" class="icon" />
+                <div class="p1">{{ card.title }}</div>
+                <div class="p2">{{ card.details }}</div>
+              </swiper-slide>
+            </swiper>
+            <div class="p1 subtitle">
+              Ancak, başarılı bir arazi yatırımı <b> için dikkatli bir araştırma, bütçe planlaması ve yerel yasal
+                düzenlemelere uyum önemlidir.
+              </b>
+            </div>
+          </div>
+
 
         </div>
       </section>
@@ -112,8 +337,9 @@
               slidesPerView: 3,
               spaceBetween: 50,
             },
-          }" :freeMode="true" :navigation="true" :modules="moduleLand" :scrollbar="{ hide: true }" class="swiper mpi">
-            <swiper-slide v-for="(x, n) in ilanlar" class="landSlider">
+          }
+            " :freeMode="true" :navigation="true" :modules="moduleLand" :scrollbar="{ hide: true }" class="swiper mpi">
+            <swiper-slide v-for="( x, n ) in  ilanlar " class="landSlider">
               <NuxtLink class="landWrapper" :to="`listings/${x.id}`">
                 <div class="land">
                   <!-- <nuxt-img sizes="375px" class="land-img" src="land-1.png" /> -->
@@ -140,61 +366,6 @@
               </NuxtLink>
             </swiper-slide>
           </swiper>
-        </div>
-      </section>
-
-      <section class="container">
-        <TapuSteps />
-      </section>
-
-      <section class="white-bg ">
-        <div class="table container mpi">
-          <h1>Son <span>5</span> Senede</h1>
-          <h4> Türkiye </h4>
-          <h1>Yatırım araçlarındaki değişiklikler</h1>
-          <table>
-            <thead>
-              <tr>
-                <th v-for="(header, n) in table.header" :class="[{ 'green': n == 6 }, { 'mobile-hide': n == 1 }]">{{
-                  header }}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(row, r) in  table.body ">
-                <td v-for="(data, n) in  row " :class="[{ 'green': n == 6 }, { 'mobile-hide': n == 1 }]">
-                  <span class="icon-wrapper" :class="[{ 'gold': r == 2 }, { 'blue': r == 4 }, { 'darkGreen': r == 3 }]">
-                    <Icon :name="data.icon" class="icon" v-if="data.icon" :class="{ 'gold': n == 2 }" />
-                  </span>
-                  <span :class="{ 'mobile-hide': n == 0 }">
-                    {{ data.name }}
-                  </span>
-                  <span class="currency" :class="{ 'hide': n == 0 }">
-                    ₺
-                  </span>
-                  <div v-if="n == 6 && r == 1" class="orange t2">(%695.62 ARTIŞ)</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="p2">Arazi verileri
-            <NuxtLink to="https://www.endeksa.com/tr/analiz/turkiye/eskisehir/endeks/satilik/arsa" class="link">
-              <span>
-                Endeksa’dan
-              </span>
-            </NuxtLink>
-            alınmıştır.
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="why-Eskisehir big-container">
-          <div class="text">
-            <h2>Dolar Euro Altın Borsa</h2>
-            <h4> EKSLAND ile </h4>
-            <div class="display"> Geleceğin Yatırımı Arsa </div>
-          </div>
-          <nuxt-img sizes="xs:640px sm:768px md:1024px lg:1271px" class="why-image mpi" src="whyeskisehir.png" />
         </div>
       </section>
 
@@ -230,9 +401,18 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/navigation';
 const moduleLand = [Scrollbar, Navigation, FreeMode]
 
+import 'swiper/css/effect-cards';
+import { EffectCards } from 'swiper/modules';
+const modules = [EffectCards]
+
 import content from "../assets/content.json"
+const cards1 = content.cards1
+const cards2 = content.cards2
+
 const feature = content.features
-const invests = content.invests
+const increase = content.increase
+const gold = content.gold
+const city = content.cityslider
 const faq = content.faq
 const table = content.table
 

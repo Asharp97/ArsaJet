@@ -2,7 +2,7 @@
   <div class="big-container" id="fillform">
     <div class="contact-us-form big-container">
       <div class="half swiper-quote mobile-hide ">
-        <nuxt-img sizes="xs:0px lg:635px" class="backgroundImg" src="fillform.png" />
+         <nuxt-img sizes="xs:0px lg:635px" class="backgroundImg" src="fillform.png" />
         <swiper :navigation="true" :modules="modules" class="swiper" :loop="true" :space-between="70">
           <swiper-slide>
             <div class="text-bg">

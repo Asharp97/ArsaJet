@@ -511,5 +511,17 @@
     "Son 5 Yıldaki bölge emlak değeri",
     "Bölge arazilerinin değerlenme oranı (Yıllık)",
     "Arsanın sanayı bölgesine uzaklığı"
+  ],
+  "increase": [457, 482, 693, 1.086, 2.209, 3.636],
+  "gold": [217, 290, 453, 761, 1.117, 1.954],
+  "cityslider": [
+    "Afyon",
+    "İstanbul",
+    "Bursa",
+    "kocaeli",
+    "Kütahya",
+    "Kırklareli",
+    "Trabzon",
+    "Yalova"
   ]
 }

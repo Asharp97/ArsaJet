@@ -9,7 +9,6 @@
 h1 {
   font-weight: 600;
   line-height: 1.1;
-
   // 40-25
   font-size: clamp(1.5625rem, 1.2332rem + 1.3405vw, 2.5rem);
 }
@@ -31,11 +30,13 @@ h3 {
 h4 {
   line-height: 1.1;
   font-weight: 500;
-  //missing font s0z9e
+  // 22 16
+  font-size: clamp(1rem, 0.8683rem + 0.5362vw, 1.375rem);
 }
 
 h5{
-  //missing font s0z9e
+  //18 13
+  font-size: clamp(0.8125rem, 0.7027rem + 0.4468vw, 1.125rem);
   font-size: 18px;
   font-weight: 600;
 }
