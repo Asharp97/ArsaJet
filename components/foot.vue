@@ -22,9 +22,9 @@
           <div class="links">
             <div v-for="col in footer" class="link-col">
               <NuxtLink :to="`/${col.url}`">
-                <div class="t1">{{ col.title }}</div>
+                <div class="p1">{{ col.title }}</div>
               </NuxtLink>
-              <div class="subtext" v-for="link in col.links">
+              <div class="p4" v-for="link in col.links">
                 <NuxtLink :to="`/${link.url}`">
                   {{ link.name }}
                 </NuxtLink>

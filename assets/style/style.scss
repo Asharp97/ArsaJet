@@ -11,7 +11,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   body {
-    background-color: $offwhite;
+    background-color: white;
     color: black;
 
     section {
@@ -201,8 +201,8 @@
 .footer-fillform {
   margin-top: $sectionGap;
   .footer-bg {
-    background-color: white;
     margin-top: $sectionGap;
+    border-top: 1px solid $gray;
     footer {
       display: flex;
       padding-block: 77px;
@@ -300,7 +300,12 @@
   gap: 22px;
   z-index: 10;
   .text {
-    color: white;
+    color: $darkGreen;
+    h1 {
+      border-bottom: 1px solid $gray;
+      padding-bottom: 18px;
+      margin-bottom: 9px;
+    }
     .p2 {
       margin-block: 12px;
     }
@@ -342,9 +347,10 @@
 }
 
 .contact-us-form {
-  background-color: white;
+  background-color: $offwhite;
   display: flex;
   height: 756px;
+  border-radius: 20px;
 
   .half {
     width: 50%;
@@ -355,66 +361,43 @@
       margin-bottom: 20px;
     }
   }
-  .swiper-quote {
-    position: relative;
+  .left-side {
+    background-color: $darkGreen;
+    border-radius: 20px 0px 0 20px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    .backgroundImg {
-      position: absolute;
-      bottom: 0;
-      top: 0;
-      height: 100%;
-      object-fit: cover;
-      width: 100%;
-    }
-    .swiper {
-      padding: 0 64px;
-      .text-bg {
-        border-radius: 10px;
-        background: rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(125px);
-        padding: 48px 27px;
+    color: white;
+    .reach-us {
+      h1 {
+        border-bottom: 1px solid white;
+        padding-bottom: 9px;
+        // margin-bottom: 70px;
+        margin-bottom: 120px;
+      }
 
+      .link {
         display: flex;
-        flex-direction: column;
-        gap: 17px;
-
-        .title {
-          font-size: 25px;
-          font-weight: 600;
+        max-width: 330px;
+        gap: 25px;
+        .p4 {
+          margin-block: 10px;
         }
-        .author {
-          font-size: 15px;
-          font-weight: 700;
-          display: flex;
-          gap: 8px;
-          align-items: center;
-          .img {
-            width: 31px;
-          }
+        .paragraph{
+          margin: 0;
+          color: $green;
         }
       }
-    }
-    .swiper-button-next,
-    .swiper-button-prev {
-      &::after {
-        font-size: 22px;
-        background-color: black;
-        border-radius: 50%;
-        color: white;
-        padding-inline: 15px;
-        padding-block: 10px;
-        opacity: 0.8;
+      .icons{
+        margin-top: 104px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        .icon{
+          font-size: 36px;
+        }
       }
-      &:hover {
-        opacity: 1;
-      }
-    }
-    .swiper-button-next {
-      right: 17px;
-    }
-    .swiper-button-prev {
-      left: 17px;
     }
   }
   .padded-form {
@@ -622,7 +605,8 @@
           width: fit-content;
           z-index: 9;
           max-width: 451px;
-          backdrop-filter: blur(55.5px);
+          // backdrop-filter: blur(55.5px);
+          background-color: $offwhite;
         }
       }
     }
@@ -859,6 +843,46 @@
         }
       }
     }
+    .city-grid {
+      .p1 {
+        color: $gray;
+        margin-bottom: 18px;
+      }
+      h1 {
+        margin-bottom: 94px;
+      }
+      .cells {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .cell {
+          display: flex;
+          .img {
+            width: 250px;
+            height: 189px;
+            object-fit: cover;
+          }
+          .text {
+            width: 250px;
+            padding-top: 16px;
+            padding-left: 29px;
+            .p1 {
+              margin: 0;
+              color: $darkGray;
+            }
+            h2 {
+              color: $darkGreen;
+              margin-block: 28px;
+            }
+          }
+        }
+        .inv {
+          .img {
+            order: 1;
+          }
+        }
+      }
+    }
     .decks {
       display: flex;
       justify-content: space-evenly;
@@ -1032,7 +1056,7 @@
           .land {
             width: 357px !important;
             border-radius: 7px;
-            background-color: white;
+            border: 1px solid $gray;
 
             .land-img {
               height: 245px;
@@ -1087,11 +1111,13 @@
         }
       }
     }
-  }
-  .ask {
-    h1 {
-      text-align: center;
-      margin-bottom: 40px;
+    .ask {
+      background-color: $offwhite;
+      padding-block: 88px;
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
     }
   }
 }
@@ -2083,7 +2109,7 @@
   th,
   td {
     text-align: start;
-    border: 1px solid lightgray;
+    border: 1px solid $offwhite;
   }
 
   .icon {
@@ -2398,7 +2424,7 @@
       &:hover {
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
       }
-      .t2 {
+      .p1 {
         span {
           color: $orange;
         }
@@ -2428,8 +2454,9 @@
       display: grid;
       grid-template-rows: 0fr;
       padding-inline: 25px;
-      .p2 {
+      .p3m {
         overflow: hidden;
+        color: $gray;
       }
     }
     .open {

@@ -3,7 +3,7 @@
     <div class="faq-wrapper mpi">
       <div class="faq" @click="accordionCheck(n)" v-for="(f, n) in faq">
         <div class="question">
-          <div class="t2">
+          <div class="p1">
             <span> 0{{ n + 1 }}. </span>
             {{ f.label }}
           </div>
@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="answer" :class="{ 'open': openfaq[n] }">
-          <div class="p2"><br> {{ f.content }}</div>
+          <div class="p3m"><br> {{ f.content }}</div>
         </div>
       </div>
     </div>

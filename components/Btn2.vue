@@ -1,7 +1,7 @@
 <template>
   <div>
     <NuxtLink :to="`${destination ? '/' + destination : ''}`">
-      <button type="button" :class="[{ 'inv': inv },{ 'orange': orange }]">
+      <button type="button" :class="[{ 'inv': inv },{ 'green': green }]">
         {{ text }}
         <slot />
       </button>
@@ -10,15 +10,15 @@
 </template>
 
 <script setup>
-defineProps(['text', 'destination', 'inv','orange']);
+defineProps(['text', 'destination', 'inv','green']);
 </script>
 
 <style lang="scss" scoped>
 @import "../assets/style/variables.scss";
-.orange{
+.green{
   color: white !important;
   border: none;
-  background-color: $orange;
+  background-color: $darkGreen;
 }
 button {
   display: flex;
@@ -47,7 +47,7 @@ button {
 }
 
 .inv {
-  color: $orange ;
+  color: $green ;
   background-color: white;
 }
 </style>

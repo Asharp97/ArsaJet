@@ -22,8 +22,8 @@
     </q-dialog>
 
     <div class="text">
-      <h4>{{ title }}</h4>
-      <div class="p2">{{ subtitle }}</div>
+      <h1>{{ title }}</h1>
+      <div class="p4">{{ subtitle }}</div>
     </div>
 
     <form class="form">
@@ -75,7 +75,7 @@
           </select>
         </div>
       </div>
-      <btn2 :orange="true" @click="submit()" text="Bizimle iletişime geçin" />
+      <btn2 :green="true" @click="submit()" text="Sizi Arayalım" />
     </form>
   </div>
 </template>

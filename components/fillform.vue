@@ -1,34 +1,29 @@
 <template>
   <div class="big-container" id="fillform">
     <div class="contact-us-form big-container">
-      <div class="half swiper-quote mobile-hide ">
-         <nuxt-img sizes="xs:0px lg:635px" class="backgroundImg" src="fillform.png" />
-        <swiper :navigation="true" :modules="modules" class="swiper" :loop="true" :space-between="70">
-          <swiper-slide>
-            <div class="text-bg">
-              <div class="title">
-                Önceliğimiz Memnuniyetiniz
-              </div>
-              <div class="p2">İnternet üzerinden yaptığım en doğru yatırımdı. Eksland yatırım araçlarına bakış açımı
-                değiştirdi.
-                Ayrıca yurdumdan bir toprağım oldu. Çok teşekkür ederim.</div>
-              <div class="author">
-                <nuxt-img class="img" src="profile.png" />
-                <span> Kemal Eren Yılmaz </span>
+      <div class="half left-side mobile-hide ">
+        <div class="reach-us">
+          <h1>Bize Ulaşın</h1>
+          <div class="link">
+            <img src="../assets/link.svg" alt="">
+            <div class="content">
+              <h4>Arsajet</h4>
+              <div class="p4">Anonim Şirketleri</div>
+              <div class="p4 paragraph">Şimdi bizimle iletişime geçin! Danışmanlarımız en kısa sürede size geri dönüş
+                yapacaktır.
               </div>
             </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="text-bg">
-              Slide 2
-            </div>
-          </swiper-slide>
-        </swiper>
+          </div>
+          <div class="icons">
+            <Icon class="icon" name="ic:round-facebook" />
+            <Icon class="icon" name="entypo-social:linkedin-with-circle" />
+            <Icon class="icon" name="ph:instagram-logo-fill" />
 
+          </div>
+        </div>
       </div>
       <div class="half padded-form">
-        <FormComponent title="Formu Doldurun"
-          subtitle="Şimdi bizimle iletişime geçin! Danışmanlarımız en kısa sürede size geri dönüş yapacaktır." />
+        <FormComponent title="Sizi Arayalım" subtitle="Form göndermeniz durumunda 24 saat içerisinde sizi arayalım." />
       </div>
     </div>
   </div>

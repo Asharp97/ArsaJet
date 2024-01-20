@@ -523,5 +523,39 @@
     "Kırklareli",
     "Trabzon",
     "Yalova"
+  ],
+  "cityGrid": [
+    {
+      "increase": 363,
+      "city": "İstanbul"
+    },
+    {
+      "increase": 363,
+      "city": "Bursa"
+    },
+    {
+      "increase": 363,
+      "city": "Eskişehir"
+    },
+    {
+      "increase": 363,
+      "city": "Afyon"
+    },
+    {
+      "increase": 363,
+      "city": "Trabzon"
+    },
+    {
+      "increase": 363,
+      "city": "Rize"
+    },
+    {
+      "increase": 363,
+      "city": "Kırklareli"
+    },
+    {
+      "increase": 363,
+      "city": "Yalova"
+    }
   ]
 }

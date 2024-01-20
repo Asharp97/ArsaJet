@@ -18,7 +18,8 @@
 
         <div class="callyou-form" @click.self="openWellCall()" v-if="wellcall">
           <div class="form-bg">
-            <FormComponent title="Hemen Bize Ulaşın" subtitle="Ücretsiz bilgi edinin." />
+            <FormComponent title="Sizi Arayalım"
+              subtitle="Form göndermeniz durumunda 24 saat içerisinde sizi arayalım." />
           </div>
         </div>
       </div>
@@ -262,8 +263,25 @@
       </section>
 
       <section>
-        <div class="city-grid">
-          
+        <div class="city-grid container">
+          <div class="p1">
+            Soru işaretlerinizi gidermek için buradayız.
+          </div>
+          <h1>Şehirlerimizdeki Arsa Fiyat Dinamiklerini Sunuyoruz.</h1>
+
+          <div class="cells">
+            <div v-for="(city, n) in  cityGrid" class="cell"
+              :class="[{ 'inv': n == 2 }, { 'inv': n == 3 }, { 'inv': n == 7 }, { 'inv': n == 6 }]">
+              <nuxt-img class="img" :src="`city/${city.city}.png`" />
+              <div class="text">
+                <div class="p1">Son 5 Yıl</div>
+                <div class="p4">2019 - 2023</div>
+                <h2>%{{ city.increase }} ARTIŞ</h2>
+                <div class="p4">{{ city.city }}</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -271,7 +289,7 @@
         <div class="decks big-container">
           <div class="deck">
             <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards">
-              <swiper-slide class="card" v-for="card in cards1">
+              <swiper-slide class="card" v-for=" card  in  cards1 ">
                 <Icon :name="`${card.icon}`" class="icon" />
                 <div class="p1">{{ card.title }}</div>
                 <div class="p2">{{ card.details }}</div>
@@ -284,7 +302,7 @@
           </div>
           <div class="deck">
             <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards">
-              <swiper-slide class="card card2" v-for="card in cards2">
+              <swiper-slide class="card card2" v-for=" card  in  cards2 ">
                 <Icon :name="`${card.icon}`" class="icon" />
                 <div class="p1">{{ card.title }}</div>
                 <div class="p2">{{ card.details }}</div>
@@ -339,7 +357,7 @@
             },
           }
             " :freeMode="true" :navigation="true" :modules="moduleLand" :scrollbar="{ hide: true }" class="swiper mpi">
-            <swiper-slide v-for="( x, n ) in  ilanlar " class="landSlider">
+            <swiper-slide v-for="(  x, n  ) in   ilanlar  " class="landSlider">
               <NuxtLink class="landWrapper" :to="`listings/${x.id}`">
                 <div class="land">
                   <!-- <nuxt-img sizes="375px" class="land-img" src="land-1.png" /> -->
@@ -369,9 +387,11 @@
         </div>
       </section>
 
-      <section class="ask container">
-        <h1 class="mpb">Sıkça sorulan sorular</h1>
-        <FaqComponent :faq="faq" class="FaqComponent" />
+      <section>
+        <div class="ask ">
+          <h1 class="mpb">Sıkça sorulan sorular</h1>
+          <FaqComponent :faq="faq" class="FaqComponent" />
+        </div>
       </section>
 
     </div>
@@ -415,6 +435,7 @@ const gold = content.gold
 const city = content.cityslider
 const faq = content.faq
 const table = content.table
+const cityGrid = content.cityGrid
 
 let count = ref(3)
 
