@@ -1,56 +1,62 @@
 <template>
   <div class="faq">
     <section>
-      <hero img="hero-faq" text="Aklınızda soru kalmasın." />
+      <hero img="hero-faq" />
     </section>
     <NuxtLink to="#nav">
       <Icon name="material-symbols:arrow-upward-alt-rounded" class="up" :class="{ 'hideup': !showArrow }" />
     </NuxtLink>
-    <div class="gap">
-      <section class="titles">
-        <div class="p1">Sıkça sorulan sorular.</div>
 
+    <div class="gap">
+      <section class="titles container">
         <div class="title" id="nav">
-          <div class="logo"> EKS<span>LAND</span> </div>
-          <h4>Fikirtepe</h4>
-          <div class="display">Aklınıza <br> gelebilecek tüm <br> sorular.</div>
+          <div class="p1">Merak Ettikleriniz</div>
+          <h1>Aklınıza Gelebilecek Tüm Sorular</h1>
         </div>
 
         <div class="nav">
           <NuxtLink to="#buy">
-            <div class="t1"> Satın alım işlemleri ilgili </div>
+            <div class="p3m"> Satın alım işlemleri ile ilgili </div>
           </NuxtLink>
           <NuxtLink to="#pay">
-            <div class="t1"> Ödeme işlemleri ile ilgili </div>
+            <div class="p3m"> Ödeme işlemleri ile ilgili </div>
           </NuxtLink>
           <NuxtLink to="#papers">
 
-            <div class="t1"> Evrak işlemleri ile ilgili </div>
+            <div class="p3m"> Evrak işlemleri ile ilgili </div>
           </NuxtLink>
           <NuxtLink to="#eksland">
-            <div class="t1"> EKSLAND ile ilgili </div>
+            <div class="p3m"> EKSLAND ile ilgili </div>
+          </NuxtLink>
+          <NuxtLink to="#other">
+            <div class="p3m"> Diğer </div>
           </NuxtLink>
         </div>
       </section>
 
-      <section class="container" id="buy">
-        <h1>Satın alım işlemleri ilgili</h1>
-        <FaqComponent :faq="faq" class="FaqComponent white-bg" />
+      <section class="faq-bg gray-bg container" id="buy">
+        <h2>Satın alım işlemleri ilgili</h2>
+        <FaqComponent :faq="faq" class="FaqComponent " />
       </section>
 
-      <section class="container" id="pay">
-        <h1>Ödeme işlemleri ile ilgili</h1>
-        <FaqComponent :faq="faq" class="FaqComponent white-bg" />
+      <section class="faq-bg gray-bg container" id="pay">
+        <h2>Ödeme işlemleri ile ilgili</h2>
+        <FaqComponent :faq="faq" class="FaqComponent " />
       </section>
 
-      <section class="container" id="papers">
-        <h1>Evrak işlemleri ile ilgili</h1>
-        <FaqComponent :faq="faq" class="FaqComponent white-bg" />
+      <section class="faq-bg gray-bg container" id="papers">
+        <h2>Evrak işlemleri ile ilgili</h2>
+        <FaqComponent :faq="faq" class="FaqComponent " />
       </section>
 
-      <section class="container" id="eksland">
-        <h1>EKSLAND ile ilgili</h1>
-        <FaqComponent :faq="faq" class="FaqComponent white-bg" />
+      <section class="faq-bg gray-bg container" id="eksland">
+        <h2>EKSLAND ile ilgili</h2>
+        <FaqComponent :faq="faq" class="FaqComponent " />
+      </section>
+
+      <section class="faq-bg gray-bg container" id="other">
+        <h2>Diğer</h2>
+        <FaqComponent :faq="faq" class="FaqComponent " />
       </section>
     </div>
   </div>

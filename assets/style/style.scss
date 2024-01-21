@@ -285,6 +285,12 @@
         }
       }
     }
+    .whatsapp {
+      position: absolute;
+      bottom: 49px;
+      right: 82px;
+      z-index: 1;
+    }
     .wellcall {
       background-color: white;
       border-radius: 0px 0px 7px 7px;
@@ -1410,11 +1416,17 @@
     }
   }
 
-  h1 {
-    width: 61%;
-    margin-inline: auto;
-    margin-block: 22px;
+  .faq-bg{
+    border-radius: 20px;
+    padding: 60px;
   }
+
+  h2 {
+    margin-bottom: 50px;
+    max-width: 900px;
+    margin-inline: auto;
+  }
+
   .white-bg {
     padding-block: 100px;
     border-radius: 20px;
@@ -1754,6 +1766,7 @@
     }
   }
 }
+
 .gray-bg {
   background-color: $offwhite;
 }
@@ -2176,11 +2189,8 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
-  text-align: center;
-  padding-bottom: 100px;
   .p1 {
-    margin-top: 43px;
-    margin-bottom: 126px;
+    margin-top: 250px;
   }
   .p1,
   h4 {
@@ -2190,7 +2200,6 @@
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
-    justify-content: center;
     a {
       background-color: white;
       padding: 15px 40px;

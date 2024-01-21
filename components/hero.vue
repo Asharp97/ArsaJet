@@ -8,10 +8,12 @@
 
       <div class="hero-content container">
         <div>
-          <div class="p1">ARSAJET ile</div>
+          <div class="p1" v-if="text">ARSAJET ile</div>
           <div class="display">{{ text }}</div>
         </div>
       </div>
+
+      <img src="../assets/WP.svg" class="whatsapp" alt="">
 
 
       <Wellcall />
