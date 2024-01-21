@@ -1,16 +1,22 @@
 <template>
   <div class="hero" :class="{ 'marginbot': mb }">
-    <nuxt-img sizes="xs:640px sm:768px md:1024px lg:1280px xl:1536px xxl:1536px 2xl:2560px" class="landing-image "
-      :src="`${img}.png`" />
-    <div class="landing-page mpi container">
-      <div class="landing-text">
-        <div class="display">
-          {{ text }}
+    <nuxt-img v-if="img" sizes="xs:640px sm:768px md:1024px lg:1280px xl:1536px xxl:1536px 2xl:2560px"
+      class="landing-image " :src="`${img}.png`" />
+    <div class="video-hero">
+      <video v-if="!img" autoplay muted loop class="video-src" src="https://ik.imagekit.io/sharp/arsajet/video.mp4">
+      </video>
+
+      <div class="hero-content container">
+        <div>
+          <div class="p1">ARSAJET ile</div>
+          <div class="display">{{ text }}</div>
         </div>
       </div>
-      <div class="form-bg">
-        <FormComponent title="Hemen Bize Ulaşın" subtitle="Ücretsiz bilgi edinin." />
-      </div>
+
+
+      <Wellcall />
+
+
     </div>
   </div>
 </template>

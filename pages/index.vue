@@ -1,28 +1,7 @@
 <template>
   <div class="home">
     <section>
-      <div class="video-hero">
-        <video autoplay muted loop class="video-src" src="https://ik.imagekit.io/sharp/arsajet/video.mp4">
-        </video>
-
-        <div class="hero-content container">
-          <div>
-            <div class="p1">ARSAJET ile</div>
-            <div class="display">Değerini Kaybetmeyen Yatırım: Toprak!</div>
-          </div>
-        </div>
-
-        <button @click="openWellCall()">
-          <div class="wellcall"> Sizi Arayalım </div>
-        </button>
-
-        <div class="callyou-form" @click.self="openWellCall()" v-if="wellcall">
-          <div class="form-bg">
-            <FormComponent title="Sizi Arayalım"
-              subtitle="Form göndermeniz durumunda 24 saat içerisinde sizi arayalım." />
-          </div>
-        </div>
-      </div>
+      <hero text="Değerini Kaybetmeyen Yatırım: Toprak!"/>
     </section>
 
     <div class="gap">
@@ -223,7 +202,7 @@
 
       <section>
         <div class="smooth-city-slide">
-          <div v-for="x in 2">
+          <div v-for="x in 3" class="city-slide">
             <div class="city" v-for="n in city">
               <h3> •</h3>
               <h3>{{ n }}</h3>
@@ -399,10 +378,7 @@
 </template>
 
 <script setup>
-let wellcall = ref(false);
-const openWellCall = () => {
-  wellcall.value = !wellcall.value
-}
+
 
 const supabase = useSupabaseClient()
 let ilanlar = ref()

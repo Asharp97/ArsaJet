@@ -1,5 +1,5 @@
 <template>
-  <div class="big-container" id="fillform">
+  <div class="container" id="fillform">
     <div class="contact-us-form big-container">
       <div class="half left-side mobile-hide ">
         <div class="reach-us">

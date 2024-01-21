@@ -243,7 +243,7 @@
 
 .hero {
   position: relative;
-
+  height: 100vh;
   .landing-image {
     object-fit: cover;
     object-position: bottom;
@@ -255,33 +255,70 @@
     width: 100%;
     height: 100%;
   }
-  .landing-page {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    color: white;
-    padding-top: calc($navHeight + 110px);
-    padding-bottom: 110px;
-    z-index: 1;
-    .landing-text {
+  .video-hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    .video-src {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
       z-index: 1;
-      max-width: 635px;
-      line-height: 1.1;
     }
-    .form-bg {
-      border-radius: 14px;
-      background: rgba(255, 255, 255, 0.22);
-      backdrop-filter: blur(55.5px);
-      padding: 20px;
+    .hero-content {
+      position: relative;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      align-items: flex-end;
+      height: 100%;
+      z-index: 2;
+      padding-bottom: 78px;
+      color: white;
+      div {
+        .display {
+          max-width: 800px;
+        }
+      }
+    }
+    .wellcall {
+      background-color: white;
+      border-radius: 0px 0px 7px 7px;
+      cursor: pointer;
+      padding: 5px 22px;
+      // transform: rotateX(90deg);
+      rotate: 90deg;
+      z-index: 4;
+      position: absolute;
+      right: -65px;
+      top: 50%;
+      font-size: 20px;
+    }
+    .callyou-form {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      right: 0;
+      left: 0;
+      display: flex;
       align-items: center;
-      max-width: 451px;
-      // padding: 15px 25px;
-      width: fit-content;
-      z-index: inherit;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.393);
+      .form-bg {
+        border-radius: 14px;
+        padding: 24px 42px;
+        width: fit-content;
+        z-index: 9;
+        max-width: 451px;
+        // backdrop-filter: blur(55.5px);
+        background-color: $offwhite;
+      }
     }
   }
 }
@@ -384,17 +421,17 @@
         .p4 {
           margin-block: 10px;
         }
-        .paragraph{
+        .paragraph {
           margin: 0;
           color: $green;
         }
       }
-      .icons{
+      .icons {
         margin-top: 104px;
         display: flex;
         justify-content: center;
         gap: 24px;
-        .icon{
+        .icon {
           font-size: 36px;
         }
       }
@@ -540,76 +577,21 @@
   }
 }
 
+.smooth-img-slide {
+  display: flex;
+  gap: 46px;
+  animation: 20s smooth-slider infinite linear;
+  .img {
+    width: 316px;
+    height: 404px;
+    object-fit: cover;
+  }
+}
+
 //Pages
 .home {
   overflow: hidden;
   section {
-    .video-hero {
-      position: relative;
-      height: 100vh;
-      width: 100%;
-
-      .video-src {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: bottom;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1;
-      }
-      .hero-content {
-        position: relative;
-        display: flex;
-        align-items: flex-end;
-        height: 100%;
-        z-index: 2;
-        padding-bottom: 78px;
-        color: white;
-        div {
-          .display {
-            max-width: 491px;
-          }
-        }
-      }
-      .wellcall {
-        background-color: white;
-        border-radius: 0px 0px 7px 7px;
-        cursor: pointer;
-        padding: 5px 22px;
-        // transform: rotateX(90deg);
-        rotate: 90deg;
-        z-index: 4;
-        position: absolute;
-        right: -65px;
-        top: 50%;
-        font-size: 20px;
-      }
-      .callyou-form {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        bottom: 0;
-        height: 100%;
-        right: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.393);
-        .form-bg {
-          border-radius: 14px;
-          padding: 24px 42px;
-          width: fit-content;
-          z-index: 9;
-          max-width: 451px;
-          // backdrop-filter: blur(55.5px);
-          background-color: $offwhite;
-        }
-      }
-    }
     .why-recomended {
       max-width: 783px;
       display: flex;
@@ -694,16 +676,6 @@
       }
     }
 
-    .smooth-img-slide {
-      display: flex;
-      gap: 46px;
-      animation: 20s smooth-slider infinite linear;
-      .img {
-        width: 316px;
-        height: 404px;
-        object-fit: cover;
-      }
-    }
     @keyframes smooth-slider {
       from {
         transform: translateX(0);
@@ -807,7 +779,7 @@
       background-color: $green;
       color: $darkGreen;
       padding-block: 37px;
-      div {
+      .city-slide {
         display: flex;
         gap: 39px;
         animation: 25s smooth-slider infinite linear;
@@ -1462,50 +1434,23 @@
 .about {
   overflow: hidden;
   .bizkimiz {
-    .white-bg {
-      padding-block: 32px;
-    }
+    margin-top: 250px;
     .p1 {
       color: $gray;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
-    .worries {
-      color: $gray;
-      margin-bottom: 172px;
-      padding-bottom: 20px;
-      text-align: center;
-    }
-
-    .content {
-      padding: 85px 0px;
-      .cols {
-        display: flex;
-        margin-top: 85px;
-        text-align: center;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        .column {
-          display: flex;
-          flex-direction: column;
-          gap: 34px;
-          width: 35.5%;
-          min-width: 170px;
-          .img {
-            width: 100%;
-          }
-          .names {
-            color: #424242;
-            font-size: 21px;
-            font-weight: 500;
-          }
-        }
-      }
-    }
-    h4 {
-      color: $darkGray;
-      text-align: center;
+    h1 {
+      margin-bottom: 54px;
     }
   }
+
+  .old-images {
+    .p1 {
+      color: $gray;
+      margin-top: 53px;
+    }
+  }
+
   .we-are-here {
     .content {
       padding-top: 82px;
@@ -1529,38 +1474,22 @@
           font-size: 42px;
         }
       }
-      .title {
-        font-size: 64px;
-        font-weight: 600;
-        line-height: 1.1;
-      }
       hr {
-        border: 1px solid $darkGray;
+        border: 1px solid $gray;
       }
       .text {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-inline: 44px;
+        margin-top: 51px;
         .half {
           width: 45%;
           min-width: 200px;
-          span {
-            margin-top: 0;
-            font-size: 21px;
-            font-weight: 500;
-            color: $darkGray;
+          .p2 {
+            color: $gray;
+            margin-bottom: 20px;
           }
-        }
-      }
-      .exp {
-        padding: 15px 40px;
-        background-color: $offwhite;
-        width: fit-content;
-        border-radius: 20px;
-        margin-inline: auto;
-        margin-block: 150px;
-        .p2 {
-          color: $darkGray;
         }
       }
       .slider {
@@ -1577,52 +1506,40 @@
       }
     }
   }
-  .services {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-block: 60px;
-    h4 {
-      color: $darkGray;
-      margin-block: 63px;
-    }
-    .img {
-      margin-bottom: 61px;
-      width: 100%;
-      max-width: 1070px;
-      height: 721px;
-      object-fit: cover;
-      margin-inline: auto;
-      border-radius: 20px;
-    }
-    .cols {
-      display: flex;
-      justify-content: space-between;
-      max-width: 1070px;
-      margin-inline: auto;
-      .column {
-        width: 45%;
-        .h {
-          font-weight: 600;
-          margin-bottom: -23px;
-        }
+
+  .Millionaires {
+    position: relative;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1512px;
+    .text {
+      color: white;
+      position: absolute;
+      bottom: 75px;
+      right: 120px;
+      width: 692px;
+      .p1 {
+        color: #dddfb4;
       }
     }
-  }
-  h4 {
-    text-align: center;
+    .img {
+      width: 100%;
+      height: 985px;
+      object-fit: cover;
+    }
   }
   .office {
     .img {
       width: 100%;
       height: 601px;
       object-fit: cover;
+      border-radius: 20px;
+    }
+    h1 {
+      margin-top: 66px;
     }
     .p1 {
-      // width: 98%;
-      // margin-inline: auto;
-      padding-block: 78px;
-      padding-inline: 30px;
+      margin-top: 25px;
     }
   }
 }
