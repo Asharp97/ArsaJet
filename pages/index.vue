@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <section>
-      <hero text="Değerini Kaybetmeyen Yatırım: Toprak!"/>
+      <hero text="Değerini Kaybetmeyen Yatırım: Toprak!" video="https://ik.imagekit.io/sharp/arsajet/video.mp4" />
     </section>
 
     <div class="gap">
@@ -21,9 +21,12 @@
 
             <div class="future">
               <div class="p1">ARSAJET ile</div>
-              <h1>Ne Döviz, Ne Altın, Ne Borsa
-                Gelecekte En Kârlı Yatırım Arsa!</h1>
-              <Btn2> Detaylı Bilgi Alın
+              <h1>Ne Döviz, Ne Altın,
+                <br /> Ne Borsa <br />
+                Gelecekte En Kârlı Yatırım Arsa!
+              </h1>
+              <Btn2>
+                Detaylı Bilgi Alın
                 <Icon name="material-symbols:chevron-right-rounded" class="icon" />
               </Btn2>
             </div>
@@ -96,7 +99,7 @@
       </section>
 
       <section>
-        <div class="value-from-land small-container">
+        <div class="value-from-land m-container">
           <div class="p1">ARSAJET yatırımlarınıza yön veriyoruz.</div>
           <h1>Topraktan Gelen Değerler, Döviz ve Arazi </h1>
           <swiper class="mySwiper">
@@ -138,7 +141,7 @@
       </section>
 
       <section>
-        <div class="time-value small-container">
+        <div class="time-value m-container">
           <div class="p1">ARSAJET olarak kaygılarınızı anlıyoruz. </div>
           <h1>Ne Zaman Değerlenir? Ne kadar Değerlenir? </h1>
           <div class="ro">
@@ -201,18 +204,11 @@
       </section>
 
       <section>
-        <div class="smooth-city-slide">
-          <div v-for="x in 3" class="city-slide">
-            <div class="city" v-for="n in city">
-              <h3> •</h3>
-              <h3>{{ n }}</h3>
-            </div>
-          </div>
-        </div>
+        <SmoothCitySlide />
       </section>
 
       <section>
-        <div class="investment-choice small-container">
+        <div class="investment-choice m-container">
           <div class="p1">
             Tüm arazilerimiz 5.000 € ile 20.000 € arasında değişmektedir.
           </div>
@@ -408,7 +404,6 @@ const cards2 = content.cards2
 const feature = content.features
 const increase = content.increase
 const gold = content.gold
-const city = content.cityslider
 const faq = content.faq
 const table = content.table
 const cityGrid = content.cityGrid

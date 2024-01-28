@@ -557,5 +557,74 @@
       "increase": 363,
       "city": "Yalova"
     }
+  ],
+  "eskisehirHero": [
+    {
+      "img": "eskisehir-hero-0.png",
+      "title": "Yeşil Yatırımlarla Geleceğe Dokunun",
+      "text": "Zeytin ağacı, ceviz ağacı gibi seçeneklerle çevreye katkı sağlarken aynı zamanda değerli bir yatırım yapma fırsatını yakalayın. Doğayı korurken geleceğinize yeşil bir dokunuş katın."
+    },
+    {
+      "img": "eskisehir-hero-1.png",
+      "title": "Yeşil Yatırımlarla Geleceğe Dokunun",
+      "text": "Zeytin ağacı, ceviz ağacı gibi seçeneklerle çevreye katkı sağlarken aynı zamanda değerli bir yatırım yapma fırsatını yakalayın. Doğayı korurken geleceğinize yeşil bir dokunuş katın."
+    },
+    {
+      "img": "eskisehir-hero-2.png",
+      "title": "Yeşil Yatırımlarla Geleceğe Dokunun",
+      "text": "Zeytin ağacı, ceviz ağacı gibi seçeneklerle çevreye katkı sağlarken aynı zamanda değerli bir yatırım yapma fırsatını yakalayın. Doğayı korurken geleceğinize yeşil bir dokunuş katın."
+    }
+  ],
+  "graph": [
+    {
+      "value": 79,
+      "height": 60
+    },
+    {
+      "value": 110,
+      "height": 83
+    },
+    {
+      "value": 157,
+      "height": 110
+    },
+    {
+      "value": 294,
+      "height": 212
+    },
+    {
+      "value": 600,
+      "height": 342
+    },
+    {
+      "value": "--",
+      "height": 342
+    }
+  ],
+  "graph2": [
+    {
+      "value": 80,
+      "height": 60
+    },
+    {
+      "value": 117,
+      "height": 83
+    },
+    {
+      "value": 193,
+      "height": 138
+    },
+    {
+      "value": 365,
+      "height": 275
+    },
+    {
+      "value": 762,
+      "height": 543
+    },
+    {
+      "value": "--",
+      "height": 543
+    }
   ]
 }
