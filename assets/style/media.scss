@@ -76,26 +76,6 @@
   .mobile-show {
     display: flex !important;
   }
-  .onetwolayout {
-    margin-block: 0;
-    h3 {
-      margin-bottom: 0;
-    }
-    .imgH {
-      height: 264px;
-    }
-    .imgs {
-      .imgV {
-        height: 150px;
-      }
-    }
-    .text {
-      .p1 {
-        text-align: left;
-        width: 100%;
-      }
-    }
-  }
 
   .features {
     .swiper {
@@ -214,19 +194,6 @@
         .p1 {
           width: 100%;
         }
-      }
-    }
-    .onetwolayout {
-      gap: 10px;
-      .imgH,
-      .imgV {
-        height: 112px;
-      }
-      .imgs {
-        gap: 10px;
-      }
-      h1 {
-        margin-bottom: 12px;
       }
     }
     .young {
@@ -440,22 +407,6 @@
           .img {
             height: 260px;
           }
-        }
-      }
-    }
-    .rich-history {
-      .swiper {
-        height: 262px;
-      }
-      .swiper-button-next {
-        bottom: 10px !important;
-        &:after {
-          font-size: 15px;
-        }
-      }
-      .title {
-        .display {
-          margin-bottom: 30px;
         }
       }
     }

@@ -1,20 +1,19 @@
 <template>
   <div class="listings container">
-
     <div class="top">
-      <div class="t2 land-count"> {{ totalIlanlar }} Adet İlan Bulundu </div>
+      <div class="p1 land-count"> {{ totalIlanlar }} Adet İlan Bulundu </div>
       <div class="headers mobile-hide white-bg">
-        <div class="p2">
-          Görsel, ilan başlığı & Şehir bilgisi
+        <div class="p3m">
+          İlan Başlığı & Detayları
         </div>
         <span>
-          <div class="header ">
+          <div class="p4">
             Metrekare
           </div>
-          <div class="header ">
+          <div class="p4">
             Fiyat
           </div>
-          <div class="header ">
+          <div class="p4">
             İlçe
           </div>
         </span>
@@ -22,13 +21,13 @@
 
       <div @click="showFilter = !showFilter" class="filter-button white-bg mobile-show">
         <button>
-          <div class="p2"> Filtrele </div>
+          <div class="p4"> Filtrele </div>
         </button>
       </div>
 
       <div class="sort white-bg">
         <button>
-          <div class="p2">
+          <div class="p4">
             {{ sortBy() }}
           </div>
           <Icon name="ep:arrow-down" class="icon" />
@@ -46,14 +45,14 @@
     <div class="filter-listing-row" :class="{ 'hide-filter': !showFilter }">
       <div class="filter">
         <div class="filter-inner white-bg">
-          <div class="t2"> Fiyat </div>
+          <div class="p1"> Fiyat </div>
           <div class="inputs">
             <input type="number" @keyup.enter="getIlanlar" v-model="price.min" min="1" max="290000">
             -
             <input type="number" @keyup.enter="getIlanlar" v-model="price.max" min="1" max="30000">
           </div>
-          <!-- <q-range :step='1000' v-model="price" :min="0" :max="30000" color="black" thumb-color="black" label /> -->
-          <div class="t2">
+          <q-range :step='1000' v-model="price" :min="0" :max="30000" color="black" thumb-color="black" label />
+          <div class="p1">
             Metrekare
           </div>
           <div class="inputs">
@@ -61,9 +60,9 @@
             -
             <input type="number" @keyup.enter="getIlanlar" v-model="km.max" min="1" max="1300">
           </div>
-          <!-- <q-range :step='1000' v-model="km" :min="0" :max="1300" color="black" thumb-color="black" label /> -->
+          <q-range :step='1000' v-model="km" :min="0" :max="1300" color="black" thumb-color="black" label />
 
-          <div class="t2">
+          <div class="p1">
             Şehirler
           </div>
           <div class="checklist">
@@ -93,27 +92,26 @@
               </div>
               <div class="text">
                 <div class="title">
-                  <div class="p2 gray">
+                  <div class="p4 gray">
                     <!-- #Eskisehir -->
-                    {{ ilan.cityLocation }}
+                    #{{ ilan.cityLocation }}
                   </div>
-                  <div class="p2">
+                  <div class="p3m">
                     Eksland güvencesiyle satılık arsa
                   </div>
-                </div>
-                <div class="details">
-
-                  <div class="param p2">
-                    {{ ilan.squareMeters }}m&sup2;
-                    <!-- 500m2 -->
-                  </div>
-                  <div class="param p2">
-                    <!-- 11.000 € -->
-                    {{ ilan.landPrice }}€
-                  </div>
-                  <div class="param p2 last">
-                    <!-- Alpu -->
-                    {{ ilan.districtLocation }}
+                  <div class="details">
+                    <div class="param p4">
+                      {{ ilan.squareMeters }}m&sup2;
+                      <!-- 500m2 -->
+                    </div>
+                    <div class="param p4">
+                      <!-- 11.000 € -->
+                      {{ ilan.landPrice }}€
+                    </div>
+                    <div class="param p4 last">
+                      <!-- Alpu -->
+                      {{ ilan.districtLocation }}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -135,7 +133,7 @@
         </div>
         <h2 v-if="totalIlanlar == 0">
           We're sorry we couldn't find any lands that fit your search,
-          <Icon name="material-symbols:heart-broken-rounded" class="orange" />
+          <Icon name="material-symbols:heart-broken-rounded" class="green" />
           Consider widening your search parameters
         </h2>
       </div>
@@ -187,17 +185,17 @@ const sortBy = () => {
   if (order.value)
     return order.value.text
   else
-    return 'Sort By'
+    return 'Liste Sıralama'
 }
 
 let getCount = async () => {
   let query = supabase
     .from('lands')
     .select('*', { count: 'exact', head: true })
-  // .gte('landPrice', price.value.min)
-  // .gte('squareMeters', km.value.min)
-  // .lte('landPrice', price.value.max)
-  // .lte('squareMeters', km.value.max)
+    .gte('landPrice', price.value.min)
+    .gte('squareMeters', km.value.min)
+    .lte('landPrice', price.value.max)
+    .lte('squareMeters', km.value.max)
 
   if (city.value.length > 0)
     query = query.in('cityLocation', city.value)
@@ -217,11 +215,11 @@ let getIlanlar = async () => {
   let query = supabase
     .from('lands')
     .select()
-  // .gte('landPrice', price.value.min)
-  // .gte('squareMeters', km.value.min)
-  // .lte('landPrice', price.value.max)
-  // .lte('squareMeters', km.value.max)
-  // .range(adPerPage * (page.value - 1), page.value * adPerPage)
+    .gte('landPrice', price.value.min)
+    .gte('squareMeters', km.value.min)
+    .lte('landPrice', price.value.max)
+    .lte('squareMeters', km.value.max)
+    .range(adPerPage * (page.value - 1), page.value * adPerPage)
 
   if (city.value.length > 0)
     query = query.in('cityLocation', city.value)
@@ -268,7 +266,7 @@ watch(
   }
 
   .active {
-    color: $orange;
+    color: $darkGreen;
   }
 }
 

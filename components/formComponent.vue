@@ -20,7 +20,7 @@
         </q-card-actions>
       </q-card>
     </q-dialog>
-
+    
     <div class="text">
       <h1>{{ title }}</h1>
       <div class="p4">{{ subtitle }}</div>

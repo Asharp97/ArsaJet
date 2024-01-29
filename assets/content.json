@@ -312,10 +312,10 @@
       "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
     }
   ],
-  "contactDetails": [
+  "contact": [
     {
       "title": "Adres",
-      "adres": "Lorem ipsum dolor sit amet consectetur. Rhoncus dictum erat ult"
+      "adres": "Turkey Office: Fikirtepe, Ekşioğlu Residence, Barış Sk. No:1, 34720 Kadıköy İstanbul"
     },
     {
       "title": "E-Mail",
@@ -482,8 +482,8 @@
     }
   ],
   "params": [
-    "Bulunduğu Şehir",
-    "Bulunduğu İlçe",
+    "Şehir",
+    "İlçe",
     "Metrekare",
     "Metrekare fiyatı",
     "Ada no",
@@ -625,6 +625,46 @@
     {
       "value": "--",
       "height": 543
+    }
+  ],
+  "choice": [
+    {
+      "img": "gold.png",
+      "choose": "Altın mı Arazi mi?",
+      "text": "Altın doğrudan topraktan çıkan bir madendir. Topraktan çıkan bu değerli maden yatırım araçlarından biridir. Ama uzun vadede, tarım arazilerine yapılan yatırımların, uzun vadede daha fazla kazanç potansiyeli sunabilir.",
+      "change": [568, 321, 4323, 342, 3242342, 324]
+    },
+    {
+      "img": "dolar.png",
+      "choose": "Dolar mı Arazi mi?",
+      "text": "Altın doğrudan topraktan çıkan bir madendir. Topraktan çıkan bu değerli maden yatırım araçlarından biridir. Ama uzun vadede, tarım arazilerine yapılan yatırımların, uzun vadede daha fazla kazanç potansiyeli sunabilir.",
+      "change": [568, 321, 4323, 342, 3242342, 324]
+    },
+    {
+      "img": "euro.png",
+      "choose": "Euro mu Arazi mi?",
+      "text": "Altın doğrudan topraktan çıkan bir madendir. Topraktan çıkan bu değerli maden yatırım araçlarından biridir. Ama uzun vadede, tarım arazilerine yapılan yatırımların, uzun vadede daha fazla kazanç potansiyeli sunabilir.",
+      "change": [568, 321, 4323, 342, 3242342, 324]
+    }
+  ],
+  "choice2": [
+    {
+      "img": "clio.png",
+      "text": "ekstra ekleyip ortalama bir hatchback araca sahip olabilirsiniz...",
+      "also": "Ayrıca aldığınız araç ile yatırım yaparken aracınızın sigorta, kasko, vergi, yakıt, bakımları, değer kayıplarını da unutmayınız.",
+      "accent": "212.000 ₺"
+    },
+    {
+      "img": "bag.png",
+      "text": "daha ekleyerek geleceğiniz için yatırım yapabilir, ailenizi güvence altına alabilirsiniz.",
+      "also": "1.5 adet çanta fiyatına yatırım yapabilmeniz Arsajet ile çok kolay. ",
+      "accent": "58.000 ₺"
+    },
+    {
+      "img": "family.png",
+      "text": "Antalya’da ortalama iyi bir otelde aileniz ile bir tatil yapabilirsiniz.",
+      "also": "Ayrıca yol, giyim ve ekstra masraflarınız hariç bir miktar harcama ile bu tatile erişebilirsiniz. Ya da çocuklarınız ve geleceğiniz için yatırım gerçekleştirebilirsiniz.",
+      "accent": "1 haftalik"
     }
   ]
 }

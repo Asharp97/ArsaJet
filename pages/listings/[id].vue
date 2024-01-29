@@ -5,22 +5,20 @@
       <section>
         <div class="white-bg">
           <div class="container">
+            <div class="p1 gray">İlan detaylarını öğrenin </div>
+            <h1>Arsajet Güvencesiyle Yatırım Gerçekleştirin</h1>
             <div class="details">
+
               <div class="imgDiv">
                 <!-- <nuxt-img sizes="xs:640px sm:768px md:784px lg:877px" class="img" src="listing-img.png" /> -->
                 <img :src="land.imgURL[0]" alt="" class="img">
               </div>
               <div class="textDiv mpi">
-                <h4>Arazi fiyatı: {{ land.landPrice }}.00 €</h4>
-                <div class="p2">Satın almak için hemen iletişime geçin.</div>
-                <hr>
                 <div class="params">
                   <div class="title" v-for="(x, n, q) in section1">
-                    <div class="p2">
-                      {{ params[q] }}:
-                    </div>
+                    <div class="p1"> {#} {{ params[q] }}: </div>
                     <div class="param">
-                      <div class="p2">
+                      <div class="p1">
                         &nbsp;{{ x }}
                         <span class="measure" v-if="q == 2"> m&sup2; </span>
                         <span class="measure" v-if="q == 3"> € </span>
@@ -28,10 +26,8 @@
                     </div>
                   </div>
                 </div>
-                <btn2 class="button" :destination="`listings/${id}/#fillform`">
-                  <h6>
-                    Hemen Satın Al
-                  </h6>
+                <btn2 class="button" :green="true" :destination="`listings/${id}/#fillform`">
+                  <div class="p1">Arazi fiyatı: {{ land.landPrice }}.00 €</div>
                 </btn2>
               </div>
             </div>
@@ -41,7 +37,8 @@
 
       <section>
         <div class="closer-look mpi container">
-          <h1>Araziye yakından bakın</h1>
+          <div class="p1 gray">Metrekare detaylarını öğrenin</div>
+          <h1>Arazinin Metrekare Detayları</h1>
           <swiper :navigation="true" :loop="true" class="swiper  noNav" @slideNextTransitionStart="nextEnd"
             :spaceBetween="30" @slidePrevTransitionStart="prevEnd">
             <swiper-slide v-for="n in land.imgURL" class="slide">
@@ -62,38 +59,38 @@
         </div>
       </section>
 
-      <section class="container mpi">
-        <onetwolayout :text="lookcloser[0].text" :title="lookcloser[0].title" :titlesub="lookcloser[0].subtitle"
-          :img1="land.imgURL[land.imgURL.length - 1]" :img2="img2" />
+      <section class="land-gallery container">
+        <div class="p1 gray">Fotoğraflar</div>
+        <h1>Arazi Galerisi</h1>
+        <div class="gallery">
+          <div class="imgWrapper" v-for="(img, n) in land.imgURL" @click="showImage(n)">
+            <img :src="img" alt="" class="img">
+            <Icon name="ic:baseline-zoom-in" class="icon" />
+          </div>
+        </div>
+        <!-- 
+        <div  v-if="imgShow">
+          <img :src="land.imgURL[imageIndex]" alt="">
+        </div> -->
+
+        <q-dialog v-model="imgShow" :maximized="true" class="dialog">
+          <img :src="land.imgURL[imageIndex]" class="container" alt="">
+        </q-dialog>
+
       </section>
 
       <section class="white-bg">
         <metrekare />
       </section>
 
-      <section class="rich-history ">
-        <div class="container mpi">
-          <div class="title ">
-            <h1>
-              Eskişehir
-            </h1>
-            <div class="p1 mobile-hide">
-              <b> Eskişehir</b>, tarihi zenginliği, kültürel mirası ve modern yaşam tarzının mükemmel bir birleşimini
-              sunan gelecek için <b> yatırım</b> fırsatları barındıran bir şehirdi.
-            </div>
-          </div>
-          <slider :swiper="swipedata" :space="10" :size1="true" />
-          <div class="title mobile-show ">
-            <div class="p2">
-              <b> Eskişehir</b>, tarihi zenginliği, kültürel mirası ve modern yaşam tarzının mükemmel bir birleşimini
-              sunan gelecek için <b> yatırım</b> fırsatları barındıran bir şehirdi.
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="container">
-        <TapuSteps />
+        <div class="p1 gray">ARSAJET olarak</div>
+        <h1>Yatırım Yaparken Neleri Öneriyoruz?</h1>
+        <deck />
       </section>
+
+
+
     </div>
   </div>
 </template>
@@ -126,6 +123,14 @@ const params = content.params
 onMounted(() => {
   details()
 })
+
+const imgShow = ref(false)
+const imageIndex = ref()
+
+const showImage = (n) => {
+  imageIndex.value = n
+  imgShow.value = true
+}
 
 
 //swiper

@@ -102,14 +102,12 @@
         <div class="value-from-land m-container">
           <div class="p1">ARSAJET yatırımlarınıza yön veriyoruz.</div>
           <h1>Topraktan Gelen Değerler, Döviz ve Arazi </h1>
-          <swiper class="mySwiper">
-            <swiper-slide class="slide">
-              <nuxt-img class="img" src="gold.png" />
+          <swiper class="mySwiper" :spaceBetween="30">
+            <swiper-slide class="slide" v-for="x in choice">
+              <nuxt-img class="img" :src="x.img" />
               <div class="text">
-                <h2>Altın mı Arazi mi?</h2>
-                <div class="p3m">Altın doğrudan topraktan çıkan bir madendir. Topraktan çıkan bu değerli maden yatırım
-                  araçlarından biridir. Ama uzun vadede, tarım arazilerine yapılan yatırımların, uzun vadede daha fazla
-                  kazanç potansiyeli sunabilir.</div>
+                <h2>{{ x.choose }}</h2>
+                <div class="p3m">{{ x.text }}</div>
                 <div class="p3sb">Son 5 yıldaki değişiklikler</div>
                 <table>
                   <thead>
@@ -122,10 +120,8 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td v-for="n in gold">
-                        <div class="p1">
-                          {{ n }} ₺
-                        </div>
+                      <td v-for="n in x.change">
+                        <div class="p1"> {{ n }} ₺ </div>
                       </td>
                     </tr>
                   </tbody>
@@ -212,26 +208,22 @@
           <div class="p1">
             Tüm arazilerimiz 5.000 € ile 20.000 € arasında değişmektedir.
           </div>
+          <h1>Min. 160.000 Maks. 640.000 ₺’ye <br> Geleceğe Yatırım Yapabilirsiniz. Ya da İsterseniz...</h1>
 
           <swiper class="mySwiper">
-            <swiper-slide class="slide">
-              <h1>Min. 160.000 Maks. 640.000 ₺’ye <br> Geleceğe Yatırım Yapabilirsiniz. Ya da İsterseniz...</h1>
-              <nuxt-img class="img" src="clio.png" />
+            <swiper-slide class="slide" v-for="x in choice2">
+              <div class="imgWrapper">
+                <nuxt-img class="img" :src="x.img" />
+              </div>
               <div class="text">
-                <h2>
-                  <span> 212.000 ₺ </span>
-                  ekstra ekleyip ortalama bir hatchback araca sahip olabilirsiniz...
-                </h2>
-                <div class="p3m">
-                  Ayrıca aldığınız araç ile yatırım yaparken aracınızın sigorta, kasko, vergi, yakıt, bakımları, değer
-                  kayıplarını da unutmayınız.
-                </div>
+                <h2> <span> {{ x.accent }} </span> {{ x.text }} </h2>
+                <div class="p3m"> {{ x.also }} </div>
               </div>
             </swiper-slide>
           </swiper>
 
           <div class="pagination">
-            <div class="dots" v-for="(pag, n) in  5" :class="{ 'active-pagination': n == 1 }"> </div>
+            <div class="dots" v-for="(pag, n) in  3" :class="{ 'active-pagination': n == 1 }"> </div>
           </div>
 
         </div>
@@ -261,37 +253,7 @@
       </section>
 
       <section>
-        <div class="decks big-container">
-          <div class="deck">
-            <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards">
-              <swiper-slide class="card" v-for=" card  in  cards1 ">
-                <Icon :name="`${card.icon}`" class="icon" />
-                <div class="p1">{{ card.title }}</div>
-                <div class="p2">{{ card.details }}</div>
-              </swiper-slide>
-            </swiper>
-            <div class="p2 subtitle">
-              Arazi yatırımı, uzun vadeli bir yatırım stratejisi olarak dikkat çekiyor. Doğru seçilen bir arazi, <b>
-                gelecekte değer kazanabilir ve farklı kullanım amaçlarına hizmet edebilir.</b>
-            </div>
-          </div>
-          <div class="deck">
-            <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards">
-              <swiper-slide class="card card2" v-for=" card  in  cards2 ">
-                <Icon :name="`${card.icon}`" class="icon" />
-                <div class="p1">{{ card.title }}</div>
-                <div class="p2">{{ card.details }}</div>
-              </swiper-slide>
-            </swiper>
-            <div class="p1 subtitle">
-              Ancak, başarılı bir arazi yatırımı <b> için dikkatli bir araştırma, bütçe planlaması ve yerel yasal
-                düzenlemelere uyum önemlidir.
-              </b>
-            </div>
-          </div>
-
-
-        </div>
+        <deck />
       </section>
 
       <section>
@@ -393,13 +355,9 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/navigation';
 const moduleLand = [Scrollbar, Navigation, FreeMode]
 
-import 'swiper/css/effect-cards';
-import { EffectCards } from 'swiper/modules';
-const modules = [EffectCards]
+
 
 import content from "../assets/content.json"
-const cards1 = content.cards1
-const cards2 = content.cards2
 
 const feature = content.features
 const increase = content.increase
@@ -407,6 +365,8 @@ const gold = content.gold
 const faq = content.faq
 const table = content.table
 const cityGrid = content.cityGrid
+const choice = content.choice
+const choice2 = content.choice2
 
 let count = ref(3)
 
