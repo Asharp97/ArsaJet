@@ -27,14 +27,14 @@
 
 
 
-      <div v-if="text" class="hero-content container">
-        <div>
+      <div v-if="text" class="hero-content container" :class="{ 'invest': invest }">
+        <div class="text">
           <div class="p1">ARSAJET ile</div>
           <div class="display">{{ text }}</div>
         </div>
       </div>
 
-      <img src="../assets/WP.svg" class="whatsapp" alt="">
+      <!-- <img src="../assets/WP.svg" class="whatsapp" alt=""> -->
 
 
       <Wellcall />
@@ -47,7 +47,7 @@
 </template>
 
 <script setup>
-defineProps(['text', 'img', 'mb', 'video', 'slides']);
+defineProps(['text', 'img', 'mb', 'video', 'slides', 'invest']);
 
 // import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
@@ -62,6 +62,16 @@ const modules = [Pagination, Autoplay]
 
 .marginbot {
   margin-bottom: $sectionGap;
+}
+
+.invest {
+  color: black !important;
+  justify-content: flex-end;
+
+  .text {
+    max-width: 600px;
+  }
+
 }
 </style>
 

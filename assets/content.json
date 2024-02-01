@@ -240,18 +240,6 @@
       ]
     }
   ],
-  "minerals": [
-    {
-      "title": "01. Eskişehir",
-      "subtitle": "Madenleri ile zengin şehir",
-      "text": [
-        "Eskişehir, maden potansiyeli açısından oldukça zengin bir bölge olarak bilinir. Özellikle linyit kömürü, bor, manyezit, talk, zeolit ve trona gibi çeşitli maden kaynaklarına sahiptir. Şehir bünyesinde 75 firma faaliyet göstermekte yaklaşık 3.800 çalışan bulunmaktadır.",
-        "Türkiye’de rezerv açısından en çok bulunan bor cevherleri tinkal ve kolemanit’tir. Türkiye’de önemli tinkal yatakları Seyitgazi’ye bağlı Kırka’da bulunuyor."
-      ],
-      "img1": "mineral-1",
-      "img2": ["mineral-2", "mineral-3"]
-    }
-  ],
   "oldpics": [
     {
       "img": "old1",
@@ -264,36 +252,6 @@
     {
       "img": "old1",
       "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
-    },
-    {
-      "img": "old1",
-      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
-    },
-    {
-      "img": "old1",
-      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
-    },
-    {
-      "img": "old1",
-      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
-    },
-    {
-      "img": "old1",
-      "label": "Bağdat Caddesi - 1967 Ekşioğlu İnşaat"
-    }
-  ],
-  "transport": [
-    {
-      "img": "airport",
-      "label": "Eskişehir'deki Hüseyin Polatkan Havaalanı, şehrin hava ulaşımını kolaylaştıran önemli bir ulaşım merkezidir. Havaalanı, iç hat uçuşlarına hizmet vermektedir ve Eskişehir'in diğer büyük şehirlere bağlantısını sağlar."
-    },
-    {
-      "img": "metro",
-      "label": "metro??"
-    },
-    {
-      "img": "metro2",
-      "label": "another metro"
     },
     {
       "img": "old1",

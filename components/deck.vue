@@ -1,5 +1,5 @@
 <template>
-  <div class="decks big-container">
+  <div class="decks m-container">
     <div class="deck">
       <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards">
         <swiper-slide class="card" v-for=" card  in  cards1 ">
@@ -47,11 +47,11 @@ const cards2 = content.cards2
 <style lang="scss" scoped>
 .decks {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   .deck {
-    width: 35%;
+    width: 45%;
 
     .subtitle {
       max-width: 418px;
@@ -107,4 +107,5 @@ const cards2 = content.cards2
       }
     }
   }
-}</style>
+}
+</style>

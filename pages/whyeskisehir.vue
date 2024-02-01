@@ -29,7 +29,6 @@
                 <Icon name="material-symbols:chevron-right-rounded" class="icon" />
               </Btn2>
             </div>
-
           </div>
         </div>
       </section>
@@ -38,66 +37,9 @@
       <section class="minerals m-container">
         <div class="p1">Şehrin öne çıkanları</div>
         <h1>Neden Eskişehir’i öneriyoruz</h1>
-        <swiper class="slides">
-          <swiper-slide class="slide">
-            <div class="text">
-              <h2>
-                <span> Maden kaynakları </span> ile <br> zengin şehir!
-              </h2>
-              <div class="p3m">Eskişehir, çeşitli maden kaynaklarıyla zenginleşmiş bir bölge olarak bilinir. Özellikle
-                linyit kömürü, bor, manyezit, talk, zeolit ve trona gibi madenlerle ön plana çıkan şehirde, 75 firma
-                faaliyet göstermekte ve yaklaşık 3.800 kişi istihdam edilmektedir.
-                <br>
-                <br>
-                Türkiye’de önemli tinkal yatakları Seyitgazi’ye bağlı Kırka’da bulunuyor.
-              </div>
-            </div>
-            <nuxt-img provider="imagekit" class="img" src="kristal.png" />
 
-          </swiper-slide>
-          <swiper-slide class="slide">
-            <div class="text">
-              <h2> Eskişehir’in <span> Sanayisi </span> </h2>
-              <div class="p3m">
+        <Reasons />
 
-                Eskişehir, son yıllarda hızla gelişen bir sanayi merkezi haline gelmiştir. Ülkemizin tek Uçak Motor
-                Fabrikası (TUSAŞ) ile Dizel Lokomotif motoru üreten tek fabrikası (TÜLOMSAŞ) Eskişehir’de bulunmaktadır.
-                Ayrıca şehrin ekonomisinin %39’unu şehrin sanayisi sağlamaktadır.
-                <br>
-                <br>
-                Ayrıca, Eskişehir'deki organize sanayi bölgeleri ve endüstriyel alanlar, yatırımcılar için uygun altyapı
-                ve destek sunmaktadır.
-              </div>
-            </div>
-            <nuxt-img provider="imagekit" class="img" src="fabrika.png" />
-
-          </swiper-slide>
-          <swiper-slide class="slide">
-            <div class="text">
-              <h2> Eskişehir’in <span> Popülasyonu</span> </h2>
-              <div class="p3m">
-                Eskişehir, genç ve dinamik bir nüfusa ev sahipliği yapmaktadır. Şehir, birçok üniversite ve yüksek öğrenim
-                kurumu barındırması nedeniyle gençlerin yoğun olarak bulunduğu bir yerdir. Eskişehir, öğrenci nüfusu, genç
-                girişimciler ve profesyoneller için cazip bir yaşam ve kariyer merkezi olma özelliğine sahiptir.
-                <br>
-                <br>
-                Bu dinamik nüfus, kültürel etkinlikleri, sanat sahnelerini, kafe ve restoranları canlandırırken, şehre
-                enerji ve yenilik getiriyor. Ayrıca, genç nüfus, Eskişehir'in geleceğini şekillendirme potansiyeli taşır
-                ve şehirdeki sosyal ve ekonomik gelişmelere önemli katkılar sunar.
-              </div>
-            </div>
-            <div class="img">
-              <nuxt-img provider="imagekit" class="piechart" src="piechart-1.png" />
-              <nuxt-img provider="imagekit" class="piechart" src="piechart-0.png" />
-
-
-            </div>
-          </swiper-slide>
-        </swiper>
-        <div class="pagination">
-          <div class="dots" v-for="(pag, n) in  3" :class="{ 'active-pagination': n == 1 }">
-          </div>
-        </div>
       </section>
 
       <section>
@@ -170,6 +112,7 @@
       <section>
         <SmoothCitySlide />
       </section>
+
       <section>
         <div class="honorable-mentions container">
           <div class="white-bg container">
@@ -259,8 +202,6 @@ import content from "../assets/content.json"
 const eskisehirHero = content.eskisehirHero
 const graph = content.graph
 const graph2 = content.graph2
-const layout = content.minerals
-const trans = content.transport
 const faq = content.honorableMentions
 
 let switcher = false

@@ -102,37 +102,7 @@
         <div class="value-from-land m-container">
           <div class="p1">ARSAJET yatırımlarınıza yön veriyoruz.</div>
           <h1>Topraktan Gelen Değerler, Döviz ve Arazi </h1>
-          <swiper class="mySwiper" :spaceBetween="30">
-            <swiper-slide class="slide" v-for="x in choice">
-              <nuxt-img class="img" :src="x.img" />
-              <div class="text">
-                <h2>{{ x.choose }}</h2>
-                <div class="p3m">{{ x.text }}</div>
-                <div class="p3sb">Son 5 yıldaki değişiklikler</div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th v-for="n in 6">
-                        <h4 v-if="n < 6">{{ 2018 + n }}</h4>
-                        <h4 v-else>Şu an</h4>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td v-for="n in x.change">
-                        <div class="p1"> {{ n }} ₺ </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </swiper-slide>
-          </swiper>
-          <div class="pagination">
-            <div class="dots" v-for="(pag, n) in  5" :class="{ 'active-pagination': n == 1 }">
-            </div>
-          </div>
+          <AlternativeInvestment />
         </div>
       </section>
 
@@ -204,29 +174,7 @@
       </section>
 
       <section>
-        <div class="investment-choice m-container">
-          <div class="p1">
-            Tüm arazilerimiz 5.000 € ile 20.000 € arasında değişmektedir.
-          </div>
-          <h1>Min. 160.000 Maks. 640.000 ₺’ye <br> Geleceğe Yatırım Yapabilirsiniz. Ya da İsterseniz...</h1>
-
-          <swiper class="mySwiper">
-            <swiper-slide class="slide" v-for="x in choice2">
-              <div class="imgWrapper">
-                <nuxt-img class="img" :src="x.img" />
-              </div>
-              <div class="text">
-                <h2> <span> {{ x.accent }} </span> {{ x.text }} </h2>
-                <div class="p3m"> {{ x.also }} </div>
-              </div>
-            </swiper-slide>
-          </swiper>
-
-          <div class="pagination">
-            <div class="dots" v-for="(pag, n) in  3" :class="{ 'active-pagination': n == 1 }"> </div>
-          </div>
-
-        </div>
+        <InvestmentChoice />
       </section>
 
       <section>
@@ -366,7 +314,7 @@ const faq = content.faq
 const table = content.table
 const cityGrid = content.cityGrid
 const choice = content.choice
-const choice2 = content.choice2
+
 
 let count = ref(3)
 
@@ -392,11 +340,7 @@ const getCount = (x) => {
   else
     count.value = x / 400
 }
-
-
 </script>
-
-
 
 <style lang="scss" scoped>
 .gold {

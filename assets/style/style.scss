@@ -1526,190 +1526,44 @@
 }
 
 .invest {
-  .titles {
-    padding-top: 10px;
-    h3 {
-      max-width: 547px;
-      margin-inline: auto;
+  .bg-gray {
+    background-color: $offwhite;
+    padding-block: 90px;
+  }
+  .steps {
+    h1 {
+      margin-bottom: 94px;
     }
-  }
-  .number {
-    font-size: 13rem;
-    position: absolute;
-    color: #0000004d;
-  }
-  .firststep {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    .social {
-      border-radius: 10px;
-      padding: 4px 24px;
+    .step {
       display: flex;
       align-items: center;
-      gap: 18px;
-      font-size: clamp(0.9375rem, 0.841rem + 0.5149vw, 1.25rem);
-    }
-    .zoomlink {
-      background: #0b5cff;
-      padding-block: 13px !important;
-      color: white;
-      .t2 {
-        font-family: "Varela Round", sans-serif;
-      }
-      .icon {
-        font-size: clamp(1.8375rem, 0.841rem + 0.5149vw, 1.25rem);
-      }
-    }
-    .whatsapp {
-      border: 2px solid #34b93e;
-      color: #34b93e;
-      .icon {
-        font-size: 35px;
-      }
-    }
-    .display {
-      text-align: center;
-    }
-    .number {
-      top: -50px;
-      left: 0;
-    }
-    .img {
-      width: 100%;
-    }
-    .zoom {
-      display: flex;
       flex-wrap: wrap;
-      gap: 120px;
-      .p1 {
-        width: 41%;
-      }
-      .btns {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        flex-wrap: wrap;
-        max-width: 520px;
-      }
-    }
-  }
-  .secondstep {
-    position: relative;
-    padding-block: 60px;
-    .part1 {
-      text-align: center;
-      margin-bottom: 120px;
-      .display {
-        margin-bottom: 60px;
-      }
-      .p1 {
-        max-width: 1128px;
-        margin-inline: auto;
-      }
-    }
-    .part2 {
-      text-align: end;
-    }
+      justify-content: space-between;
+      margin-bottom: 193px;
+      gap: 20px;
 
-    .number {
-      top: -100px;
-      z-index: -10;
-      color: #0000001a;
-      font-size: 40rem;
-    }
-  }
-  .thirdstep {
-    display: flex;
-    justify-content: space-between;
-    // gap: 50px;
-    // margin-top: -100px;
-    // flex-wrap: wrap;
-    .img {
-      width: 100%;
-      object-fit: cover;
-    }
-    .sector {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      max-width: 588px;
-      padding-left: 70px;
-      .p1 {
-        margin-block: 50px;
+      .img {
+        max-width: 540px;
+        width: 100%;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 416px;
+        width: 100%;
+        h4 {
+          margin-bottom: 23px;
+        }
+        .p3m {
+          margin-bottom: 40px;
+        }
       }
     }
-    .sector2 {
-      max-width: 443px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-    }
-    .sector3 {
-      .three {
-        right: 0;
-        font-size: 30rem;
-        top: -150px;
-        color: #0000004d;
-      }
-    }
-  }
-  .white-bg {
-    z-index: -5;
   }
   .decks {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    .deck {
-      width: 35%;
-      .subtitle {
-        max-width: 418px;
-        margin-top: 100px;
-      }
-      .cards {
-        .swiper-wrapper {
-          // max-width: 500px;
-          width: 100%;
-        }
-        .card {
-          &:nth-child(1) {
-            background-color: #3a3a3a;
-          }
-          &:nth-child(2) {
-            background-color: #272727;
-          }
-          &:nth-child(3) {
-            background-color: #070707;
-          }
-          height: 275px;
-          max-width: 439px;
-          color: white;
-          border-radius: 10px;
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-          padding: 30px;
-          .icon {
-            font-size: 40px;
-          }
-        }
-        .card2 {
-          &:nth-child(1) {
-            background-color: #a96306;
-          }
-          &:nth-child(2) {
-            background-color: #794704;
-          }
-          &:nth-child(3) {
-            background-color: #492b03;
-          }
-        }
-      }
+    h1 {
+      margin-bottom: 80px;
     }
   }
 }
