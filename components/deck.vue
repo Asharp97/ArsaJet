@@ -49,9 +49,11 @@ const cards2 = content.cards2
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 
   .deck {
     width: 45%;
+    min-width: 400px;
 
     .subtitle {
       max-width: 418px;

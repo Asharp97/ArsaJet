@@ -246,7 +246,8 @@
   height: 100vh;
   .landing-image {
     object-fit: cover;
-    object-position: bottom;
+    object-position: bottom left;
+
     position: absolute;
     top: 0;
     right: 0;
