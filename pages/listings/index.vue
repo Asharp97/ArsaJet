@@ -87,7 +87,7 @@
           <div class="white-bg" v-for="ilan  in  ilanlar">
             <NuxtLink :to="`listings/${ilan.id}`" class="land">
               <div class="img-wrapper">
-                <!-- <nuxt-img sizes="375px" class="land-img" src="land-1.png" /> -->
+                <!-- <nuxt-img  sizes="375px" class="land-img" src="land-1.png" /> -->
                 <img :src="ilan.imgURL[0]" alt="" class="land-img">
               </div>
               <div class="text">

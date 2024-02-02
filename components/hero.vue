@@ -9,10 +9,10 @@
 
       <swiper v-if="slides" :pagination="{
         clickable: true,
-      }" :autoplay="{
+      }" :loop="true" :autoplay="{
   delay: 2000,
   disableOnInteraction: false,
-}" :loop="true" :modules="modules" class="city-slider">
+}" :modules="modules" class="city-slider">
         <swiper-slide v-for="slide in slides" class="slide">
           <nuxt-img class="img" :src=slide.img />
           <div class="container">
@@ -28,9 +28,9 @@
 
 
       <div v-if="text" class="hero-content container" :class="{ 'invest': invest }">
-        <div class="text">
+        <div class="text" style="max-width: textWidth">
           <div class="p1">ARSAJET ile</div>
-          <div class="display">{{ text }}</div>
+          <div class="display" id="text-hero">{{ text }}</div>
         </div>
       </div>
 
@@ -39,21 +39,26 @@
 
       <Wellcall />
 
-
     </div>
 
 
   </div>
 </template>
 
-<script setup>
-defineProps(['text', 'img', 'mb', 'video', 'slides', 'invest']);
+<script setup lang="ts">
+const props = defineProps(['text', 'img', 'mb', 'video', 'slides', 'invest', 'textWidth']);
 
 // import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 const modules = [Pagination, Autoplay]
+
+
+
+onMounted(() => {
+  document.getElementById("text-hero").style.maxWidth = props.textWidth;
+})
 
 </script>
 
@@ -74,7 +79,6 @@ const modules = [Pagination, Autoplay]
 
 }
 </style>
-
 
 
 

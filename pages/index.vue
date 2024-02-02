@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <section>
-      <hero text="Değerini Kaybetmeyen Yatırım: Toprak!" video="https://ik.imagekit.io/sharp/arsajet/video.mp4" />
+      <hero textWidth="600px" text="Değerini Kaybetmeyen Yatırım: Toprak!"
+        video="https://ik.imagekit.io/sharp/arsajet/video.mp4" />
     </section>
 
     <div class="gap">
@@ -10,7 +11,7 @@
           <div class="feature-future container mpi">
 
             <div class="feature">
-              <div class="card" v-for="item in feature">
+              <div class="card" v-for=" item  in  feature ">
                 <div class="title">
                   <Icon :name="item.icon" class="icons" />
                   <h5>{{ item.title }}</h5>
@@ -49,7 +50,7 @@
 
       <section>
         <div class="increase-slide">
-          <div v-for="(inc, n) in  increase " :class="{ 'final': n == increase.length - 1 }">
+          <div v-for="( inc, n ) in   increase  " :class="{ 'final': n == increase.length - 1 }">
             <h3 v-if="n != increase.length - 1">
               {{ 2019 + n }}
             </h3>
@@ -94,7 +95,7 @@
 
       <section>
         <div class="smooth-img-slide">
-          <nuxt-img class="img" src="dog.png" v-for="n in 12" />
+          <nuxt-img class="img" src="dog.png" v-for=" n  in  12 " />
         </div>
       </section>
 
@@ -185,7 +186,7 @@
           <h1>Şehirlerimizdeki Arsa Fiyat Dinamiklerini Sunuyoruz.</h1>
 
           <div class="cells">
-            <div v-for="(city, n) in  cityGrid" class="cell"
+            <div v-for="( city, n ) in   cityGrid " class="cell"
               :class="[{ 'inv': n == 2 }, { 'inv': n == 3 }, { 'inv': n == 7 }, { 'inv': n == 6 }]">
               <nuxt-img class="img" :src="`city/${city.city}.png`" />
               <div class="text">
@@ -242,10 +243,10 @@
             },
           }
             " :freeMode="true" :navigation="true" :modules="moduleLand" :scrollbar="{ hide: true }" class="swiper mpi">
-            <swiper-slide v-for="(  x, n  ) in   ilanlar  " class="landSlider">
+            <swiper-slide v-for="(   x, n   ) in    ilanlar   " class="landSlider">
               <NuxtLink class="landWrapper" :to="`listings/${x.id}`">
                 <div class="land">
-                  <!-- <nuxt-img sizes="375px" class="land-img" src="land-1.png" /> -->
+                  <!-- <nuxt-img  sizes="375px" class="land-img" src="land-1.png" /> -->
                   <img :src="x.imgURL[0]" class="land-img" alt="">
                   <div class="text">
                     <div class="t2"> EKS Land ile Eskişehir’den Yatırımlık Arsa </div>
