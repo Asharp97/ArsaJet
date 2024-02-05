@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="graph1 container mpi">
+    <div class="graph1 m-container mpi">
 
       <div class="p1 gray">Türkiye’de</div>
       <h1>Metrekare Başına Arsa Fiyat Endeksi</h1>

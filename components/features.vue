@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="container" ref="el">
+  <div class="m-container" id="container" ref="el">
     <div class="mpi">
       <div class="features white-bg">
         <div class="p1 gray">Tüm özelliklerini öğrenin</div>

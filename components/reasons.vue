@@ -49,9 +49,8 @@
           </div>
         </div>
         <div class="img">
-          <nuxt-img provider="imagekit" class="piechart" src="piechart-1.png" />
-          <nuxt-img provider="imagekit" class="piechart" src="piechart-0.png" />
-
+          <nuxt-img provider="imagekit" class="piechart" src="age.png" />
+          <nuxt-img provider="imagekit" class="piechart" src="gender.png" />
 
         </div>
       </swiper-slide>

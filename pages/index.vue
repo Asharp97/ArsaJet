@@ -1,15 +1,14 @@
 <template>
   <div class="home">
     <section>
-      <hero textWidth="600px" text="Değerini Kaybetmeyen Yatırım: Toprak!"
-        video="https://ik.imagekit.io/sharp/arsajet/video.mp4" />
+      <hero textWidth="600px" :text="['Değerini', 'Kaybetmeyen', 'Yatırım: Toprak!']"
+        video="https://ik.imagekit.io/sharp/arsajet/video.mp4?tr=f-webm" />
     </section>
 
     <div class="gap">
       <section>
         <div class="bg-feature-future">
           <div class="feature-future container mpi">
-
             <div class="feature">
               <div class="card" v-for=" item  in  feature ">
                 <div class="title">
@@ -26,9 +25,11 @@
                 <br /> Ne Borsa <br />
                 Gelecekte En Kârlı Yatırım Arsa!
               </h1>
-              <Btn2>
-                Detaylı Bilgi Alın
-                <Icon name="material-symbols:chevron-right-rounded" class="icon" />
+              <Btn2 class="button">
+                <div class="p1">
+                  Detaylı Bilgi Alın
+                  <Icon name="material-symbols:chevron-right-rounded" class="icon" />
+                </div>
               </Btn2>
             </div>
 
@@ -49,54 +50,31 @@
       </section>
 
       <section>
-        <div class="increase-slide">
-          <div v-for="( inc, n ) in   increase  " :class="{ 'final': n == increase.length - 1 }">
-            <h3 v-if="n != increase.length - 1">
-              {{ 2019 + n }}
-            </h3>
-            <h3 v-else>
-              Şu an
-            </h3>
-            <div class="p2">
-              {{ inc }} ₺
-            </div>
+        <div class="increase-slide-bg ">
+          <div class="increase-slide m-container">
+            <div v-for="( inc, n ) in   increase  " :class="{ 'final': n == increase.length - 1 }">
+              <h3 v-if="n != increase.length - 1">
+                {{ 2019 + n }}
+              </h3>
+              <h3 v-else>
+                Şu an
+              </h3>
+              <div class="p2">
+                {{ inc }} ₺
+              </div>
 
+            </div>
           </div>
         </div>
       </section>
 
       <section class="container">
-        <div class="threesteps">
-          <nuxt-img class="img" src="3adim.png" />
-          <div class="text">
-            <h1>
-              3 Adımda ARSAJET ile Yatırımınızı Gerçekleştirin
-            </h1>
-            <ol>
-              <li>
-                <div class="p3sb">
-                  İletişim formumuzu doldurmanız zoom toplantısı planlayıp sizleri daha yakından tanımamız için yeterli
-                  olacaktır.
-                </div>
-              </li>
-              <li>
-                <div class="p3sb">Yatırım yapmak istediğiniz arsa için depozito göndermeniz ve yaşadığınız ülkenin büyük
-                  elçiliğinden satış için gerekli evrakları hazırlamanız gerekmektedir. </div>
-              </li>
-              <li>
-                <div class="p3sb">
-                  Tapu dairesinde işlemler sonrası tapunuzu sizlere teslim edeceğiz. Arazi yatırımı yapmak işte bu kadar
-                  kolay! Şimdi form doldurun!</div>
-              </li>
-            </ol>
-          </div>
-        </div>
+        <Threesteps />
       </section>
 
-      <section>
-        <div class="smooth-img-slide">
-          <nuxt-img class="img" src="dog.png" v-for=" n  in  12 " />
-        </div>
+      <section class="container">
+        <smooth-img-slide />
+        <div class="p1 gray" style="margin-top: 20px;">ARSAJET ile Yaşam Kalitenizi Arttırın.</div>
       </section>
 
       <section>
@@ -113,11 +91,9 @@
           <h1>Ne Zaman Değerlenir? Ne kadar Değerlenir? </h1>
           <div class="ro">
             <div class="text">
-              <div class="num">
-                01
-              </div>
-
+              <div class="num"> 01 </div>
               <h2>Kaygılarınızı Anlıyoruz.</h2>
+
               <div class="p3m">Hisseli arazi yatırımlarını önermiyoruz çünkü orta ve uzun vadede diğer hissedarların
                 vefatı
                 durumunda izale-i şuyu süreciyle karşılaşabilirsiniz, bu da tüm paydaşların maddi ve manevi zarar
@@ -126,11 +102,10 @@
               </div>
             </div>
             <div class="text">
-              <div class="num">
-                02
-              </div>
+              <div class="num"> 02 </div>
               <h2>Ne Zaman Değerlenir?</h2>
-              <div class="p3m">Türkiye ve dünya genelinde nüfus planlaması her 5/10 yılda bir değişiyor. Arazi her zaman
+              <div class="p3m">
+                Türkiye ve dünya genelinde nüfus planlaması her 5/10 yılda bir değişiyor. Arazi her zaman
                 sınırlı bir kaynak ve Türkiye'de metrekare arazi miktarı sabit. Nüfus arttıkça, arz-talep dengesi
                 değişiyor. Öngörülerimize göre, Türkiye'de arazi fiyatları her 5/10 yılda bir yükselişe geçiyor.</div>
             </div>
@@ -160,14 +135,11 @@
 
           </div>
         </div>
-      </section>
-
-      <section>
-        <div class="youtube-videos container">
+        <!-- <div class="youtube-videos container">
           <iframe width="364" height="224" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
           <iframe width="364" height="224" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
           <iframe width="364" height="224" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
-        </div>
+        </div> -->
       </section>
 
       <section>
@@ -179,7 +151,7 @@
       </section>
 
       <section>
-        <div class="city-grid container">
+        <div class="city-grid m-container">
           <div class="p1">
             Soru işaretlerinizi gidermek için buradayız.
           </div>
@@ -188,7 +160,11 @@
           <div class="cells">
             <div v-for="( city, n ) in   cityGrid " class="cell"
               :class="[{ 'inv': n == 2 }, { 'inv': n == 3 }, { 'inv': n == 7 }, { 'inv': n == 6 }]">
-              <nuxt-img class="img" :src="`city/${city.city}.png`" />
+              <div class="imgWrapper">
+                <h4>{{ city.city }}</h4>
+                <nuxt-img class="img" :src="`city/${city.city}.png`" />
+
+              </div>
               <div class="text">
                 <div class="p1">Son 5 Yıl</div>
                 <div class="p4">2019 - 2023</div>
@@ -201,12 +177,23 @@
         </div>
       </section>
 
-      <section>
-        <deck />
+      <section class="m-container ">
+        <div class="deck">
+          <div class="p1 gray">ARSAJET olarak</div>
+          <h1>Yatırım Yaparken Neleri Öneriyoruz?</h1>
+          <deck />
+
+          <Btn2 class="button">
+            <div class="p1">
+              Detaylı Bilgi Alın
+              <Icon name="material-symbols:chevron-right-rounded" class="icon" />
+            </div>
+          </Btn2>
+        </div>
       </section>
 
       <section>
-        <div class="popular-ads container" id="container">
+        <div class="popular-ilanlar container" id="container">
           <div class="top mpi">
             <div class="header">
               <div class="title">
@@ -259,10 +246,10 @@
                     </div>
                     <div class="buttons">
                       <button class="price">
-                        <div class="t1"> 10.000 € </div>
+                        <div class="p1"> {{ x.landPrice }} € </div>
                       </button>
                       <button class="seeDetail">
-                        <div class="t2"> Detayları Gör </div>
+                        <div class="p2"> Detayları Gör </div>
                       </button>
                     </div>
                   </div>
@@ -272,6 +259,8 @@
           </swiper>
         </div>
       </section>
+
+
 
       <section>
         <div class="ask ">
@@ -285,14 +274,13 @@
 </template>
 
 <script setup>
-
-
 const supabase = useSupabaseClient()
 let ilanlar = ref()
 const getPopularIlan = async () => {
   const { data, error } = await supabase
     .from('lands')
     .select()
+    .limit(10)
   if (data)
     ilanlar.value = data
 }
@@ -310,11 +298,9 @@ import content from "../assets/content.json"
 
 const feature = content.features
 const increase = content.increase
-const gold = content.gold
 const faq = content.faq
-const table = content.table
 const cityGrid = content.cityGrid
-const choice = content.choice
+
 
 
 let count = ref(3)

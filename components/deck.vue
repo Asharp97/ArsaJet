@@ -9,6 +9,9 @@
         </swiper-slide>
       </swiper>
       <div class="p2 subtitle">
+        <span>
+          <Icon name="ic:baseline-star" class="icon star" />
+        </span>
         Arazi yatırımı, uzun vadeli bir yatırım stratejisi olarak dikkat çekiyor. Doğru seçilen bir arazi, <b>
           gelecekte değer kazanabilir ve farklı kullanım amaçlarına hizmet edebilir.</b>
       </div>
@@ -27,8 +30,6 @@
         </b>
       </div>
     </div>
-
-
   </div>
 </template>
 
@@ -57,7 +58,7 @@ const cards2 = content.cards2
 
     .subtitle {
       max-width: 418px;
-      margin-top: 100px;
+      margin-top: 70px;
     }
 
     .cards {

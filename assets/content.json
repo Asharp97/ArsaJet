@@ -318,72 +318,6 @@
       "details": "Arsanın piyasa değerini belirlemek için bölgeyi araştırmalı ve benzer arsa satışlarına bakmalısınız."
     }
   ],
-  "table": {
-    "header": [
-      "Yatırım Araçları",
-      "2019",
-      "2020",
-      "2021",
-      "2022",
-      "2023",
-      "Şu an"
-    ],
-    "body": [
-      [
-        { "icon": "logos:bitcoin", "name": "Bitcoin", "color": "inherit" },
-        { "name": 3.88 },
-        { "name": 10.2 },
-        { "name": 36.67 },
-        { "name": 20.55 },
-        { "name": 25.12 },
-        { "name": 41.98 }
-      ],
-      [
-        {
-          "icon": "lucide:land-plot",
-          "name": "Arazi/Arsa",
-          "color": "greenDark"
-        },
-        { "name": 457 },
-        { "name": 482 },
-        { "name": 693 },
-        { "name": 1.086 },
-        { "name": 2.209 },
-        { "name": 3.636 }
-      ],
-      [
-        { "icon": "mdi:gold", "name": "Altın", "color": "gold" },
-        { "name": 217 },
-        { "name": 290 },
-        { "name": 453 },
-        { "name": 761 },
-        { "name": 1.117 },
-        { "name": 1.889 }
-      ],
-      [
-        {
-          "icon": "cryptocurrency-color:usd",
-          "name": "Dolar Kuru",
-          "color": "dolar"
-        },
-        { "name": 5.67 },
-        { "name": 6.86 },
-        { "name": 8.65 },
-        { "name": 16.8 },
-        { "name": 25.93 },
-        { "name": 28.86 }
-      ],
-      [
-        { "icon": "solar:euro-bold", "name": "Euro Kuru", "color": "euro" },
-        { "name": 6.58 },
-        { "name": 7.7 },
-        { "name": 10.29 },
-        { "name": 17.46 },
-        { "name": 28.22 },
-        { "name": 31.49 }
-      ]
-    ]
-  },
   "clientHeader": ["ID", "name", "mail", "telephone", "country"],
   "ilanHeader": [
     "ID",
@@ -590,19 +524,19 @@
       "img": "gold.png",
       "choose": "Altın mı Arazi mi?",
       "text": "Altın doğrudan topraktan çıkan bir madendir. Topraktan çıkan bu değerli maden yatırım araçlarından biridir. Ama uzun vadede, tarım arazilerine yapılan yatırımların, uzun vadede daha fazla kazanç potansiyeli sunabilir.",
-      "change": [568, 321, 4323, 342, 3242342, 324]
+      "change": [568, 321, 4323, 342, 900, 324]
     },
     {
       "img": "dolar.png",
       "choose": "Dolar mı Arazi mi?",
       "text": "Altın doğrudan topraktan çıkan bir madendir. Topraktan çıkan bu değerli maden yatırım araçlarından biridir. Ama uzun vadede, tarım arazilerine yapılan yatırımların, uzun vadede daha fazla kazanç potansiyeli sunabilir.",
-      "change": [568, 321, 4323, 342, 3242342, 324]
+      "change": [568, 321, 4323, 342, 9090, 324]
     },
     {
       "img": "euro.png",
       "choose": "Euro mu Arazi mi?",
       "text": "Altın doğrudan topraktan çıkan bir madendir. Topraktan çıkan bu değerli maden yatırım araçlarından biridir. Ama uzun vadede, tarım arazilerine yapılan yatırımların, uzun vadede daha fazla kazanç potansiyeli sunabilir.",
-      "change": [568, 321, 4323, 342, 3242342, 324]
+      "change": [568, 321, 4323, 342, 9090, 324]
     }
   ],
   "choice2": [

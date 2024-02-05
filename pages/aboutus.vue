@@ -1,13 +1,13 @@
 <template>
   <div class="about">
     <section>
-      <hero img="hero-home" text="Arazi Yatırımı bir Fırsattır, Arsajet ile İmkanlarınıza Değer Katın." />
+      <hero img="hero-home" :text="['Arazi Yatırımı bir Fırsattır', 'Arsajet ile İmkanlarınıza', ' Değer Katın.']" />
     </section>
     <div class="gap">
 
 
 
-      <section id="bizKimiz" class="bizkimiz container">
+      <section id="bizKimiz" class="bizkimiz m-container">
         <div class="p1">Merak Ettikleriniz</div>
         <h1>Biz Kimiz?</h1>
         <div class="p3m">Lorem ipsum dolor sit amet consectetur. Dui morbi elit sed vel placerat. Mollis sapien vulputate
@@ -33,8 +33,8 @@
         <div class="p1 container">Arsajet ile daha yatırımlarımıza bakın</div>
       </section>
 
-      <section class="white-bg ">
-        <div class="Millionaires mpi">
+      <section class="white-bg">
+        <div class="Millionaires big-container mpi">
           <nuxt-img src="tower.png" class="img" />
           <div class="text">
             <div class="p1">ARSAJET ile</div>
@@ -49,7 +49,7 @@
       </section>
 
       <section class="we-are-here">
-        <div class="content white-bg container ">
+        <div class="content white-bg m-container ">
           <div class="icons">
             <Icon name="subway:world-1" class="world icon" />
             <Icon name="la:hands-helping" class="help icon" />
@@ -77,7 +77,7 @@
 
 
 
-      <section class="office container mpi">
+      <section class="office m-container mpi">
 
 
         <div class="white-bg">

@@ -10,7 +10,7 @@
       <swiper v-if="slides" :pagination="{
         clickable: true,
       }" :loop="true" :autoplay="{
-  delay: 2000,
+  delay: 5000,
   disableOnInteraction: false,
 }" :modules="modules" class="city-slider">
         <swiper-slide v-for="slide in slides" class="slide">
@@ -30,7 +30,7 @@
       <div v-if="text" class="hero-content container" :class="{ 'invest': invest }">
         <div class="text" style="max-width: textWidth">
           <div class="p1">ARSAJET ile</div>
-          <div class="display" id="text-hero">{{ text }}</div>
+          <div class="display" :class="'display' + n" v-for="(t, n) in text">{{ t }} <br></div>
         </div>
       </div>
 
@@ -54,29 +54,51 @@ import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 const modules = [Pagination, Autoplay]
 
-
-
-onMounted(() => {
-  document.getElementById("text-hero").style.maxWidth = props.textWidth;
-})
-
 </script>
 
 <style lang="scss" scoped>
 @import '../assets/style/variables.scss';
+@import '../assets/style/animations.scss';
 
 .marginbot {
   margin-bottom: $sectionGap;
 }
 
 .invest {
-  color: black !important;
+  color: $darkGray !important;
+  // color: black !important;
+
   justify-content: flex-end;
 
   .text {
     max-width: 600px;
   }
 
+}
+
+.hero-content {
+  .text {
+    .p1 {
+      animation: .5s cover-remove ease-in-out;
+    }
+
+    .display {
+      animation: .3s cover-remove ease-in-out;
+      animation-fill-mode: both;
+    }
+
+    .display0 {
+      animation-delay: .5s;
+    }
+
+    .display1 {
+      animation-delay: .6s;
+    }
+
+    .display2 {
+      animation-delay: .7s;
+    }
+  }
 }
 </style>
 

@@ -8,7 +8,7 @@
     </NuxtLink>
 
     <div class="gap">
-      <section class="titles container">
+      <section class="titles m-container">
         <div class="title" id="nav">
           <div class="p1">Merak Ettikleriniz</div>
           <h1>Aklınıza Gelebilecek Tüm Sorular</h1>
@@ -34,27 +34,27 @@
         </div>
       </section>
 
-      <section class="faq-bg gray-bg container" id="buy">
+      <section class="faq-bg gray-bg m-container" id="buy">
         <h2>Satın alım işlemleri ilgili</h2>
         <FaqComponent :faq="faq" class="FaqComponent " />
       </section>
 
-      <section class="faq-bg gray-bg container" id="pay">
+      <section class="faq-bg gray-bg m-container" id="pay">
         <h2>Ödeme işlemleri ile ilgili</h2>
         <FaqComponent :faq="faq" class="FaqComponent " />
       </section>
 
-      <section class="faq-bg gray-bg container" id="papers">
+      <section class="faq-bg gray-bg m-container" id="papers">
         <h2>Evrak işlemleri ile ilgili</h2>
         <FaqComponent :faq="faq" class="FaqComponent " />
       </section>
 
-      <section class="faq-bg gray-bg container" id="eksland">
+      <section class="faq-bg gray-bg m-container" id="eksland">
         <h2>EKSLAND ile ilgili</h2>
         <FaqComponent :faq="faq" class="FaqComponent " />
       </section>
 
-      <section class="faq-bg gray-bg container" id="other">
+      <section class="faq-bg gray-bg m-container" id="other">
         <h2>Diğer</h2>
         <FaqComponent :faq="faq" class="FaqComponent " />
       </section>

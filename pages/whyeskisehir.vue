@@ -24,9 +24,11 @@
                 <br /> Ne Borsa <br />
                 Gelecekte En Kârlı Yatırım Arsa!
               </h1>
-              <Btn2>
-                Detaylı Bilgi Alın
-                <Icon name="material-symbols:chevron-right-rounded" class="icon" />
+              <Btn2 class="button">
+                <div class="p1">
+                  <span> Detaylı Bilgi Alın </span>
+                  <Icon name="material-symbols:chevron-right-rounded" class="icon" />
+                </div>
               </Btn2>
             </div>
           </div>
@@ -188,10 +190,11 @@
 
       </section>
       <section>
-        <div class="youtube-videos container">
+        <!-- <div class="youtube-videos container">
           <iframe width="364" height="224" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
           <iframe width="364" height="224" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
-        </div>
+          <iframe width="364" height="224" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+        </div> -->
       </section>
     </div>
   </div>

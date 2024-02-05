@@ -36,7 +36,7 @@
       </section>
 
       <section>
-        <div class="closer-look mpi container">
+        <div class="closer-look mpi m-container">
           <div class="p1 gray">Metrekare detaylarını öğrenin</div>
           <h1>Arazinin Metrekare Detayları</h1>
           <swiper :navigation="true" :loop="true" class="swiper  noNav" @slideNextTransitionStart="nextEnd"
@@ -59,7 +59,7 @@
         </div>
       </section>
 
-      <section class="land-gallery container">
+      <section class="land-gallery m-container">
         <div class="p1 gray">Fotoğraflar</div>
         <h1>Arazi Galerisi</h1>
         <div class="gallery">
@@ -68,13 +68,27 @@
             <Icon name="ic:baseline-zoom-in" class="icon" />
           </div>
         </div>
+
+        <div class="buttons">
+
+          <btn2 class="button" :green="true" :destination="`listings/${id}/#fillform`">
+            <div class="p1">Arazi fiyatı: {{ land.landPrice }}.00 €</div>
+          </btn2>
+          <Btn2>
+            <div class="p1"> Detaylı Bilgi Alın
+              <span>
+                <Icon name="material-symbols:chevron-right-rounded" class="icon" />
+              </span>
+            </div>
+          </Btn2>
+        </div>
         <!-- 
         <div  v-if="imgShow">
           <img :src="land.imgURL[imageIndex]" alt="">
         </div> -->
 
         <q-dialog v-model="imgShow" :maximized="true" class="dialog">
-          <img :src="land.imgURL[imageIndex]" class="container" alt="">
+          <img :src="land.imgURL[imageIndex]" class="m-container" alt="">
         </q-dialog>
 
       </section>
@@ -83,14 +97,11 @@
         <metrekare />
       </section>
 
-      <section class="container">
+      <section class="m-container">
         <div class="p1 gray">ARSAJET olarak</div>
         <h1>Yatırım Yaparken Neleri Öneriyoruz?</h1>
         <deck />
       </section>
-
-
-
     </div>
   </div>
 </template>

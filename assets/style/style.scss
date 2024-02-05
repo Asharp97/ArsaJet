@@ -314,7 +314,7 @@
       z-index: 2;
       padding-bottom: 78px;
       color: white;
-      div {
+      .text {
         .display {
           // max-width: 800px;
         }
@@ -428,7 +428,7 @@
 .contact-us-form {
   background-color: $offwhite;
   display: flex;
-  height: 756px;
+  height: 560px;
   border-radius: 20px;
 
   .half {
@@ -448,12 +448,16 @@
     justify-content: center;
     align-items: center;
     color: white;
+    padding-block: 50px;
     .reach-us {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       h1 {
         border-bottom: 1px solid white;
         padding-bottom: 9px;
         // margin-bottom: 70px;
-        margin-bottom: 120px;
       }
 
       .link {
@@ -469,7 +473,6 @@
         }
       }
       .icons {
-        margin-top: 104px;
         display: flex;
         justify-content: center;
         gap: 24px;
@@ -594,7 +597,8 @@
 .youtube-videos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-top: 160px;
 }
 
 //Pages
@@ -621,16 +625,17 @@
         line-height: 32px;
       }
     }
-
-    .increase-slide {
+    .increase-slide-bg {
       background-color: $green;
-      color: white;
-      display: flex;
-      justify-content: space-evenly;
-      padding-block: 22px;
-      text-align: center;
-      .final {
-        color: $darkGreen;
+      .increase-slide {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding-block: 22px;
+        text-align: center;
+        .final {
+          color: $darkGreen;
+        }
       }
     }
 
@@ -738,6 +743,8 @@
     }
 
     .time-value {
+      // animation: fade-in 1s linear;
+      // animation-timeline: view();
       .p1 {
         margin-bottom: 18px;
       }
@@ -817,10 +824,34 @@
         flex-wrap: wrap;
         .cell {
           display: flex;
-          .img {
+          .imgWrapper {
             width: 250px;
             height: 189px;
-            object-fit: cover;
+            position: relative;
+            &:hover {
+              h4 {
+                opacity: 1;
+                z-index: 1;
+              }
+              .img {
+                filter: brightness(0.3);
+                border-radius: 25px;
+                scale: 1.05;
+              }
+            }
+            h4 {
+              color: white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              // opacity: 0;
+            }
+            .img {
+              width: 100%;
+              filter: brightness(1);
+              object-fit: cover;
+            }
           }
           .text {
             width: 250px;
@@ -837,14 +868,25 @@
           }
         }
         .inv {
-          .img {
+          .imgWrapper {
             order: 1;
           }
         }
       }
     }
 
-    .popular-ads {
+    .deck {
+      h1 {
+        margin-bottom: 80px;
+      }
+      .button {
+        margin-inline: auto;
+        width: fit-content;
+        margin-top: 129px;
+      }
+    }
+
+    .popular-ilanlar {
       .top {
         display: flex;
         justify-content: space-between;
@@ -958,8 +1000,9 @@
                 button {
                   border-radius: 7px;
                   border: 2px solid black;
-                  padding-inline: 25px;
+                  // padding-inline: 25px;
                   padding-block: 15px;
+                  width: 150px;
                 }
 
                 .seeDetail {
@@ -1104,8 +1147,8 @@
             .land-img {
               width: 147px;
               height: 100%;
-              border-top-left-radius: 7px;
-              border-bottom-left-radius: 7px;
+              border-top-left-radius: 3px;
+              border-bottom-left-radius: 3px;
             }
           }
 
@@ -1237,6 +1280,12 @@
           object-fit: cover;
         }
       }
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 150px;
     }
     .dialog {
       img {
@@ -1492,6 +1541,7 @@
     flex-wrap: wrap;
     margin-block: 60px;
     gap: 80px;
+
     .img {
       max-width: 414px;
       width: 100%;
@@ -1562,9 +1612,14 @@
       }
     }
   }
-  .decks {
+  .decks-wrapper {
     h1 {
       margin-bottom: 80px;
+    }
+    .btn {
+      margin-top: 130px;
+      margin-inline: auto;
+      width: fit-content;
     }
   }
 }
@@ -1944,6 +1999,11 @@
         color: black;
         margin-bottom: 50px;
       }
+      .button {
+        .p1 {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
@@ -2001,7 +2061,7 @@
   padding: 18px 70px;
   gap: 6px;
   margin-inline: auto;
-  margin-top: 73px;
+  // margin-top: 73px;
   position: relative;
   z-index: 10;
   .dots {
