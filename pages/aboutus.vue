@@ -5,8 +5,6 @@
     </section>
     <div class="gap">
 
-
-
       <section id="bizKimiz" class="bizkimiz m-container">
         <div class="p1">Merak Ettikleriniz</div>
         <h1>Biz Kimiz?</h1>

@@ -291,10 +291,10 @@ watch(
     overflow: hidden;
     width: 0;
     min-width: 0;
-  }
+    border: none;
+    height: 0;
 
-  .listing {
-    width: 100%;
+    grid-template-rows: 0 !important;
   }
 }
 </style>

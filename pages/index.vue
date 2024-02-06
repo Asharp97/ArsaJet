@@ -158,8 +158,7 @@
           <h1>Şehirlerimizdeki Arsa Fiyat Dinamiklerini Sunuyoruz.</h1>
 
           <div class="cells">
-            <div v-for="( city, n ) in   cityGrid " class="cell"
-              :class="[{ 'inv': n == 2 }, { 'inv': n == 3 }, { 'inv': n == 7 }, { 'inv': n == 6 }]">
+            <div v-for="( city, n ) in   cityGrid " class="cell">
               <div class="imgWrapper">
                 <h4>{{ city.city }}</h4>
                 <nuxt-img class="img" :src="`city/${city.city}.png`" />

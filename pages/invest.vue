@@ -24,7 +24,7 @@
             </div>
 
           </div>
-          <div class="step">
+          <div class="step step2">
             <div class="text">
               <h4>Bizimle İletişim Kurun</h4>
               <div class="p3m">Sitemizde iletişim bölümünde bulunan formu doldurmanız sizinle iletişim kurmamız için

@@ -130,9 +130,6 @@
   }
 
   .home {
-    .swiper-wrapper {
-      padding-inline: 33px;
-    }
     section {
       .feature-cards {
         gap: 20px;
@@ -164,6 +161,29 @@
           }
         }
       }
+
+      .city-grid {
+        .cells {
+          .cell {
+            width: 100%;
+            .imgWrapper {
+              order: unset !important;
+            }
+            &:nth-child(even) {
+              .imgWrapper {
+                order: 1 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .decks {
+    gap: 90px !important;
+    .deck {
+      width: 90% !important;
+      min-width: 0 !important;
     }
   }
   .whyeskisehir {
@@ -437,121 +457,19 @@
         }
       }
     }
+    .wellcall {
+      position: absolute !important;
+    }
   }
   .invest {
-    .gap {
-      gap: 30px;
-    }
-    overflow: hidden;
-    .titles {
-      padding-bottom: 30px;
-      .p1 {
-        margin-bottom: 0;
-      }
-      // h3 {
-      //   max-width: 300px;
-      //   margin-top: 30px;
-      // }
-    }
-    .number {
-      font-size: 7rem;
-    }
-    .firststep {
-      gap: 35px;
-      .social {
-        gap: 9px;
-      }
-      h4 {
-        text-align: center;
-      }
-      .number {
-        font-size: 4rem;
-        top: -20px;
-        left: 20px;
-      }
-      .zoom {
-        gap: 60px;
-        .p1 {
-          width: 100%;
-        }
-        .btns {
-          width: 100%;
-          max-width: 327px;
-          flex-direction: row;
-          .icon {
-            font-size: clamp(0.9375rem, 0.841rem + 0.5149vw, 1.25rem);
-          }
-
-          button {
-            font-size: 12px;
-            padding: 11px 15px;
-          }
-        }
-      }
-      .img {
-        height: 150px;
-        object-fit: cover;
-        object-position: right;
+    .steps {
+      .step {
+        margin-bottom: 120px;
       }
     }
-    .secondstep {
-      padding-block: 14px;
-      .part1 {
-        margin-bottom: 30px;
-        .display {
-          margin-bottom: 30px;
-        }
-      }
-      .number {
-        font-size: 16rem;
-        top: -50px;
-      }
-    }
-    .big-container {
-      padding-block: 30px;
-      .thirdstep {
-        gap: 10px;
-        justify-content: space-between;
-        height: fit-content;
-        padding-inline: 20px;
-
-        .sector,
-        .sector2 {
-          display: flex;
-          justify-content: flex-start;
-          width: 29.6%;
-          .img {
-            height: 80px;
-          }
-        }
-        .sector {
-          padding: 0;
-          .p1 {
-            margin-block: 12px;
-          }
-        }
-        .sector2 {
-          // height: fit-content;
-        }
-        .sector3 {
-          height: fit-content;
-          width: 22.4%;
-          margin-right: 20px;
-          .three {
-            font-size: 12rem;
-            margin-top: -70px;
-            margin-bottom: -110px;
-          }
-        }
-      }
-      .text-btn {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding-left: 20px;
-        .p1 {
-          width: 64%;
-        }
+    .step2 {
+      .text {
+        order: 1;
       }
     }
   }
@@ -587,6 +505,7 @@
       }
     }
     .bizkimiz {
+      margin-top: 120px;
       .p1 {
         margin-bottom: 57px;
       }

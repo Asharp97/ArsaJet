@@ -1,6 +1,6 @@
 <template>
   <div>
-    <swiper @slideNextTransitionStart="next()" @slidePrevTransitionStart="prev()" class="mySwiper" :spaceBetween="30">
+    <swiper @slideNextTransitionStart="next()" @slidePrevTransitionStart="prev()" class="mySwiper" :spaceBetween="0">
       <swiper-slide class="slide" v-for="x in choice">
         <nuxt-img class="img" :src="x.img" />
         <div class="text">
