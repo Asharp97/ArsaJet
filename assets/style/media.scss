@@ -130,9 +130,6 @@
   }
 
   .home {
-    .swiper-wrapper {
-      padding-inline: 33px;
-    }
     section {
       .feature-cards {
         gap: 20px;
@@ -162,6 +159,26 @@
               }
             }
           }
+        }
+      }
+
+      .city-grid {
+        .cells {
+          .cell {
+            .imgWrapper {
+              order: unset !important;
+            }
+            &:nth-child(even) {
+              .imgWrapper {
+                order: 1 !important;
+              }
+            }
+          }
+        }
+      }
+      .decks {
+        .deck {
+          width: 90%;
         }
       }
     }

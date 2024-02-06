@@ -18,7 +18,6 @@ defineProps(['text', 'destination', 'inv', 'green']);
 
 .green {
   color: white !important;
-  border: none;
   background-color: $darkGreen;
 }
 
@@ -28,7 +27,7 @@ button {
   justify-content: center;
   gap: 12px;
   background-color: white;
-  border: 2px solid $green;
+  border: 2px solid $darkGreen;
   color: $darkGreen;
   width: 100%;
   padding: 15px 20px;

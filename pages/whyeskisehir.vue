@@ -92,13 +92,7 @@
                         Minimum 1 Senelik Değişim
                       </q-item>
                       <q-item clickable v-close-popup>
-                        Minimum 1 Senelik Değişim
-                      </q-item>
-                      <q-item clickable v-close-popup>
-                        Minimum 1 Senelik Değişim
-                      </q-item>
-                      <q-item clickable v-close-popup>
-                        Minimum 1 Senelik Değişim
+                        Minimum 5 Senelik Değişim
                       </q-item>
                     </q-list>
                   </q-menu>
