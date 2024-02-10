@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="faq-wrapper mpi">
+    <div class="faq-wrapper">
       <div class="faq" @click="accordionCheck(n)" v-for="(f, n) in faq">
         <div class="question">
           <div class="p1">
-            <span> 0{{ n + 1 }}. </span>
-            {{ f.label }}
+            0{{ n + 1 }}.
+            <span> {{ f.label }}</span>
           </div>
           <div class="icons" :class="{ 'open-icons': openfaq[n] }">
             <Icon name="octicon:dash-16" class="right-icon icon" />

@@ -1,7 +1,7 @@
 <template>
-  <div class="hero" :class="{ 'marginbot': mb }">
-    <nuxt-img v-if="img" sizes="xs:640px sm:768px md:1024px lg:1280px xl:1536px xxl:1536px 2xl:2560px"
-      class="landing-image " :src="`${img}.png`" />
+  <div class="hero " :class="{ 'marginbot': mb }">
+    <nuxt-img  v-if="img" sizes="xs:640px sm:768px md:1024px lg:1280px xl:1536px xxl:1536px 2xl:2560px"
+      class="landing-image scale-down exit" :src="`${img}.png`" />
     <div class="video-hero">
       <video v-if="video" autoplay muted loop class="video-src" :src=video>
       </video>
@@ -27,7 +27,7 @@
 
 
 
-      <div v-if="text" class="hero-content container" :class="{ 'invest': invest }">
+      <div v-if="text" class="hero-content container escape-up exit" :class="{ 'invest': invest }">
         <div class="text" style="max-width: textWidth">
           <div class="p1">ARSAJET ile</div>
           <div class="display" :class="'display' + n" v-for="(t, n) in text">{{ t }} <br></div>

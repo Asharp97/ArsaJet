@@ -243,7 +243,8 @@
 
 .hero {
   position: relative;
-  height: 100%;
+  height: 900px;
+
   .landing-image {
     object-fit: cover;
     object-position: bottom left;
@@ -319,12 +320,6 @@
           // max-width: 800px;
         }
       }
-    }
-    .whatsapp {
-      position: absolute;
-      bottom: 49px;
-      right: 82px;
-      z-index: 1;
     }
     .wellcall {
       position: fixed;
@@ -1529,14 +1524,15 @@
       position: absolute;
       bottom: 75px;
       right: 120px;
-      width: 692px;
+      max-width: 692px;
       .p1 {
         color: #dddfb4;
       }
     }
     .img {
+      filter: brightness(0.5);
       width: 100%;
-      height: 985px;
+      height: 900px;
       object-fit: cover;
     }
   }
@@ -1590,6 +1586,7 @@
   .iframes {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 53px;
     .map {
       border-radius: 10px;
@@ -2195,6 +2192,10 @@
   border-bottom: 1px solid rgb(153 153 153 / 16%);
 }
 
+.h1-wrapper{
+  width: fit-content;
+}
+
 // reusable compnents
 .slider {
   .img {
@@ -2290,8 +2291,9 @@
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
       }
       .p1 {
+        color: $orange;
         span {
-          color: $orange;
+          color: black;
         }
       }
       .icons {

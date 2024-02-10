@@ -32,7 +32,7 @@
       </section>
 
       <section class="white-bg">
-        <div class="Millionaires big-container mpi">
+        <div class="Millionaires big-container ">
           <nuxt-img src="tower.png" class="img" />
           <div class="text">
             <div class="p1">ARSAJET ile</div>
@@ -75,7 +75,7 @@
 
 
 
-      <section class="office m-container mpi">
+      <section class="office m-container mpi scale-up">
 
 
         <div class="white-bg">

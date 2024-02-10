@@ -1,6 +1,6 @@
 <template>
-  <div class="container" id="fillform">
-    <div class="contact-us-form m-container">
+  <div class="container scale-up enter" id="fillform">
+    <div class="contact-us-form  m-container">
       <div class="half left-side mobile-hide ">
         <div class="reach-us">
           <h1>Bize Ulaşın</h1>

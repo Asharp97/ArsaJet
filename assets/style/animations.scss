@@ -29,7 +29,84 @@
   }
 }
 
-@keyframes float {
+@keyframes scale-down {
+  from {
+    scale: 1;
+    opacity: 1;
+    border-radius: 50%;
+  }
+  to {
+    scale: 0;
+    opacity: 0;
+    border-radius: 0;
+  }
+}
+.scale-down {
+  transform-origin: top;
+  animation: scale-down 5s ease-in-out both;
+  animation-timeline: view(block);
+}
+@keyframes scale-into-frame {
+  from {
+    scale: 2;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+.scale-into-frame {
+  transform-origin: top;
+  animation: scale-into-frame 5s ease-in-out both;
+  animation-timeline: view(block);
+}
+
+@keyframes scale-up {
+  from {
+    scale: 0;
+    opacity: 0;
+    border-radius: 50%;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+    border-radius: 0;
+  }
+}
+.scale-up {
+  transform-origin: bottom;
+  animation: scale-up 2s ease-in-out both;
+  animation-timeline: view(block);
+}
+.enter {
+  animation-range: cover 0% cover 20%;
+}
+.exit {
+  animation-range: cover 80% cover 100%;
+}
+.exit2 {
+  animation-range: cover 99% cover 100%;
+}
+
+@keyframes scale-up-horizontal {
+  from {
+    scale: 1 0;
+    opacity: 0;
+  }
+  to {
+    scale: 1 1;
+    opacity: 1;
+  }
+}
+.scale-up-horizontal {
+  transform-origin: bottom;
+  animation: scale-down-horizontal 5s ease-in-out both;
+  animation-timeline: view(block);
+  animation-range: cover 20% cover 100%;
+}
+
+@keyframes floater {
   0% {
     transform: translateY(50px);
   }
@@ -39,4 +116,56 @@
   100% {
     transform: translateY(50px);
   }
+}
+
+.float {
+  animation: floater 10s infinite;
+  // animation-timeline: view(block);
+  // animation-range: cover 70% cover 100%;
+}
+
+@keyframes escape-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-550px);
+  }
+}
+
+.escape-up {
+  transform-origin: bottom;
+  animation: escape-up 2s ease-in-out both;
+  animation-timeline: view(block);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.typing {
+  border-right: 0.15em solid black; /* The typwriter cursor */
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-timeline: view(block);
+  animation-range: cover 20% cover 60%;
 }
