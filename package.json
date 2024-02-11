@@ -24,6 +24,7 @@
     "@quasar/extras": "^1.16.7",
     "@supabase/supabase-js": "^2.38.0",
     "@vueuse/nuxt": "^10.6.1",
+    "gsap": "^3.12.5",
     "nuxt-swiper": "^1.2.2",
     "pinia": "^2.1.7",
     "quasar": "^2.13.0"

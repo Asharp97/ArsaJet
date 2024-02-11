@@ -34,7 +34,7 @@
         </div>
       </section>
 
-      <section class="faq-bg gray-bg m-container" id="buy">
+      <section class="faq-bg gray-bg m-container scale-up enter" id="buy">
         <h2>Satın alım işlemleri ilgili</h2>
         <FaqComponent :faq="faq" class="FaqComponent " />
       </section>

@@ -103,6 +103,8 @@
 
 //compnents
 .navbar {
+  animation: 0.5s 2s from-above cubic-bezier(0, 0, 0, 1) both;
+
   background: rgba(0, 0, 0, 0.5);
   color: white;
   z-index: 3;
@@ -168,6 +170,7 @@
         }
         .contact {
           margin-block: 100px;
+
           .method {
             // text-align: start;
             padding: 10px;
@@ -247,7 +250,6 @@
 
   .landing-image {
     object-fit: cover;
-    object-position: bottom left;
 
     position: absolute;
     top: 0;
@@ -259,7 +261,8 @@
   }
   .video-hero {
     position: relative;
-    height: 100vh;
+    display: flex;
+    height: 100%;
     width: 100%;
 
     .video-src {
@@ -308,18 +311,13 @@
     }
 
     .hero-content {
-      position: relative;
       display: flex;
       align-items: flex-end;
-      height: 100%;
+      height: fit-content;
       z-index: 2;
+      margin-top: auto;
       padding-bottom: 78px;
       color: white;
-      .text {
-        .display {
-          // max-width: 800px;
-        }
-      }
     }
     .wellcall {
       position: fixed;
@@ -589,7 +587,7 @@
 
   .img {
     max-width: 316px;
-    height: 404px; 
+    height: 404px;
     object-fit: cover;
   }
 }
@@ -603,7 +601,6 @@
 
 //Pages
 .home {
-  overflow: hidden;
   section {
     .why-recomended {
       max-width: 783px;
@@ -1553,6 +1550,7 @@
 }
 
 .contact {
+  // overflow-x: hidden;
   .contact-details {
     display: flex;
     justify-content: space-evenly;
@@ -1596,6 +1594,7 @@
 }
 
 .invest {
+  // overflow-x: hidden;
   .bg-gray {
     background-color: $offwhite;
     padding-block: 90px;
@@ -1652,7 +1651,7 @@
 }
 
 .whyeskisehir {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   .minerals {
     .p1 {
@@ -2192,7 +2191,7 @@
   border-bottom: 1px solid rgb(153 153 153 / 16%);
 }
 
-.h1-wrapper{
+.h1-wrapper {
   width: fit-content;
 }
 

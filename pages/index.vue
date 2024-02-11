@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <section>
-      <hero textWidth="600px" :text="['Değerini', 'Kaybetmeyen', 'Yatırım: Toprak!']"
+      <hero :text="['Değerini', 'Kaybetmeyen', 'Yatırım: Toprak!']"
         video="https://ik.imagekit.io/sharp/arsajet/video.mp4?tr=f-webm" />
     </section>
 
     <div class="gap">
-      <section>
+      <section class="scale-up enter">
         <div class="bg-feature-future">
           <div class="feature-future container mpi">
             <div class="feature">

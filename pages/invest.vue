@@ -1,17 +1,21 @@
 <template>
   <div class="invest ">
+    <section>
+      <hero img="hero-invest" class=" " :text="['Arazi Yatırımıyla', 'Aile Mutluluğunuzu', 'Güvence Altına Alın']"
+        id="form" :invest="true" />
+    </section>
     <div class="gap ">
-      <section>
-        <hero img="invest-hero" class=" " :text="['Arazi Yatırımıyla', 'Aile Mutluluğunuzu', 'Güvence Altına Alın']"
-          id="form" :invest="true" />
-      </section>
 
       <section class="bg-gray scale-up enter">
         <div class="steps m-container scale-up enter">
 
           <div class="p1 gray">Arazi yatırımınızı Arsajet ile yapın</div>
           <div class="h1-wrapper">
-            <h1 class="typing enter">3 Adımda Yatırımınızı Kolayca Gerçekleştirin</h1>
+            <h1 class="typing">
+              <span class="blink">
+                3 Adımda Yatırımınızı Kolayca Gerçekleştirin
+              </span>
+            </h1>
           </div>
 
           <div class="step scale-into-frame enter">
@@ -56,7 +60,12 @@
       <section class="decks-wrapper m-container scale-up enter">
         <div class="p1 ">ARSAJET olarak</div>
         <div class="h1-wrapper">
-          <h1 class="typing enter">Yatırım Yaparken Neleri Öneriyoruz?</h1>
+          <h1 class="typing">
+            <div class="blink">
+
+              Yatırım Yaparken Neleri Öneriyoruz?
+            </div>
+          </h1>
         </div>
         <deck />
 

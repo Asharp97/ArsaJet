@@ -5,7 +5,7 @@
     </section>
 
     <div class="gap">
-      <section class="mpb white-bg" style="padding-top: 120px;">
+      <section class="mpb white-bg  scale-into-frame " style="padding-top: 120px;">
         <div class="m-container mpi">
 
           <div class="display">
