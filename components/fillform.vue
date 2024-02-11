@@ -39,4 +39,16 @@ import FormComponent from './formComponent.vue';
 const modules = [Navigation, Pagination];
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.scale-up {
+  .half {
+    animation: round-up ease-in-out both;
+    animation-timeline: view(block);
+    animation-range: cover 10% cover 30%;
+
+    &:last-child {
+      animation-range: cover 15% cover 35%;
+    }
+  }
+}
+</style>

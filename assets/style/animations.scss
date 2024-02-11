@@ -73,6 +73,19 @@
   animation: scale-up 2s ease-in-out both;
   animation-timeline: view(block);
 }
+@keyframes round-up {
+  0% {
+    scale: 0;
+    border-radius: 50%;
+  }
+  80% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+    border-radius: 0;
+  }
+}
 .enter {
   animation-range: cover 0% cover 20%;
 }
@@ -124,7 +137,22 @@
   }
 }
 
+@keyframes from-below {
+  from {
+    opacity: 0;
+    transform: translateY(900px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
+.from-below {
+  animation: from-below ease-in-out both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 30%;
+}
 
 @keyframes escape-up {
   0% {
@@ -141,6 +169,25 @@
 .escape-up {
   transform-origin: bottom;
   animation: escape-up ease-in-out both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 60%;
+}
+
+@keyframes textParallax {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+.textParallax {
+  transform-origin: bottom;
+  animation: textParallax ease-in-out both;
   animation-timeline: view(block);
   animation-range: cover 0% cover 60%;
 }
@@ -168,11 +215,25 @@
   overflow: hidden;
   white-space: nowrap;
 
-  animation: typing steps(40, end);
+  animation: typing steps(40, end) both;
   animation-timeline: view(block);
   animation-range: cover 20% cover 50%;
   .blink {
     border-right: 0.15em solid black; /* The typwriter cursor */
     animation: blink-caret 0.75s step-end infinite;
   }
+}
+
+@keyframes imgParallax {
+  0% {
+    object-position: top;
+  }
+  100% {
+    object-position: bottom;
+  }
+}
+.imgParallax {
+  animation: imgParallax ease-in-out both;
+  animation-timeline: view(block);
+  animation-range: cover 40% cover 90%;
 }

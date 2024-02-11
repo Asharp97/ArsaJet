@@ -7,7 +7,7 @@
     <div class="gap ">
 
       <section class="bg-gray scale-up enter">
-        <div class="steps m-container scale-up enter">
+        <div class="steps m-container">
 
           <div class="p1 gray">Arazi yatırımınızı Arsajet ile yapın</div>
           <div class="h1-wrapper">
@@ -18,10 +18,10 @@
             </h1>
           </div>
 
-          <div class="step scale-into-frame enter">
-            <nuxt-img provider="imagekit" class="img" src="step1.png" />
+          <div class="step from-below">
+            <nuxt-img provider="imagekit" class="img imgParallax" src="step1.jpg" />
 
-            <div class="text ">
+            <div class="text textParallax ">
               <h4>Bizimle İletişim Kurun</h4>
               <div class="p3m">Sitemizde iletişim bölümünde bulunan formu doldurmanız sizinle iletişim kurmamız için
                 yeterli
@@ -30,8 +30,8 @@
             </div>
 
           </div>
-          <div class="step scale-into-frame enter">
-            <div class="text ">
+          <div class="step from-below">
+            <div class="text textParallax ">
               <h4>Bizimle İletişim Kurun</h4>
               <div class="p3m">Sitemizde iletişim bölümünde bulunan formu doldurmanız sizinle iletişim kurmamız için
                 yeterli
@@ -39,13 +39,13 @@
               <btn2 text="Gerekli Evrakları İndir" :green="true" />
             </div>
 
-            <nuxt-img provider="imagekit" class="img" src="step2.png" />
+            <nuxt-img provider="imagekit" class="img imgParallax" src="step2.jpg" />
           </div>
 
-          <div class="step scale-into-frame enter">
-            <nuxt-img provider="imagekit" class="img" src="step3.png" />
+          <div class="step from-below">
+            <nuxt-img provider="imagekit" class="img imgParallax" src="step3.jpg" />
 
-            <div class="text  enter">
+            <div class="text textParallax  ">
               <h4>Bizimle İletişim Kurun</h4>
               <div class="p3m">Sitemizde iletişim bölümünde bulunan formu doldurmanız sizinle iletişim kurmamız için
                 yeterli

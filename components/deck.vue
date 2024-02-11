@@ -1,8 +1,8 @@
 <template>
   <div class="decks m-container">
-    <div class="deck">
-      <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards">
-        <swiper-slide class="card" v-for=" card  in  cards1 ">
+    <div class="deck from-below">
+      <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards cards1">
+        <swiper-slide class="card" v-for=" card  in  cards1 " @click="clickHandle()">
           <Icon :name="`${card.icon}`" class="icon" />
           <div class="p1">{{ card.title }}</div>
           <div class="p2">{{ card.details }}</div>
@@ -16,9 +16,9 @@
           gelecekte değer kazanabilir ve farklı kullanım amaçlarına hizmet edebilir.</b>
       </div>
     </div>
-    <div class="deck">
-      <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards">
-        <swiper-slide class="card card2" v-for=" card  in  cards2 ">
+    <div class="deck from-below">
+      <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards cards2">
+        <swiper-slide class="card card2" v-for=" card  in  cards2 " @click="clickHandle2()">
           <Icon :name="`${card.icon}`" class="icon" />
           <div class="p1">{{ card.title }}</div>
           <div class="p2">{{ card.details }}</div>
@@ -43,6 +43,18 @@ const modules = [EffectCards]
 import content from "../assets/content.json"
 const cards1 = content.cards1
 const cards2 = content.cards2
+
+
+const clickHandle = () => {
+  const swiper = document.querySelector('.cards1').swiper;;
+  swiper.slideNext()
+}
+const clickHandle2 = () => {
+  const swiper = document.querySelector('.cards2').swiper;;
+  swiper.slideNext()
+}
+
+
 </script>
 
 <style lang="scss" scoped>
@@ -55,6 +67,10 @@ const cards2 = content.cards2
   .deck {
     width: 45%;
     min-width: 400px;
+
+    &:last-child {
+      animation-range: cover 10% cover 40%;
+    }
 
     .subtitle {
       max-width: 418px;

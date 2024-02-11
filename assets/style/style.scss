@@ -9,7 +9,8 @@
   font-family: "Poppins", sans-serif;
   transition: 200ms;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+  overscroll-behavior: contain;
   body {
     background-color: white;
     color: black;
@@ -103,7 +104,7 @@
 
 //compnents
 .navbar {
-  animation: 0.5s 2s from-above cubic-bezier(0, 0, 0, 1) both;
+  animation: 0.5s 1.2s from-above cubic-bezier(0, 0, 0, 1) both;
 
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -601,6 +602,7 @@
 
 //Pages
 .home {
+  // overflow-x: hidden;
   section {
     .why-recomended {
       max-width: 783px;
@@ -1617,7 +1619,10 @@
 
       .img {
         max-width: 540px;
+        height: 319px;
         width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
       }
       .text {
         display: flex;
