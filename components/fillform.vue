@@ -7,7 +7,7 @@
           <div class="link">
             <img src="../assets/link.svg" alt="">
             <div class="content">
-              <h4>Arsajet</h4>
+              <h4>LandClub</h4>
               <div class="p4">Anonim Şirketleri</div>
               <div class="p4 paragraph">Şimdi bizimle iletişime geçin! Danışmanlarımız en kısa sürede size geri dönüş
                 yapacaktır.

@@ -16,11 +16,11 @@
 
         <q-card-actions align="center">
           <!-- <q-btn flat label="OK" color="primary" v-close-popup /> -->
-          <div class="logo">EKS<span>LAND</span></div>
+          <div class="logo">Land<span>Club</span></div>
         </q-card-actions>
       </q-card>
     </q-dialog>
-    
+
     <div class="text">
       <h1>{{ title }}</h1>
       <div class="p4">{{ subtitle }}</div>

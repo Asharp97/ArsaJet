@@ -20,7 +20,7 @@
             </div>
 
             <div class="future ">
-              <div class="p1">ARSAJET ile</div>
+              <div class="p1">LANDCLUB ile</div>
               <h1 class="elastic-enter">Ne Döviz, Ne Altın,
                 <br /> Ne Borsa <br />
                 Gelecekte En Kârlı Yatırım Arsa!
@@ -38,9 +38,9 @@
       </section>
 
       <section>
-        <div class="why-recomended">
+        <div class="why-recomended m-container">
           <div class="p1">
-            ARSAJET olarak
+            LANDCLUB olarak
           </div>
           <h1 class="typing">
             <div class="blink">
@@ -48,13 +48,13 @@
             </div>
           </h1>
           <div class="p1 invert-green">SON 5 YIL İÇİNDE</div>
-          <nuxt-img class="img" src="695.png" />
+          <nuxt-img class="img float" src="695.png" />
 
         </div>
       </section>
 
       <section>
-        <div class="increase-slide-bg ">
+        <div class="increase-slide-bg from-below enter-middle">
           <div class="increase-slide m-container">
             <div v-for="( inc, n ) in   increase  " :class="{ 'final': n == increase.length - 1 }">
               <h3 v-if="n != increase.length - 1">
@@ -76,14 +76,17 @@
         <Threesteps />
       </section>
 
-      <section class="container">
-        <smooth-img-slide />
-        <div class="p1 gray" style="margin-top: 20px;">ARSAJET ile Yaşam Kalitenizi Arttırın.</div>
+      <section class="of-hide">
+        <div class="container">
+
+          <smooth-img-slide />
+          <div class="p1 gray" style="margin-top: 20px;">LANDCLUB ile Yaşam Kalitenizi Arttırın.</div>
+        </div>
       </section>
 
       <section>
         <div class="value-from-land m-container">
-          <div class="p1">ARSAJET yatırımlarınıza yön veriyoruz.</div>
+          <div class="p1">LANDCLUB yatırımlarınıza yön veriyoruz.</div>
           <h1 class="typing">
             <div class="blink">
               Topraktan Gelen Değerler, Döviz ve Arazi
@@ -95,7 +98,7 @@
 
       <section>
         <div class="time-value m-container">
-          <div class="p1">ARSAJET olarak kaygılarınızı anlıyoruz. </div>
+          <div class="p1">LANDCLUB olarak kaygılarınızı anlıyoruz. </div>
           <h1>Ne Zaman Değerlenir? Ne kadar Değerlenir? </h1>
           <div class="ro">
             <div class="text">
@@ -150,7 +153,7 @@
         </div> -->
       </section>
 
-      <section>
+      <section class="of-hide">
         <SmoothCitySlide />
       </section>
 
@@ -160,19 +163,21 @@
 
       <section>
         <div class="city-grid m-container">
-          <div class="p1">
+          <div class="p1 ">
             Soru işaretlerinizi gidermek için buradayız.
           </div>
-          <h1>Şehirlerimizdeki Arsa Fiyat Dinamiklerini Sunuyoruz.</h1>
+          <h1 class="">
+            Şehirlerimizdeki Arsa Fiyat Dinamiklerini Sunuyoruz.
+          </h1>
 
           <div class="cells">
             <div v-for="( city, n ) in   cityGrid " class="cell">
-              <div class="imgWrapper">
+              <div class="imgWrapper from-below">
                 <h4>{{ city.city }}</h4>
-                <nuxt-img class="img" :src="`city/${city.city}.png`" />
+                <nuxt-img class="img " :src="`city/${city.city}.png`" />
 
               </div>
-              <div class="text">
+              <div class="text elastic-enter-gap" >
                 <div class="p1">Son 5 Yıl</div>
                 <div class="p4">2019 - 2023</div>
                 <h2>%{{ city.increase }} ARTIŞ</h2>
@@ -186,7 +191,7 @@
 
       <section class="m-container ">
         <div class="deck">
-          <div class="p1 gray">ARSAJET olarak</div>
+          <div class="p1 gray">LANDCLUB olarak</div>
           <h1>Yatırım Yaparken Neleri Öneriyoruz?</h1>
           <deck />
 
@@ -199,7 +204,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="of-hide">
         <div class="popular-ilanlar container" id="container">
           <div class="top mpi">
             <div class="header">

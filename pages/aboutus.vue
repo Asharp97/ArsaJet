@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <section>
-      <hero img="hero-home" :text="['Arazi Yatırımı bir Fırsattır', 'Arsajet ile İmkanlarınıza', ' Değer Katın.']" />
+      <hero img="hero-home" :text="['Arazi Yatırımı bir Fırsattır', 'LandClub ile İmkanlarınıza', ' Değer Katın.']" />
     </section>
     <div class="gap">
 
@@ -28,14 +28,14 @@
           <nuxt-img class="img" src="old.png" v-for="n in 12" />
 
         </div>
-        <div class="p1 container">Arsajet ile daha yatırımlarımıza bakın</div>
+        <div class="p1 container">LandClub ile daha yatırımlarımıza bakın</div>
       </section>
 
       <section class="white-bg">
         <div class="Millionaires big-container ">
           <nuxt-img src="tower.png" class="img" />
           <div class="text">
-            <div class="p1">ARSAJET ile</div>
+            <div class="p1">LANDCLUB ile</div>
             <div class="display">
               %90 Of All Millionaires
               Become so Through of
@@ -59,7 +59,7 @@
           <hr>
           <div class="text">
             <div class="half">
-              <div class="p2">Arsajet güvencesiyle</div>
+              <div class="p2">LandClub güvencesiyle</div>
               <h2>50 senelik tecrübemiz ve bilgimiz ile yatırımınızı bizimle gerçekleştirin</h2>
             </div>
             <div class="half">

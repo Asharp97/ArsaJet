@@ -6,7 +6,7 @@
         <div class="white-bg">
           <div class="container">
             <div class="p1 gray">İlan detaylarını öğrenin </div>
-            <h1>Arsajet Güvencesiyle Yatırım Gerçekleştirin</h1>
+            <h1>LandClub Güvencesiyle Yatırım Gerçekleştirin</h1>
             <div class="details">
 
               <div class="imgDiv">
@@ -98,7 +98,7 @@
       </section>
 
       <section class="m-container">
-        <div class="p1 gray">ARSAJET olarak</div>
+        <div class="p1 gray">LANDCLUB olarak</div>
         <h1>Yatırım Yaparken Neleri Öneriyoruz?</h1>
         <deck />
       </section>

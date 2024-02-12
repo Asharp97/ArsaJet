@@ -7,7 +7,7 @@
       }" />
       <div class="text elastic-enter-mb">
         <h1>
-          3 Adımda ARSAJET ile Yatırımınızı Gerçekleştirin
+          3 Adımda LANDCLUB ile Yatırımınızı Gerçekleştirin
         </h1>
         <ol>
           <li class="elastic-enter-mb">

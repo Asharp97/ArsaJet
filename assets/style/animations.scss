@@ -19,6 +19,10 @@
     opacity: 1;
   }
 }
+.fade-in {
+  animation: 1s fade-in ease-in-out both;
+  animation-range: cover 0% cover 50%;
+}
 
 @keyframes scale-down {
   from {
@@ -160,13 +164,17 @@
   animation-range: cover 0% cover 60%;
 }
 
+.enter-middle {
+  animation-range: cover 20% cover 30%;
+}
+
 @keyframes elastic-exit {
   from {
     gap: 0;
   }
 
   to {
-    gap: 30px;
+    gap: 50px;
   }
 }
 .elastic-exit {
@@ -174,7 +182,7 @@
   flex-direction: column;
   animation: elastic-exit ease-in-out both;
   animation-timeline: view(block);
-  animation-range: cover 0% cover 60%;
+  animation-range: cover 28% cover 60%;
 }
 @keyframes elastic-enter-mb {
   from {
@@ -195,12 +203,15 @@
   from {
     gap: 30px;
   }
-  
+
   to {
     gap: 0;
   }
 }
 .elastic-enter-gap {
+  display: flex;
+  flex-direction: column;
+
   animation: elastic-enter-gap ease-in-out both;
   animation-timeline: view(block);
   animation-range: cover 0% cover 60%;
@@ -248,7 +259,6 @@
   animation-timeline: view(block);
   animation-range: cover 20% cover 50%;
   .blink {
-    width: fit-content;
     border-right: 0.15em solid black; /* The typwriter cursor */
     animation: blink-caret 0.75s step-end infinite;
   }

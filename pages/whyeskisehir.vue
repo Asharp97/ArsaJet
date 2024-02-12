@@ -10,7 +10,7 @@
           <div class="feature-future m-container mpi">
 
             <div class="text">
-              <div class="p1">Arsajet ile</div>
+              <div class="p1">LandClub ile</div>
               <h1>Eskişehir’i Keşfedin</h1>
               <div class="p3m">
                 Lorem ipsum dolor sit amet consectetur. Sed commodo arcu pulvinar quisque tempor vel massa
@@ -19,7 +19,7 @@
             </div>
 
             <div class="future">
-              <div class="p1">ARSAJET ile</div>
+              <div class="p1">LANDCLUB ile</div>
               <h1>Ne Döviz, Ne Altın,
                 <br /> Ne Borsa <br />
                 Gelecekte En Kârlı Yatırım Arsa!
@@ -47,7 +47,7 @@
       <section>
         <SmoothImgSlide />
         <div class=" m-container" style="margin-top: 52px;">
-          <div class="p1 gray">ARSAJET ile Eskişehir Yatırım Fırsatı</div>
+          <div class="p1 gray">LANDCLUB ile Eskişehir Yatırım Fırsatı</div>
         </div>
       </section>
 

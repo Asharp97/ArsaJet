@@ -9,7 +9,7 @@
       <section class="bg-gray scale-up enter">
         <div class="steps m-container">
 
-          <div class="p1 gray">Arazi yatırımınızı Arsajet ile yapın</div>
+          <div class="p1 gray">Arazi yatırımınızı LandClub ile yapın</div>
           <div class="h1-wrapper">
             <h1 class="typing">
               <div class="blink">
@@ -58,7 +58,7 @@
       </section>
 
       <section class="decks-wrapper m-container scale-up enter">
-        <div class="p1 ">ARSAJET olarak</div>
+        <div class="p1 ">LANDCLUB olarak</div>
         <div class="h1-wrapper">
           <h1 class="typing">
             <div class="blink">

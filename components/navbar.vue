@@ -8,7 +8,7 @@
 
         <NuxtLink to="/">
           <div class="logo">
-            ArsaJet
+            LandClub
           </div>
         </NuxtLink>
 
@@ -79,7 +79,7 @@
 
             <!-- <NuxtLink to="/">
               <div class="logo">
-                EKS<span>LAND</span>
+                Land<span>Club</span>
               </div>
             </NuxtLink> -->
             <ul>

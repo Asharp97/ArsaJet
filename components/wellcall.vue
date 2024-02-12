@@ -13,9 +13,15 @@
 </template>
 
 <script setup>
+import { useWindowScroll } from '@vueuse/core'
+
+const { x, y } = useWindowScroll()
+
 let wellcall = ref(false);
 const openWellCall = () => {
   wellcall.value = !wellcall.value
+  y.value = 0
+
 }
 </script>
 

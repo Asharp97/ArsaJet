@@ -7,9 +7,7 @@
       <div div class="footer-bg">
         <footer class="container mpi">
           <div class="text mpb">
-            <div class="logo">
-              EKS<span>LAND</span>
-            </div>
+            <div class="logo"> Land<span>Club</span></div>
             <div class="p2">Geleceğinizi inşa ederken, Eksland ile her adımınızda emin ellerde olduğunuzu unutmayın.
               Hayallerinizi
               gerçeğe dönüştürmenin güvencesiyiz.</div>

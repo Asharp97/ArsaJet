@@ -609,7 +609,6 @@
   // overflow-x: hidden;
   section {
     .why-recomended {
-      max-width: 783px;
       display: flex;
       gap: 1rem;
       justify-content: center;
@@ -619,6 +618,8 @@
       .img {
         margin-top: 2rem;
         width: 100%;
+        max-width: 783px;
+        margin-inline: auto;
       }
       .invert-green {
         background-color: $darkGreen;
@@ -1597,6 +1598,10 @@
       border: 2px solid $gray;
     }
   }
+}
+
+.of-hide{
+  overflow: hidden;
 }
 
 .invest {

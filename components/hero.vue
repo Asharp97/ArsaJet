@@ -17,7 +17,7 @@
           <nuxt-img class="img" :src=slide.img />
           <div class="container">
             <div class="text-bg">
-              <div class="p2">ARSAJET ile</div>
+              <div class="p2">LANDCLUB ile</div>
               <h3>{{ slide.title }}</h3>
               <div class="p3m"> {{ slide.text }} </div>
             </div>
@@ -29,7 +29,7 @@
 
       <div v-if="text" class="hero-content container escape-up exit" :class="{ 'invest': invest }">
         <div class="text elastic-exit">
-          <div class="p1">ARSAJET ile</div>
+          <div class="p1">LANDCLUB ile</div>
           <div class="display" :class="'display' + n" v-for="(t, n) in text">{{ t }} <br></div>
         </div>
       </div>
