@@ -319,6 +319,10 @@
       margin-top: auto;
       padding-bottom: 78px;
       color: white;
+      .text {
+        display: flex;
+        flex-direction: column;
+      }
     }
     .wellcall {
       position: fixed;
@@ -2294,6 +2298,11 @@
       &:hover {
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
       }
+
+      animation: elastic-enter-mb ease-in-out both;
+      animation-timeline: view(block);
+      animation-range: cover 10% cover 60%;
+
       .p1 {
         color: $orange;
         span {

@@ -28,7 +28,7 @@
 
 
       <div v-if="text" class="hero-content container escape-up exit" :class="{ 'invest': invest }">
-        <div class="text">
+        <div class="text elastic-exit">
           <div class="p1">ARSAJET ile</div>
           <div class="display" :class="'display' + n" v-for="(t, n) in text">{{ t }} <br></div>
         </div>

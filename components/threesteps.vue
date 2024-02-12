@@ -5,22 +5,22 @@
         transform: cardTransform,
         transition: 'transform 0.25s ease-out'
       }" />
-      <div class="text">
+      <div class="text elastic-enter-mb">
         <h1>
           3 Adımda ARSAJET ile Yatırımınızı Gerçekleştirin
         </h1>
         <ol>
-          <li>
+          <li class="elastic-enter-mb">
             <div class="p3sb">
               İletişim formumuzu doldurmanız zoom toplantısı planlayıp sizleri daha yakından tanımamız için yeterli
               olacaktır.
             </div>
           </li>
-          <li>
+          <li class="elastic-enter-mb">
             <div class="p3sb">Yatırım yapmak istediğiniz arsa için depozito göndermeniz ve yaşadığınız ülkenin büyük
               elçiliğinden satış için gerekli evrakları hazırlamanız gerekmektedir. </div>
           </li>
-          <li>
+          <li class="elastic-enter-mb">
             <div class="p3sb">
               Tapu dairesinde işlemler sonrası tapunuzu sizlere teslim edeceğiz. Arazi yatırımı yapmak işte bu kadar
               kolay! Şimdi form doldurun!</div>
@@ -64,7 +64,5 @@ const cardTransform = computed(() => {
 .img {
   transform: v-bind(cardTransform);
   transition: transform 0.25s ease-out;
-
-  // animation: float 5s infinite linear;
 }
 </style>

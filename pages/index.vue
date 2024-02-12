@@ -7,7 +7,7 @@
 
     <div class="gap">
       <section class="scale-up enter">
-        <div class="bg-feature-future">
+        <div class="bg-feature-future round-up">
           <div class="feature-future container mpi">
             <div class="feature">
               <div class="card" v-for=" item  in  feature ">
@@ -19,9 +19,9 @@
               </div>
             </div>
 
-            <div class="future">
+            <div class="future ">
               <div class="p1">ARSAJET ile</div>
-              <h1>Ne Döviz, Ne Altın,
+              <h1 class="elastic-enter">Ne Döviz, Ne Altın,
                 <br /> Ne Borsa <br />
                 Gelecekte En Kârlı Yatırım Arsa!
               </h1>
@@ -42,7 +42,11 @@
           <div class="p1">
             ARSAJET olarak
           </div>
-          <h1>Neden Arazi Yatırımı Tavsiye Ediyoruz?</h1>
+          <h1 class="typing">
+            <div class="blink">
+              Neden Arazi Yatırımı Tavsiye Ediyoruz?
+            </div>
+          </h1>
           <div class="p1 invert-green">SON 5 YIL İÇİNDE</div>
           <nuxt-img class="img" src="695.png" />
 
@@ -80,7 +84,11 @@
       <section>
         <div class="value-from-land m-container">
           <div class="p1">ARSAJET yatırımlarınıza yön veriyoruz.</div>
-          <h1>Topraktan Gelen Değerler, Döviz ve Arazi </h1>
+          <h1 class="typing">
+            <div class="blink">
+              Topraktan Gelen Değerler, Döviz ve Arazi
+            </div>
+          </h1>
           <AlternativeInvestment />
         </div>
       </section>

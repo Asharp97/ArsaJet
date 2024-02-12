@@ -86,27 +86,16 @@
     border-radius: 0;
   }
 }
+.round-up {
+  animation: round-up 2s ease-in-out both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 30%;
+}
+
 .enter {
   animation-range: cover 0% cover 20%;
 }
 .exit {
-  animation-range: cover 20% cover 100%;
-}
-
-@keyframes scale-up-horizontal {
-  from {
-    scale: 1 0;
-    opacity: 0;
-  }
-  to {
-    scale: 1 1;
-    opacity: 1;
-  }
-}
-.scale-up-horizontal {
-  transform-origin: bottom;
-  animation: scale-down-horizontal ease-in-out both;
-  animation-timeline: view(block);
   animation-range: cover 20% cover 100%;
 }
 
@@ -147,7 +136,6 @@
     opacity: 1;
   }
 }
-
 .from-below {
   animation: from-below ease-in-out both;
   animation-timeline: view(block);
@@ -165,7 +153,6 @@
     transform: translateY(-550px);
   }
 }
-
 .escape-up {
   transform-origin: bottom;
   animation: escape-up ease-in-out both;
@@ -173,18 +160,62 @@
   animation-range: cover 0% cover 60%;
 }
 
-@keyframes textParallax {
-  0% {
-    transform: translateY(0);
+@keyframes elastic-exit {
+  from {
+    gap: 0;
   }
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-50px);
+
+  to {
+    gap: 30px;
   }
 }
+.elastic-exit {
+  display: flex;
+  flex-direction: column;
+  animation: elastic-exit ease-in-out both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 60%;
+}
+@keyframes elastic-enter-mb {
+  from {
+    margin-bottom: 40px;
+  }
 
+  to {
+    margin-bottom: 0;
+  }
+}
+.elastic-enter-mb {
+  animation: elastic-enter-mb ease-in-out both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 50%;
+}
+
+@keyframes elastic-enter-gap {
+  from {
+    gap: 30px;
+  }
+  
+  to {
+    gap: 0;
+  }
+}
+.elastic-enter-gap {
+  animation: elastic-enter-gap ease-in-out both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 60%;
+}
+
+@keyframes textParallax {
+  0% {
+    gap: 100px;
+    transform: translateY(100px);
+  }
+  100% {
+    gap: 0;
+    transform: translateY(0px);
+  }
+}
 .textParallax {
   transform-origin: bottom;
   animation: textParallax ease-in-out both;
@@ -200,7 +231,6 @@
     width: 100%;
   }
 }
-
 @keyframes blink-caret {
   from,
   to {
@@ -210,7 +240,6 @@
     border-color: black;
   }
 }
-
 .typing {
   overflow: hidden;
   white-space: nowrap;
@@ -219,6 +248,7 @@
   animation-timeline: view(block);
   animation-range: cover 20% cover 50%;
   .blink {
+    width: fit-content;
     border-right: 0.15em solid black; /* The typwriter cursor */
     animation: blink-caret 0.75s step-end infinite;
   }
@@ -226,10 +256,10 @@
 
 @keyframes imgParallax {
   0% {
-    object-position: top;
+    object-position: top left;
   }
   100% {
-    object-position: bottom;
+    object-position: bottom right;
   }
 }
 .imgParallax {

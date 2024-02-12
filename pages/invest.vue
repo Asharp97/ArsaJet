@@ -12,9 +12,9 @@
           <div class="p1 gray">Arazi yatırımınızı Arsajet ile yapın</div>
           <div class="h1-wrapper">
             <h1 class="typing">
-              <span class="blink">
+              <div class="blink">
                 3 Adımda Yatırımınızı Kolayca Gerçekleştirin
-              </span>
+              </div>
             </h1>
           </div>
 
@@ -30,7 +30,7 @@
             </div>
 
           </div>
-          <div class="step from-below">
+          <div class="step step2 from-below">
             <div class="text textParallax ">
               <h4>Bizimle İletişim Kurun</h4>
               <div class="p3m">Sitemizde iletişim bölümünde bulunan formu doldurmanız sizinle iletişim kurmamız için
