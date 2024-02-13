@@ -10,6 +10,27 @@
   }
 }
 
+@keyframes circle-up-enter {
+  0% {
+    display: flex;
+    clip-path: circle(0 at 50% 50%);
+  }
+  100% {
+    clip-path: circle(100% at 50% 50%);
+  }
+}
+@keyframes circle-up-exit {
+  0% {
+    clip-path: circle(100% at 50% 50%);
+  }
+  99% {
+    clip-path: circle(0 at 50% 50%);
+  }
+  100% {
+    display: none;
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;

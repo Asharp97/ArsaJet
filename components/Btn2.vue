@@ -26,15 +26,14 @@ button {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background-color: white;
+  background-color: $darkGreen;
   border: 2px solid $darkGreen;
-  color: $darkGreen;
+  color: white;
   width: 100%;
   padding: 15px 20px;
   border-radius: 10px;
-  // font-size: clamp(0.9375rem, 0.841rem + 0.5149vw, 1.25rem);
-  // font-size: 20px;
-  // font-weight: 500;
+  font-size: clamp(0.9375rem, 0.841rem + 0.5149vw, 1.25rem);
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -48,7 +47,7 @@ button {
 }
 
 .inv {
-  color: $darkGreen ;
+  color: $darkGreen;
   background-color: white;
 }
 </style>

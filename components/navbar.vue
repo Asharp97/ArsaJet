@@ -71,6 +71,11 @@
             </li>
           </ul>
         </nav>
+
+        <div class="login" @click="showLogin = !showLogin">
+          Giriş Yap / Kayıt Ol
+        </div>
+
         <div class="mobile-show" ref="el">
           <nav class="mobile-menu" :class="{ 'hide-menu': !showMenu }">
             <button @click="showMenu = !showMenu" class="close">
@@ -135,13 +140,23 @@
           </nav>
         </div>
 
+      </div>
+    </div>
+    <div class="login-screen" @click="showLogin = !showLogin"
+      :class="[{ 'showLogin': showLogin }, { 'hideLogin': !showLogin }]">
 
+      <div class="login-inner">
+        <div class="display">
+          HELLOW WORLD
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+const showLogin = ref(false)
+
 const showMenu = ref(false)
 
 const route = useRoute()
@@ -156,4 +171,32 @@ watch(
 </script>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.navbar {
+  .showLogin {
+    animation: circle-up-enter 1s cubic-bezier(1, 0.04, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hideLogin {
+    animation: circle-up-exit 1s cubic-bezier(1, 0.04, 0, 1) both;
+  }
+}
+
+.login-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+
+
+
+  background-color: blue;
+
+
+}
+</style>

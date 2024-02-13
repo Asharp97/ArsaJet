@@ -198,6 +198,9 @@
       .hide-menu {
         transform: translateX(-100%);
       }
+      .login {
+        cursor: pointer;
+      }
     }
   }
 }
@@ -1600,7 +1603,7 @@
   }
 }
 
-.of-hide{
+.of-hide {
   overflow: hidden;
 }
 
