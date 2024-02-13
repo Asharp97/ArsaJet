@@ -142,13 +142,11 @@
 
       </div>
     </div>
-    <div class="login-screen" @click="showLogin = !showLogin"
-      :class="[{ 'showLogin': showLogin }, { 'hideLogin': !showLogin }]">
-
+    <div class="login-screen" ref="loginScreen" @click="showLogin = !showLogin">
+      <!-- :class="showLogin ? 'showLogin' : 'hideLogin'" -->
+      <nuxt-img provider="imagekit" class="img-bg" src="forest-bg.jpg" />
       <div class="login-inner">
-        <div class="display">
-          HELLOW WORLD
-        </div>
+        <div class="display">LandClub</div>
       </div>
     </div>
   </div>
@@ -156,15 +154,27 @@
 
 <script setup>
 const showLogin = ref(false)
-
 const showMenu = ref(false)
 
 const route = useRoute()
 
+const loginScreen = ref(null)
+
 watch(
   () => route.params,
+  () => { showMenu.value = false }
+)
+watch(
+  () => showLogin.value,
   () => {
-    showMenu.value = false
+    if (showLogin.value) {
+      loginScreen.value.classList.add('showLogin');
+      loginScreen.value.classList.remove('hideLogin');
+    }
+    else {
+      loginScreen.value.classList.add('hideLogin');
+      loginScreen.value.classList.remove('showLogin');
+    }
   }
 )
 
@@ -175,28 +185,11 @@ watch(
 .navbar {
   .showLogin {
     animation: circle-up-enter 1s cubic-bezier(1, 0.04, 0, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    visibility: visible;
   }
 
   .hideLogin {
-    animation: circle-up-exit 1s cubic-bezier(1, 0.04, 0, 1) both;
+    animation: circle-up-exit 1s ease-in-out forwards;
   }
-}
-
-.login-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100vh;
-
-
-
-  background-color: blue;
-
-
 }
 </style>

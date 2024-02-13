@@ -203,6 +203,32 @@
       }
     }
   }
+  .login-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 900px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    .loading-inner {
+      z-index: 100;
+      color: white;
+    }
+    .img-bg {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.35);
+    }
+  }
 }
 
 .footer-fillform {

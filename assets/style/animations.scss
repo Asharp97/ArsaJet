@@ -12,11 +12,10 @@
 
 @keyframes circle-up-enter {
   0% {
-    display: flex;
     clip-path: circle(0 at 50% 50%);
   }
   100% {
-    clip-path: circle(100% at 50% 50%);
+    clip-path: circle(80% at 50% 50%);
   }
 }
 @keyframes circle-up-exit {
@@ -24,10 +23,12 @@
     clip-path: circle(100% at 50% 50%);
   }
   99% {
+    display: flex;
     clip-path: circle(0 at 50% 50%);
   }
   100% {
     display: none;
+    visibility: hidden;
   }
 }
 
@@ -145,16 +146,30 @@
 @keyframes from-above {
   from {
     transform: translateY(-300px);
+    filter: blur(50px);
   }
   to {
+    filter: blur(0px);
     transform: translateY(0);
   }
 }
 
+@keyframes from-below-blur {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+    filter: blur(50px);
+  }
+  to {
+    transform: translateY(0);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
 @keyframes from-below {
   from {
     opacity: 0;
-    transform: translateY(900px);
+    transform: translateY(200px);
   }
   to {
     transform: translateY(0);
@@ -162,9 +177,14 @@
   }
 }
 .from-below {
-  animation: from-below ease-in-out both;
+  animation: from-below cubic-bezier(0, 0, 0.06, 1) both;
   animation-timeline: view(block);
-  animation-range: cover 0% cover 30%;
+  animation-range: cover 30% cover 40%;
+}
+.from-below-blur {
+  animation: from-below cubic-bezier(0, 0, 0.06, 1) both;
+  animation-timeline: view(block);
+  animation-range: cover 30% cover 40%;
 }
 
 @keyframes escape-up {

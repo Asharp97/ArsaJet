@@ -54,9 +54,9 @@
       </section>
 
       <section>
-        <div class="increase-slide-bg from-below enter-middle">
+        <div class="increase-slide-bg from-below-blur enter-middle">
           <div class="increase-slide m-container">
-            <div v-for="( inc, n ) in   increase  " :class="{ 'final': n == increase.length - 1 }">
+            <div v-for="( inc, n ) in   increase" :class="{ 'final': n == increase.length - 1 }">
               <h3 v-if="n != increase.length - 1">
                 {{ 2019 + n }}
               </h3>
@@ -177,7 +177,7 @@
                 <nuxt-img class="img " :src="`city/${city.city}.png`" />
 
               </div>
-              <div class="text elastic-enter-gap" >
+              <div class="text elastic-enter-gap">
                 <div class="p1">Son 5 Yıl</div>
                 <div class="p4">2019 - 2023</div>
                 <h2>%{{ city.increase }} ARTIŞ</h2>
