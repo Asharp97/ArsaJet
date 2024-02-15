@@ -1,7 +1,7 @@
 <template>
   <div class="faq">
     <section>
-      <hero img="hero-faq" />
+      <hero img="hero-faq.png" />
     </section>
     <NuxtLink to="#nav">
       <Icon name="material-symbols:arrow-upward-alt-rounded" class="up" :class="{ 'hideup': !showArrow }" />

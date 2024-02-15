@@ -14,6 +14,58 @@
   }
 }
 
+@keyframes slide-in {
+  0% {
+    scale: 0.9;
+    transform: translateX(110%);
+    background-color: rgba(0, 0, 0, 0);
+  }
+  1% {
+    transform: translateX(110%);
+  }
+  50% {
+    scale: 0.9;
+    transform: translateX(0);
+  }
+  80% {
+    background-color: rgba(0, 0, 0, 0);
+    scale: 1;
+  }
+  100% {
+    transform: translateX(0);
+    scale: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    scale: 1;
+    transform: translateX(0);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+  }
+  30% {
+    scale: 1;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    scale: 0.9;
+    transform: translateX(0);
+    backdrop-filter: blur(0px);
+  }
+  70% {
+    transform: translateX(110%);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    transform: translateX(110%);
+    scale: 0.9;
+  }
+}
+
 @keyframes circle-up-enter {
   0% {
     clip-path: circle(0 at 50% 50%);
@@ -36,9 +88,16 @@
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 .fade-in {
@@ -82,6 +141,37 @@
   animation: scale-up 2s ease-in-out both;
   animation-timeline: view(block);
 }
+@keyframes scale-graph {
+  from {
+    scale: 1 0;
+  }
+  to {
+    scale: 1 1;
+  }
+}
+@keyframes scale-graph-h {
+  from {
+    scale: 0 1;
+  }
+  90%{
+    scale: 1.1 1;
+
+  }
+  to {
+    scale: 1 1;
+  }
+}
+.scale-graph {
+  transform-origin: bottom;
+  animation: scale-graph 2s ease-in-out both;
+  animation-timeline: view(block);
+}
+.scale-graph-h {
+  transform-origin: left;
+  animation: scale-graph-h 2s ease-in-out both;
+  animation-timeline: view(block);
+}
+
 @keyframes round-up {
   0% {
     scale: 0;
@@ -103,6 +193,9 @@
 
 .enter {
   animation-range: cover 0% cover 20%;
+}
+.enter2 {
+  animation-range: cover 10% cover 20%;
 }
 .exit {
   animation-range: cover 20% cover 100%;

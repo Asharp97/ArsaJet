@@ -426,6 +426,9 @@
       .text {
         display: flex;
         flex-direction: column;
+        .display {
+          white-space: nowrap;
+        }
       }
     }
     .wellcall {
@@ -445,7 +448,8 @@
       font-size: 20px;
     }
     .callyou-form {
-      position: absolute;
+      transition: 500ms ease-in-out;
+      position: fixed;
       z-index: 10;
       top: 0;
       bottom: 0;
@@ -455,14 +459,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgba(0, 0, 0, 0.393);
+
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(3px);
+
       .form-bg {
         border-radius: 14px;
         padding: 24px 42px;
         width: fit-content;
         z-index: 9;
         max-width: 451px;
-        // backdrop-filter: blur(55.5px);
         background-color: $offwhite;
       }
     }
@@ -1778,6 +1784,10 @@
   // overflow-x: hidden;
 
   .minerals {
+    .swiper-wrapper{
+      display: flex;
+      align-items: center;
+    }
     .p1 {
       color: $gray;
       margin-bottom: 18px;
@@ -1889,6 +1899,7 @@
   }
   .bg4 {
     background: #a89c84;
+    animation-range: cover 15% cover 25% !important;
   }
   .bg5 {
     background: #a88484;

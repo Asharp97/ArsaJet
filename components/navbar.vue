@@ -72,7 +72,7 @@
           </ul>
         </nav>
 
-        <div class="login" @click="showLogin = !showLogin">
+        <div class="login" @click="showLogin = !showLogin" v-if="false">
           Giriş Yap
         </div>
 
@@ -142,7 +142,7 @@
 
       </div>
     </div>
-    <div class="login-screen" ref="loginScreen" :class="showLogin ? 'showLogin' : 'hideLogin'">
+    <div class="login-screen" ref="loginScreen" :class="showLogin ? 'showLogin' : 'hideLogin'" v-if="false">
       <nuxt-img loading="lazy" class="img-bg" src="forest-bg.jpg" />
       <div class="login-inner container">
 
@@ -183,9 +183,8 @@ const showMenu = ref(false)
 
 const route = useRoute()
 
-const loginScreen = ref(null)
-
-const scrollLock = useScrollLock(loginScreen)
+// const loginScreen = ref(null)
+// const scrollLock = useScrollLock(loginScreen)
 
 watch(
   () => showLogin.value,

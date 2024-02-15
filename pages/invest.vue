@@ -1,7 +1,7 @@
 <template>
   <div class="invest ">
     <section>
-      <hero img="hero-invest" class=" " :text="['Arazi Yatırımıyla', 'Aile Mutluluğunuzu', 'Güvence Altına Alın']"
+      <hero img="hero-invest.png" class=" " :text="['Arazi Yatırımıyla', 'Aile Mutluluğunuzu', 'Güvence Altına Alın']"
         id="form" :invest="true" />
     </section>
     <div class="gap ">

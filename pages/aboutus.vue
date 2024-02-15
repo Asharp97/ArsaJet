@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <section>
-      <hero img="hero-home" :text="['Arazi Yatırımı bir Fırsattır', 'LandClub ile İmkanlarınıza', ' Değer Katın.']" />
+      <hero img="hero-aboutus.jpg" :text="['Arazi Yatırımı bir Fırsattır', 'LandClub ile İmkanlarınıza', ' Değer Katın.']" />
     </section>
     <div class="gap">
 

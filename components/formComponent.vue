@@ -82,6 +82,7 @@
 
 <script setup>
 defineProps(['title', 'subtitle']);
+const emit = defineEmits(['submit'])
 
 const errorMsg = ref(false)
 
@@ -124,6 +125,7 @@ const postInfo = async () => {
       telephone.value = ''
       country.value = null
       errorMsg.value = false
+      emit('submit')
     }
     if (error) throw error
   }

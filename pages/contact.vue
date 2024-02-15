@@ -1,7 +1,7 @@
 <template>
   <div class="contact ">
     <section>
-      <hero img="contact-us-hero" :text="['Her Zaman Bir Tık', ' Uzağınızdayız! Bize', 'Ulaşın.']" />
+      <hero img="contact-us-hero.png" :text="['Her Zaman Bir Tık', ' Uzağınızdayız! Bize', 'Ulaşın.']" />
     </section>
 
     <div class="gap">
@@ -32,7 +32,7 @@
         <div class="display"> Amerika Ofisimiz </div>
         <div class="contact-details">
 
-          <nuxt-img loading="lazy" class="img" src="usa-statue.png" />
+          <nuxt-img loading="lazy" class="img" src="usa.png" />
 
           <div class="details">
             <h2>Detaylı Bilgiler</h2>

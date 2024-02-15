@@ -27,7 +27,7 @@ button {
   justify-content: center;
   gap: 12px;
   background-color: $darkGreen;
-  border: 2px solid $darkGreen;
+  border: 2px solid $green;
   color: white;
   width: 100%;
   padding: 15px 20px;

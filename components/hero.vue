@@ -1,6 +1,6 @@
 <template>
   <div class="hero " :class="{ 'marginbot': mb }">
-    <nuxt-img loading="lazy" v-if="img" :width="width" class="landing-image scale-down " :src="`${img}.png`" />
+    <nuxt-img loading="lazy" v-if="img" :width="width" class="landing-image scale-down " :src="`${img}`" />
     <div class="video-hero">
       <video v-if="video" autoplay muted loop class="video-src scale-down" :src=video>
       </video>

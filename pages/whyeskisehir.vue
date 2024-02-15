@@ -24,7 +24,7 @@
                 <br /> Ne Borsa <br />
                 Gelecekte En Kârlı Yatırım Arsa!
               </h1>
-              <Btn2 class="button">
+              <Btn2 class="button" :inv="true">
                 <div class="p1">
                   <span> Detaylı Bilgi Alın </span>
                   <Icon name="material-symbols:chevron-right-rounded" class="icon" />
@@ -72,8 +72,8 @@
               fırsatı sunmaktadır.
             </div>
             <div class="graph">
-              <div class="chart" v-for="(x, n) in graph">
-                <div class="line" :class="'bg' + n" :style="{ height: x.height + 'px' }">
+              <div class="chart" v-for="(x, n) in        graph       ">
+                <div class="line scale-graph enter2" :class="'bg' + n" :style="{ height: x.height + 'px' }">
                   <div class="p3m"> {{ x.value }} ₺ </div>
                 </div>
                 <div class="p4"> {{ n + 2018 }} </div>
@@ -118,10 +118,12 @@
               </div>
               <div class="listed-images mobile-hide">
                 <span id="scroll1" class="scrolled">
-                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="n in 7" :src='`listed-imgs/${n}.jfif`' />
+                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="       n        in        7"
+                    :src='`listed-imgs/${n}.jfif`' />
                 </span>
                 <span id="scroll2">
-                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="n in 7" :src='`listed-imgs/${n}.jfif`' />
+                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="       n        in        7"
+                    :src='`listed-imgs/${n}.jfif`' />
                 </span>
               </div>
             </div>
@@ -137,9 +139,9 @@
             vazgeçilmez kılıyor. Bu dinamik endeks, yatırımınızın gelecekteki getirisini garanti altına alıyor.</div>
           <div class="text-graph">
             <div class="graph">
-              <div class="chart" v-for="(x, n) in graph2">
+              <div class="chart" v-for="(       x, n       ) in        graph2       ">
                 <div class="p4"> {{ n + 2019 }} </div>
-                <div class="line" :class="'bg' + n" :style="{ width: x.height + 'px' }">
+                <div class="line scale-graph-h enter2" :class="'bg' + n" :style="{ width: x.height + 'px' }">
                   <div class="p3m"> {{ x.value }} ₺ </div>
                 </div>
               </div>
