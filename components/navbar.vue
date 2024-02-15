@@ -73,7 +73,7 @@
         </nav>
 
         <div class="login" @click="showLogin = !showLogin">
-          Giriş Yap / Kayıt Ol
+          Giriş Yap
         </div>
 
         <div class="mobile-show" ref="el">
@@ -142,11 +142,36 @@
 
       </div>
     </div>
-    <div class="login-screen" ref="loginScreen" @click="showLogin = !showLogin">
-      <!-- :class="showLogin ? 'showLogin' : 'hideLogin'" -->
+    <div class="login-screen" ref="loginScreen" :class="showLogin ? 'showLogin' : 'hideLogin'">
       <nuxt-img loading="lazy" class="img-bg" src="forest-bg.jpg" />
-      <div class="login-inner">
-        <div class="display">LandClub</div>
+      <div class="login-inner container">
+
+        <Icon @click="showLogin = !showLogin" name="material-symbols:close-rounded" class="close" />
+        <div class="display">
+          <img src="../assets/Logo.svg" alt="">
+          <span> LandClub </span>
+        </div>
+        <h2>Değerini kaybetmeyen yatırım : Toprak</h2>
+        <div class="p3sb">Lorem ipsum dolor sit amet consectetur. Dui morbi elit sed vel placerat. Mollis sapien vulputate
+          at suscipit eget lectus dictum senectus eu. Sit commodo facilisi consequat eget. Quis mauris semper turpis etiam
+          morbi ac nunc lorem. Mauris elementum varius proin erat neque nunc aliquam blandit. Magna a pharetra nunc odiom.
+        </div>
+        <form action="">
+          <input type="text" placeholder="Mail Adresiniz Giriniz">
+          <input type="password" placeholder="Şifrenizi Giriniz">
+        </form>
+        <div class="action">
+          <button>
+            <div class="p3">Giriş Yap</div>
+          </button>
+          <div class="p4">Şifremi unuttum</div>
+        </div>
+        <button class="reference">Referans Kodum Var</button>
+        <div class="socials">
+          <div class="social" v-for="x in socials">
+            <Icon :name="x.name" class="icon" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -160,23 +185,24 @@ const route = useRoute()
 
 const loginScreen = ref(null)
 
+const scrollLock = useScrollLock(loginScreen)
+
+watch(
+  () => showLogin.value,
+  () => {
+    scrollLock.value = showLogin.value
+    console.log(scrollLock.value)
+  }
+)
+
 watch(
   () => route.params,
   () => { showMenu.value = false }
 )
-watch(
-  () => showLogin.value,
-  () => {
-    if (showLogin.value) {
-      loginScreen.value.classList.add('showLogin');
-      loginScreen.value.classList.remove('hideLogin');
-    }
-    else {
-      loginScreen.value.classList.add('hideLogin');
-      loginScreen.value.classList.remove('showLogin');
-    }
-  }
-)
+
+import content from "../../assets/content.json"
+const socials = content.socials
+
 
 </script>
 
@@ -189,7 +215,8 @@ watch(
   }
 
   .hideLogin {
-    animation: circle-up-exit 1s ease-in-out forwards;
+    animation: circle-up-exit 1s forwards;
+    visibility: visible;
   }
 }
 </style>
