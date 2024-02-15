@@ -5,15 +5,15 @@
     </section>
 
     <div class="gap">
-      <section class="mpb white-bg  scale-into-frame " style="padding-top: 120px;">
+      <section class="mpb white-bg from-below-blur " style="padding-top: 120px;">
         <div class="m-container mpi">
 
           <div class="display">
             İstanbul Ofisimiz
           </div>
-          <div class=" contact-details ">
+          <div class="contact-details ">
 
-            <nuxt-img class="img" src="istanbul-camii.png" />
+            <nuxt-img loading="lazy" class="img" src="istanbul-camii.png" />
 
             <div class="details">
               <h2>Detaylı Bilgiler</h2>
@@ -27,12 +27,12 @@
         </div>
       </section>
 
-      <section class="m-container mpi">
+      <section class="m-container mpi from-below-blur ">
 
         <div class="display"> Amerika Ofisimiz </div>
         <div class="contact-details">
 
-          <nuxt-img class="img" src="usa-statue.png" />
+          <nuxt-img loading="lazy" class="img" src="usa-statue.png" />
 
           <div class="details">
             <h2>Detaylı Bilgiler</h2>

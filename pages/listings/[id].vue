@@ -10,7 +10,7 @@
             <div class="details">
 
               <div class="imgDiv">
-                <!-- <nuxt-img  sizes="xs:640px sm:768px md:784px lg:877px" class="img" src="listing-img.png" /> -->
+                <!-- <nuxt-img loading="lazy"  sizes="xs:640px sm:768px md:784px lg:877px" class="img" src="listing-img.png" /> -->
                 <img :src="land.imgURL[0]" alt="" class="img">
               </div>
               <div class="textDiv mpi">
@@ -42,7 +42,7 @@
           <swiper :navigation="true" :loop="true" class="swiper  noNav" @slideNextTransitionStart="nextEnd"
             :spaceBetween="30" @slidePrevTransitionStart="prevEnd">
             <swiper-slide v-for="n in land.imgURL" class="slide">
-              <!-- <nuxt-img  sizes="xs:640px sm:768px md:1024px lg:1271px" class="img" src="closer-look.png" /> -->
+              <!-- <nuxt-img loading="lazy"  sizes="xs:640px sm:768px md:1024px lg:1271px" class="img" src="closer-look.png" /> -->
               <img :src="n" class="img" alt="">
             </swiper-slide>
           </swiper>

@@ -2,7 +2,7 @@
   <div>
     <swiper @slideNextTransitionStart="next()" @slidePrevTransitionStart="prev()" class="mySwiper" :spaceBetween="0">
       <swiper-slide class="slide" v-for="x in choice">
-        <nuxt-img class="img" :src="x.img" />
+        <nuxt-img loading="lazy" class="img" :src="x.img" />
         <div class="text">
           <h2>{{ x.choose }}</h2>
           <div class="p3m">{{ x.text }}</div>

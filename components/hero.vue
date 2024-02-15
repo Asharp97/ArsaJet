@@ -1,7 +1,6 @@
 <template>
   <div class="hero " :class="{ 'marginbot': mb }">
-    <nuxt-img v-if="img" sizes="xs:640px sm:768px md:1024px lg:1280px xl:1536px xxl:1536px 2xl:2560px"
-      class="landing-image scale-down " :src="`${img}.png`" />
+    <nuxt-img loading="lazy" v-if="img" :width="width" class="landing-image scale-down " :src="`${img}.png`" />
     <div class="video-hero">
       <video v-if="video" autoplay muted loop class="video-src scale-down" :src=video>
       </video>
@@ -14,7 +13,7 @@
   disableOnInteraction: false,
 }" :modules="modules" class="city-slider scale-down">
         <swiper-slide v-for="slide in slides" class="slide">
-          <nuxt-img class="img" :src=slide.img />
+          <nuxt-img loading="lazy" class="img" :src=slide.img />
           <div class="container">
             <div class="text-bg">
               <div class="p2">LANDCLUB ile</div>
@@ -28,7 +27,8 @@
 
 
       <div v-if="text" class="hero-content container escape-up exit" :class="{ 'invest': invest }">
-        <div class="text elastic-exit">
+        <div class="text ">
+          <!-- elastic-exit -->
           <div class="p1">LANDCLUB ile</div>
           <div class="display" :class="'display' + n" v-for="(t, n) in text">{{ t }} <br></div>
         </div>
@@ -46,6 +46,9 @@
 </template>
 
 <script setup lang="ts">
+import { useWindowSize } from '@vueuse/core'
+const { width, height } = useWindowSize()
+
 const props = defineProps(['text', 'img', 'mb', 'video', 'slides', 'invest']);
 
 // import { Swiper, SwiperSlide } from 'swiper/vue';

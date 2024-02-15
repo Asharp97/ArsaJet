@@ -2,11 +2,15 @@
   from {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transform: translateY(100%);
+    filter: blur(5px);
+    letter-spacing: 4px;
   }
 
   to {
     clip-path: polygon(0 0, 100% 0, 100% 110%, 0 110%);
     transform: translateY(0);
+    filter: blur(0);
+    letter-spacing: 0px;
   }
 }
 
@@ -63,23 +67,6 @@
   animation: scale-down ease-in-out both;
   animation-timeline: view(block);
   animation-range: cover 60% cover 100%;
-}
-
-@keyframes scale-into-frame {
-  from {
-    scale: 2;
-    opacity: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
-.scale-into-frame {
-  transform-origin: top;
-  animation: scale-into-frame 5s ease-in-out both;
-  animation-timeline: view(block);
-  animation-range: cover 0% cover 50%;
 }
 
 @keyframes scale-up {
@@ -139,8 +126,6 @@
 
 .float {
   animation: floater 10s infinite;
-  // animation-timeline: view(block);
-  // animation-range: cover 70% cover 100%;
 }
 
 @keyframes from-above {
@@ -223,7 +208,8 @@
   flex-direction: column;
   animation: elastic-exit ease-in-out both;
   animation-timeline: view(block);
-  animation-range: cover 28% cover 60%;
+  // animation-range: cover 28% cover 60%;
+  animation-range: cover 0% cover 50%;
 }
 @keyframes elastic-enter-mb {
   from {
@@ -275,36 +261,6 @@
   animation-range: cover 0% cover 60%;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
-}
-.typing {
-  overflow: hidden;
-  white-space: nowrap;
-
-  animation: typing steps(40, end) both;
-  animation-timeline: view(block);
-  animation-range: cover 20% cover 50%;
-  .blink {
-    border-right: 0.15em solid black; /* The typwriter cursor */
-    animation: blink-caret 0.75s step-end infinite;
-  }
-}
-
 @keyframes imgParallax {
   0% {
     object-position: top left;
@@ -317,4 +273,20 @@
   animation: imgParallax ease-in-out both;
   animation-timeline: view(block);
   animation-range: cover 40% cover 90%;
+}
+
+@keyframes letterSpacing {
+  0% {
+    letter-spacing: -13px;
+    filter: blur(2px);
+  }
+  100% {
+    filter: blur(0);
+    letter-spacing: 0;
+  }
+}
+.cover-remove {
+  animation: cover-remove ease-in-out both;
+  animation-timeline: view(block);
+  animation-range: cover 5% cover 50%;
 }

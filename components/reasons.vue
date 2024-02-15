@@ -14,7 +14,7 @@
             Türkiye’de önemli tinkal yatakları Seyitgazi’ye bağlı Kırka’da bulunuyor.
           </div>
         </div>
-        <nuxt-img provider="imagekit" class="img" src="kristal.png" />
+        <nuxt-img loading="lazy" class="img" src="kristal.png" />
 
       </swiper-slide>
       <swiper-slide class="slide">
@@ -31,7 +31,7 @@
             ve destek sunmaktadır.
           </div>
         </div>
-        <nuxt-img provider="imagekit" class="img" src="fabrika.png" />
+        <nuxt-img loading="lazy" class="img" src="fabrika.png" />
 
       </swiper-slide>
       <swiper-slide class="slide">
@@ -49,8 +49,8 @@
           </div>
         </div>
         <div class="img">
-          <nuxt-img provider="imagekit" class="piechart" src="age.png" />
-          <nuxt-img provider="imagekit" class="piechart" src="gender.png" />
+          <nuxt-img loading="lazy" class="piechart" src="age.png" />
+          <nuxt-img loading="lazy" class="piechart" src="gender.png" />
 
         </div>
       </swiper-slide>

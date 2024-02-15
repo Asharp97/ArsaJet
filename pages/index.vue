@@ -2,11 +2,12 @@
   <div class="home">
     <section>
       <hero :text="['Değerini', 'Kaybetmeyen', 'Yatırım: Toprak!']"
-        video="https://ik.imagekit.io/sharp/arsajet/video.mp4?tr=f-webm" />
+        :video="`https://ik.imagekit.io/sharp/arsajet/video.mp4`" />
+        <!-- ?tr=w-${width} -->
     </section>
 
     <div class="gap">
-      <section class="scale-up enter">
+      <section class="scale-up enter ">
         <div class="bg-feature-future round-up">
           <div class="feature-future container mpi">
             <div class="feature">
@@ -38,17 +39,17 @@
       </section>
 
       <section>
-        <div class="why-recomended m-container">
+        <div class="why-recomended m-container ">
           <div class="p1">
             LANDCLUB olarak
           </div>
-          <h1 class="typing">
-            <div class="blink">
-              Neden Arazi Yatırımı Tavsiye Ediyoruz?
-            </div>
+          <h1 class="cover-remove">
+
+            Neden Arazi Yatırımı Tavsiye Ediyoruz?
+
           </h1>
           <div class="p1 invert-green">SON 5 YIL İÇİNDE</div>
-          <nuxt-img class="img float" src="695.png" />
+          <nuxt-img loading="lazy" class="img float" src="695.png" />
 
         </div>
       </section>
@@ -72,7 +73,7 @@
         </div>
       </section>
 
-      <section class="container">
+      <section class="container ">
         <Threesteps />
       </section>
 
@@ -85,21 +86,21 @@
       </section>
 
       <section>
-        <div class="value-from-land m-container">
+        <div class="value-from-land m-container ">
           <div class="p1">LANDCLUB yatırımlarınıza yön veriyoruz.</div>
-          <h1 class="typing">
-            <div class="blink">
-              Topraktan Gelen Değerler, Döviz ve Arazi
-            </div>
+          <h1 class="cover-remove">
+
+            Topraktan Gelen Değerler, Döviz ve Arazi
+
           </h1>
           <AlternativeInvestment />
         </div>
       </section>
 
       <section>
-        <div class="time-value m-container">
+        <div class="time-value m-container ">
           <div class="p1">LANDCLUB olarak kaygılarınızı anlıyoruz. </div>
-          <h1>Ne Zaman Değerlenir? Ne kadar Değerlenir? </h1>
+          <h1 class="cover-remove">Ne Zaman Değerlenir? Ne kadar Değerlenir? </h1>
           <div class="ro">
             <div class="text">
               <div class="num"> 01 </div>
@@ -174,7 +175,7 @@
             <div v-for="( city, n ) in   cityGrid " class="cell">
               <div class="imgWrapper from-below">
                 <h4>{{ city.city }}</h4>
-                <nuxt-img class="img " :src="`city/${city.city}.png`" />
+                <nuxt-img loading="lazy" class="img " :src="`city/${city.city}.png`" width="250" />
 
               </div>
               <div class="text elastic-enter-gap">
@@ -192,7 +193,7 @@
       <section class="m-container ">
         <div class="deck">
           <div class="p1 gray">LANDCLUB olarak</div>
-          <h1>Yatırım Yaparken Neleri Öneriyoruz?</h1>
+          <h1 class="cover-remove">Yatırım Yaparken Neleri Öneriyoruz?</h1>
           <deck />
 
           <Btn2 class="button">
@@ -205,71 +206,7 @@
       </section>
 
       <section class="of-hide">
-        <div class="popular-ilanlar container" id="container">
-          <div class="top mpi">
-            <div class="header">
-              <div class="title">
-                <h1>Popüler İlanlar</h1>
-                <NuxtLink to="listings">
-                  <div class="p1">
-                    İlanlara git
-                    <Icon name="material-symbols:play-circle" />
-                  </div>
-                </NuxtLink>
-              </div>
-              <div class="sub-title">
-                <div class="p1">En çok ilgi gören ilanları öğrenin. <br /> </div>
-                <div class="p1">Popüler arazilere göz atın.</div>
-              </div>
-            </div>
-          </div>
-          <swiper :slidesPerView="3" :breakpoints="{
-            '0': {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            '640': {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            '768': {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            '1024': {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-          }
-            " :freeMode="true" :navigation="true" :modules="moduleLand" :scrollbar="{ hide: true }" class="swiper mpi">
-            <swiper-slide v-for="(   x, n   ) in    ilanlar   " class="landSlider">
-              <NuxtLink class="landWrapper" :to="`listings/${x.id}`">
-                <div class="land">
-                  <!-- <nuxt-img  sizes="375px" class="land-img" src="land-1.png" /> -->
-                  <img :src="x.imgURL[0]" class="land-img" alt="">
-                  <div class="text">
-                    <div class="t2"> EKS Land ile Eskişehir’den Yatırımlık Arsa </div>
-                    <div class="measurement">
-                      <Icon class="icon" name="arcticons:tapemeasure" />
-                      <div class="p2">
-                        {{ x.squareMeters }}m&sup2;
-                        <!-- 345 m -->
-                      </div>
-                    </div>
-                    <div class="buttons">
-                      <button class="price">
-                        <div class="p1"> {{ x.landPrice }} € </div>
-                      </button>
-                      <button class="seeDetail">
-                        <div class="p2"> Detayları Gör </div>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </NuxtLink>
-            </swiper-slide>
-          </swiper>
-        </div>
+        <LazyPopularIlanlar />
       </section>
 
 
@@ -286,26 +223,6 @@
 </template>
 
 <script setup>
-const supabase = useSupabaseClient()
-let ilanlar = ref()
-const getPopularIlan = async () => {
-  const { data, error } = await supabase
-    .from('lands')
-    .select()
-    .limit(10)
-  if (data)
-    ilanlar.value = data
-}
-
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Scrollbar, Navigation, FreeMode } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/scrollbar';
-import 'swiper/css/navigation';
-const moduleLand = [Scrollbar, Navigation, FreeMode]
-
-
-
 import content from "../assets/content.json"
 
 const feature = content.features
@@ -313,32 +230,9 @@ const increase = content.increase
 const faq = content.faq
 const cityGrid = content.cityGrid
 
-
-
-let count = ref(3)
-
 import { useWindowSize } from '@vueuse/core'
 const { width, height } = useWindowSize()
 
-onMounted(() => {
-  getCount(width.value)
-  getPopularIlan()
-})
-
-
-watch(
-  () => width.value,
-  () => {
-    getCount(width.value)
-  }
-)
-
-const getCount = (x) => {
-  if (x > 450)
-    count.value = x / 450
-  else
-    count.value = x / 400
-}
 </script>
 
 <style lang="scss" scoped>

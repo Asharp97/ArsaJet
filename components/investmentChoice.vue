@@ -8,7 +8,7 @@
     <swiper @slideNextTransitionStart="next()" @slidePrevTransitionStart="prev()" class="mySwiper">
       <swiper-slide class=" slide" v-for="x in choice2">
         <div class="imgWrapper">
-          <nuxt-img class="img" :src="x.img" />
+          <nuxt-img loading="lazy" class="img" :src="x.img" />
         </div>
         <div class="text">
           <h2> <span> {{ x.accent }} </span> {{ x.text }} </h2>

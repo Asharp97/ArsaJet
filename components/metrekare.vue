@@ -8,7 +8,7 @@
         Metrekare başına arsa fiyat endeksi, her sene artış gösteren bu özel araziyi yatırımcılar için vazgeçilmez
         kılıyor. Bu dinamik endeks, yatırımınızın gelecekteki getirisini garanti altına alıyor.
       </div>
-      <nuxt-img sizes="xs:640px sm:768px md:1024px lg:1271px" class="img" src="graph-1.png" />
+      <nuxt-img loading="lazy" sizes="xs:640px sm:768px md:1024px lg:1271px" class="img" src="graph-1.png" />
       <div class="footer">
         <div class="roi">
           <div class="text">

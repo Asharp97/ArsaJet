@@ -21,34 +21,6 @@
       "text": "Eşsiz portföyümüz ile sizlere fırsat arazileri sunuyor ve yatırımlarınızı sağlamlaştırıyoruz."
     }
   ],
-  "steps": [
-    {
-      "img": "step-1",
-      "title": "Bizimle İletişime Geçin",
-      "ps": [
-        "İletişim formumuzu doldurmanız ",
-        "zoom toplantısı planlayıp sizleri",
-        "daha yakından tanımamız için yeterli olacaktır."
-      ]
-    },
-    {
-      "img": "step-2",
-      "title": "Evrakları hazırlayın",
-      "ps": [
-        "Yatırım yapmak istediğiniz arsa için depozito göndermeniz ve yaşadığınız ülkenin ",
-        "büyük elçiliğinden satış için gerekli evrakları ",
-        "hazırlamanız gerekmektedir."
-      ]
-    },
-    {
-      "img": "step-3",
-      "title": "Tapu sahibi olun",
-      "ps": [
-        "Tapu dairesinde işlemler sonrası tapunuzu sizlere teslim edeceğiz.  Arazi yatırımı yapmak işte bu kadar kolay!",
-        "Şimdi form doldurun!"
-      ]
-    }
-  ],
   "footer": [
     {
       "title": "Sayfalar",
@@ -95,37 +67,10 @@
       ]
     }
   ],
-  "icon": [
-    { "name": "ic:baseline-wechat", "url": "" },
-    { "name": "logos:telegram", "url": "" },
-    { "name": "logos:whatsapp-icon", "url": "" }
-  ],
   "socials": [
     { "name": "ic:baseline-facebook", "url": "" },
     { "name": "ph:instagram-logo-fill", "url": "" },
     { "name": "entypo-social:linkedin-with-circle", "url": "" }
-  ],
-  "invests": [
-    {
-      "title": "Tecrübemizden İlham alın",
-      "icon": "teenyicons:tick-circle-solid",
-      "p": "50 yılı aşkın tecrübelerimiz, onlarca projelerimiz ile sizlere fırsatlar oluşturuyoruz."
-    },
-    {
-      "title": "Portföyümüzü inceleyin",
-      "icon": "ic:sharp-window",
-      "p": "Türkiye’de sizlere sunduğumuz yüzlerce yatırım fırsatı ile seçenekleri çeşitlendiriyoruz."
-    },
-    {
-      "title": "Yatırımlarınızı çeşitlendirin",
-      "icon": "typcn:plus",
-      "p": "Geleceğinizi güvence altına almak ve kazançlarınızı çeşitlendirmek için şimdi bizimle yatırım yapın."
-    },
-    {
-      "title": "Hizmetlerimizden faydalanın",
-      "icon": "typcn:plus",
-      "p": "Hizmetlerimizle yatırımınızı yönlendirin ve hedeflerinize daha hızlı ulaşın; başarıya giden yolda size rehberlik ediyoruz."
-    }
   ],
   "faq": [
     {

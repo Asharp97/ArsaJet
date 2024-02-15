@@ -11,7 +11,7 @@
       <section class="titles m-container">
         <div class="title" id="nav">
           <div class="p1">Merak Ettikleriniz</div>
-          <h1>Aklınıza Gelebilecek Tüm Sorular</h1>
+          <h1 class="cover-remove">Aklınıza Gelebilecek Tüm Sorular</h1>
         </div>
 
         <div class="nav">

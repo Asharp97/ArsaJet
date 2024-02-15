@@ -1,9 +1,9 @@
 <template>
   <div class="m-container" id="container" ref="el">
-    <div class="mpi">
+    <div>
       <div class="features white-bg">
         <div class="p1 gray">Tüm özelliklerini öğrenin</div>
-        <h1>Arazi ile İlgili Ayrıntılı Bilgiler</h1>
+        <h1 class="cover-remove">Arazi ile İlgili Ayrıntılı Bilgiler</h1>
         <div class="p3sb">
           <span class="darkGray"> Yatırım yapmak istediğiniz arsa için depozito göndermeniz ve yaşadığınız ülkenin </span>
           büyük elçiliğinden satış için gerekli evrakları hazırlamanız gerekmektedir.
@@ -11,7 +11,8 @@
           </span>
           elçiliğinden satış için gerekli evrakları hazırlamanız gerekmektedir.
         </div>
-        <nuxt-img sizes="xs:640px sm:768px md:1024px lg:1271px" class="smallScreenHide features-img" src="features.png" />
+        <nuxt-img loading="lazy" sizes="xs:640px sm:768px md:1024px lg:1271px" class="smallScreenHide features-img"
+          src="features.png" />
         <Swiper @swiper="onSwiper" :loopedSlides="4" :centeredSlides="true" :slideToClickedSlide="true" :slidesPerView="9"
           class="swiper" :loop="true" :breakpoints="{
             '0': {

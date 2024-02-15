@@ -144,7 +144,7 @@
     </div>
     <div class="login-screen" ref="loginScreen" @click="showLogin = !showLogin">
       <!-- :class="showLogin ? 'showLogin' : 'hideLogin'" -->
-      <nuxt-img provider="imagekit" class="img-bg" src="forest-bg.jpg" />
+      <nuxt-img loading="lazy" class="img-bg" src="forest-bg.jpg" />
       <div class="login-inner">
         <div class="display">LandClub</div>
       </div>

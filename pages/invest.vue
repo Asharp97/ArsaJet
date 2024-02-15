@@ -11,15 +11,15 @@
 
           <div class="p1 gray">Arazi yatırımınızı LandClub ile yapın</div>
           <div class="h1-wrapper">
-            <h1 class="typing">
-              <div class="blink">
-                3 Adımda Yatırımınızı Kolayca Gerçekleştirin
-              </div>
+            <h1 class="cover-remove">
+
+              3 Adımda Yatırımınızı Kolayca Gerçekleştirin
+
             </h1>
           </div>
 
           <div class="step from-below">
-            <nuxt-img provider="imagekit" class="img imgParallax" src="step1.jpg" />
+            <nuxt-img loading="lazy" class="img imgParallax" src="step1.jpg" />
 
             <div class="text textParallax ">
               <h4>Bizimle İletişim Kurun</h4>
@@ -39,11 +39,11 @@
               <btn2 text="Gerekli Evrakları İndir" :green="true" />
             </div>
 
-            <nuxt-img provider="imagekit" class="img imgParallax" src="step2.jpg" />
+            <nuxt-img loading="lazy" class="img imgParallax" src="step2.jpg" />
           </div>
 
           <div class="step from-below">
-            <nuxt-img provider="imagekit" class="img imgParallax" src="step3.jpg" />
+            <nuxt-img loading="lazy" class="img imgParallax" src="step3-cropped.jpg" />
 
             <div class="text textParallax  ">
               <h4>Bizimle İletişim Kurun</h4>
@@ -60,12 +60,7 @@
       <section class="decks-wrapper m-container scale-up enter">
         <div class="p1 ">LANDCLUB olarak</div>
         <div class="h1-wrapper">
-          <h1 class="typing">
-            <div class="blink">
-
-              Yatırım Yaparken Neleri Öneriyoruz?
-            </div>
-          </h1>
+          <h1 class="cover-remove"> Yatırım Yaparken Neleri Öneriyoruz? </h1>
         </div>
         <deck />
 

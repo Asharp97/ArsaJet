@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="threesteps">
-      <nuxt-img class="img" src="3adim.png" ref="target" :style="{
+      <nuxt-img loading="lazy" class="img" src="3adim.png" ref="target" :style="{
         transform: cardTransform,
         transition: 'transform 0.25s ease-out'
       }" />

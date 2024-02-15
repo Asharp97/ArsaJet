@@ -44,7 +44,7 @@
 
       </section>
 
-      <section>
+      <section class="of-hide">
         <SmoothImgSlide />
         <div class=" m-container" style="margin-top: 52px;">
           <div class="p1 gray">LANDCLUB ile Eskişehir Yatırım Fırsatı</div>
@@ -105,7 +105,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="of-hide">
         <SmoothCitySlide />
       </section>
 
@@ -118,10 +118,10 @@
               </div>
               <div class="listed-images mobile-hide">
                 <span id="scroll1" class="scrolled">
-                  <nuxt-img sizes="200px" class="img" v-for="n in 7" :src='`listed-imgs/${n}.jfif`' />
+                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="n in 7" :src='`listed-imgs/${n}.jfif`' />
                 </span>
                 <span id="scroll2">
-                  <nuxt-img sizes="200px" class="img" v-for="n in 7" :src='`listed-imgs/${n}.jfif`' />
+                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="n in 7" :src='`listed-imgs/${n}.jfif`' />
                 </span>
               </div>
             </div>

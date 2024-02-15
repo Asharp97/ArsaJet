@@ -1,6 +1,6 @@
 <template>
-  <div class="decks m-container">
-    <div class="deck from-below">
+  <div class="decks m-container of-hide">
+    <div class="deck from-below ">
       <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="cards cards1">
         <swiper-slide class="card" v-for=" card  in  cards1 " @click="clickHandle()">
           <Icon :name="`${card.icon}`" class="icon" />
@@ -67,6 +67,7 @@ const clickHandle2 = () => {
   .deck {
     width: 45%;
     min-width: 400px;
+    margin-inline: auto;
 
     &:last-child {
       animation-range: cover 10% cover 40%;
