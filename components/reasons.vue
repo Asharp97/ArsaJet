@@ -4,7 +4,7 @@
       <swiper-slide class="slide">
         <div class="text">
           <h2>
-            <span> Maden kaynakları </span> ile <br> zengin şehir!
+            <span> Maden kaynakları </span> ile zengin şehir!
           </h2>
           <div class="p3m">Eskişehir, çeşitli maden kaynaklarıyla zenginleşmiş bir bölge olarak bilinir. Özellikle
             linyit kömürü, bor, manyezit, talk, zeolit ve trona gibi madenlerle ön plana çıkan şehirde, 75 firma

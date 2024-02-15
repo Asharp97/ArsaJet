@@ -36,10 +36,10 @@
       </section>
 
       <section>
-        <div class="closer-look mpi m-container">
+        <div class="closer-look mpi sm-container">
           <div class="p1 gray">Metrekare detaylarını öğrenin</div>
           <h1>Arazinin Metrekare Detayları</h1>
-          <swiper :navigation="true" :loop="true" class="swiper  noNav" @slideNextTransitionStart="nextEnd"
+          <swiper :navigation="true" :loop="true" class="swiper noNav" @slideNextTransitionStart="nextEnd"
             :spaceBetween="30" @slidePrevTransitionStart="prevEnd">
             <swiper-slide v-for="n in land.imgURL" class="slide">
               <!-- <nuxt-img loading="lazy"  sizes="xs:640px sm:768px md:1024px lg:1271px" class="img" src="closer-look.png" /> -->

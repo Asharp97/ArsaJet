@@ -357,6 +357,8 @@
       position: fixed;
       background-color: white;
       border-radius: 0px 0px 7px 7px;
+      border: 1px solid $gray;
+      border-top: none;
       cursor: pointer;
       padding: 5px 22px;
       // transform: rotateX(90deg);
@@ -539,7 +541,7 @@
   .swiper {
     display: flex;
     justify-content: space-between;
-    height: 320px;
+    height: 216px;
     .slide {
       display: flex;
       flex-direction: column;
@@ -614,15 +616,19 @@
     transform: translateX(-100%);
   }
 }
-.smooth-img-slide {
+.smooth-img-slide-wrapper {
   display: flex;
   gap: 46px;
-  animation: 20s smooth-slider infinite linear;
+  .smooth-img-slide {
+    display: flex;
+    gap: 46px;
+    animation: 20s smooth-slider infinite linear;
 
-  .img {
-    max-width: 316px;
-    height: 404px;
-    object-fit: cover;
+    .img {
+      max-width: 316px;
+      height: 404px;
+      object-fit: cover;
+    }
   }
 }
 
@@ -647,7 +653,7 @@
       .img {
         margin-top: 2rem;
         width: 100%;
-        max-width: 783px;
+        max-width: 700px;
         margin-inline: auto;
       }
       .invert-green {
@@ -729,10 +735,13 @@
         color: $gray;
         margin-bottom: 18px;
       }
+      .swiper-wrapper {
+        display: flex;
+        align-items: flex-end;
+      }
       .slide {
         display: flex;
         flex-wrap: wrap;
-
         gap: 48px;
         .text {
           display: flex;
@@ -773,7 +782,7 @@
         }
         .img {
           flex-grow: 1;
-          margin-top: 110px;
+          object-fit: cover;
         }
       }
     }
@@ -1291,7 +1300,7 @@
     .gallery {
       display: flex;
       justify-content: space-between;
-      gap: 80px;
+      gap: 40px;
       flex-wrap: wrap;
       .imgWrapper {
         flex: 1 0 280px;
@@ -1359,7 +1368,7 @@
         border-radius: 20px;
         width: 100%;
         max-width: 791px;
-        max-height: 529px;
+        max-height: 462px;
         object-fit: cover;
         border-radius: 20px;
       }
@@ -1407,7 +1416,7 @@
           margin-inline: auto;
           width: 100%;
           max-width: 1230px;
-          height: 690px;
+          height: 490px;
           border-radius: 20px;
           object-fit: cover;
         }
@@ -1415,9 +1424,6 @@
     }
     .swiper-button-next {
       bottom: 29px;
-    }
-    .swiper-wrapper {
-      padding-bottom: 75px;
     }
   }
 }
@@ -1442,7 +1448,7 @@
   }
 
   .faq-bg {
-    border-radius: 20px;
+    border-radius: 20px !important;
     padding: 60px;
   }
 
@@ -1709,10 +1715,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 100px;
         .text {
-          max-width: 450px;
+          max-width: 850px;
           h2 {
             margin-bottom: 34px;
+            width: 140%;
             span {
               color: $orange;
             }
@@ -1724,6 +1732,7 @@
           display: flex;
           gap: 20px;
           align-items: center;
+          max-width: 516px;
           .piechart {
             width: 258px;
           }
@@ -2051,6 +2060,7 @@
         max-width: 376px;
         color: black;
         margin-bottom: 50px;
+        line-height: 1.1;
       }
       .button {
         .p1 {
@@ -2114,7 +2124,7 @@
   padding: 18px 70px;
   gap: 6px;
   margin-inline: auto;
-  // margin-top: 73px;
+  margin-top: 73px;
   position: relative;
   z-index: 10;
   .dots {
@@ -2156,6 +2166,11 @@
   width: 99%;
   margin-inline: auto;
   max-width: 1193px;
+}
+.sm-container {
+  width: 99%;
+  margin-inline: auto;
+  max-width: 900px;
 }
 
 .big-container {
@@ -2387,7 +2402,7 @@
   }
   .img {
     width: 100%;
-    max-width: 900px;
+    max-width: 700px;
     margin-inline: auto;
   }
   .footer {

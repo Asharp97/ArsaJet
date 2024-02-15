@@ -45,7 +45,7 @@
       </section>
 
       <section class="of-hide">
-        <SmoothImgSlide />
+        <SmoothImgSlide folder="eskisehir-smooth" />
         <div class=" m-container" style="margin-top: 52px;">
           <div class="p1 gray">LANDCLUB ile Eskişehir Yatırım Fırsatı</div>
         </div>

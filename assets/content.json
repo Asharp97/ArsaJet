@@ -486,6 +486,12 @@
   ],
   "choice2": [
     {
+      "img": "fam.png",
+      "text": "Antalya’da ortalama iyi bir otelde aileniz ile bir tatil yapabilirsiniz.",
+      "also": "Ayrıca yol, giyim ve ekstra masraflarınız hariç bir miktar harcama ile bu tatile erişebilirsiniz. Ya da çocuklarınız ve geleceğiniz için yatırım gerçekleştirebilirsiniz.",
+      "accent": "1 haftalik"
+    },
+    {
       "img": "clio.png",
       "text": "ekstra ekleyip ortalama bir hatchback araca sahip olabilirsiniz...",
       "also": "Ayrıca aldığınız araç ile yatırım yaparken aracınızın sigorta, kasko, vergi, yakıt, bakımları, değer kayıplarını da unutmayınız.",
@@ -496,12 +502,6 @@
       "text": "daha ekleyerek geleceğiniz için yatırım yapabilir, ailenizi güvence altına alabilirsiniz.",
       "also": "1.5 adet çanta fiyatına yatırım yapabilmeniz LandClub ile çok kolay. ",
       "accent": "58.000 ₺"
-    },
-    {
-      "img": "fam.png",
-      "text": "Antalya’da ortalama iyi bir otelde aileniz ile bir tatil yapabilirsiniz.",
-      "also": "Ayrıca yol, giyim ve ekstra masraflarınız hariç bir miktar harcama ile bu tatile erişebilirsiniz. Ya da çocuklarınız ve geleceğiniz için yatırım gerçekleştirebilirsiniz.",
-      "accent": "1 haftalik"
     }
   ]
 }

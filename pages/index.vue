@@ -3,7 +3,7 @@
     <section>
       <hero :text="['Değerini', 'Kaybetmeyen', 'Yatırım: Toprak!']"
         :video="`https://ik.imagekit.io/sharp/arsajet/video.mp4`" />
-        <!-- ?tr=w-${width} -->
+      <!-- ?tr=w-${width} -->
     </section>
 
     <div class="gap">
@@ -26,7 +26,8 @@
                 <br /> Ne Borsa <br />
                 Gelecekte En Kârlı Yatırım Arsa!
               </h1>
-              <Btn2 class="button">
+              <Btn2 class="button" inv="true">
+
                 <div class="p1">
                   Detaylı Bilgi Alın
                   <Icon name="material-symbols:chevron-right-rounded" class="icon" />
@@ -39,7 +40,7 @@
       </section>
 
       <section>
-        <div class="why-recomended m-container ">
+        <div class="why-recomended sm-container ">
           <div class="p1">
             LANDCLUB olarak
           </div>
@@ -79,8 +80,7 @@
 
       <section class="of-hide">
         <div class="container">
-
-          <smooth-img-slide />
+          <SmoothImgSlide folder="home-smooth" />
           <div class="p1 gray" style="margin-top: 20px;">LANDCLUB ile Yaşam Kalitenizi Arttırın.</div>
         </div>
       </section>

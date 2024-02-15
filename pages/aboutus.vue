@@ -24,10 +24,7 @@
       </section>
 
       <section class="of-hide old-images">
-        <div class="smooth-img-slide">
-          <nuxt-img loading="lazy" class="img" src="old.png" v-for="n in 12" />
-
-        </div>
+        <SmoothImgSlide folder="home-smooth" />
         <div class="p1 container">LandClub ile daha yatırımlarımıza bakın</div>
       </section>
 
@@ -75,7 +72,7 @@
 
 
 
-      <section class="office m-container mpi">
+      <section class="office sm-container mpi">
 
 
         <div class="white-bg">
