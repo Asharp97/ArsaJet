@@ -261,6 +261,22 @@
         }
       }
     }
+    .minerals {
+      .slides {
+        .slide {
+          gap: 20px;
+
+          .img {
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            .piechart {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
   }
   .contact-us-form {
     height: 550px;
@@ -382,21 +398,12 @@
     .landing-image {
       filter: brightness(0.7);
     }
-    .landing-page {
-      // height: 100vh;
-      gap: 80px;
-      justify-content: center !important;
-      padding-top: calc($navHeight + 50px);
-      padding-bottom: 50px;
-      .landing-text {
-        // margin-top: 175px !important;
-        text-align: center;
-      }
-      .form-bg {
-        backdrop-filter: none;
-        background-color: #85858552;
-        button {
-          padding-inline: 0;
+    .video-hero {
+      .city-slider {
+        .slide {
+          .text-bg {
+            left: 0;
+          }
         }
       }
     }
