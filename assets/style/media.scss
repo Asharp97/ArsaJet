@@ -247,6 +247,20 @@
         }
       }
     }
+    .price-index {
+      .text-graph {
+        .graph {
+          .changeperyear {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+        .text {
+          max-width: 100%;
+        }
+      }
+    }
   }
   .contact-us-form {
     height: 550px;

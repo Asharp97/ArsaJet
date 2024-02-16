@@ -79,26 +79,7 @@
                 <div class="p4"> {{ n + 2018 }} </div>
               </div>
 
-              <div class="change-per-year">
-                <button>
-                  <div class="p4"> Minimum 1 Senelik Değişim
-                    <span>
-                      <Icon name="ph:caret-down-light" class="icon" />
-                    </span>
-                  </div>
-                  <q-menu fit transition-show="jump-down" transition-hide="jump-up">
-                    <q-list>
-                      <q-item clickable v-close-popup>
-                        Minimum 1 Senelik Değişim
-                      </q-item>
-                      <q-item clickable v-close-popup>
-                        Minimum 5 Senelik Değişim
-                      </q-item>
-                    </q-list>
-                  </q-menu>
-                </button>
-                <h1>%286,5</h1>
-              </div>
+              <ChangePerYear />
 
             </div>
           </div>
@@ -139,6 +120,7 @@
             vazgeçilmez kılıyor. Bu dinamik endeks, yatırımınızın gelecekteki getirisini garanti altına alıyor.</div>
           <div class="text-graph">
             <div class="graph">
+              <ChangePerYear class="mobile-show changeperyear" />
               <div class="chart" v-for="(       x, n       ) in        graph2       ">
                 <div class="p4"> {{ n + 2019 }} </div>
                 <div class="line scale-graph-h enter2" :class="'bg' + n" :style="{ width: x.height + 'px' }">
@@ -147,7 +129,7 @@
               </div>
             </div>
             <div class="text">
-              <div class="change-per-year">
+              <!-- <div class="change-per-year">
                 <button>
                   <div class="p4">
                     Minimum 1 Senelik Değişim
@@ -173,7 +155,8 @@
                   </q-menu>
                 </button>
                 <h1>%286,5</h1>
-              </div>
+              </div> -->
+              <ChangePerYear class="mobile-hide" />
               <div class="p3m">
                 Son 4 yılda Türkiye genelinde arsa ve tarla fiyatları %1146 seviyesinde önemli bir artış gösterdi. Her yıl
                 en az %286'lık bir yükseliş yaşandı. Bu istatistikler, Türkiye'nin gayrimenkul sektöründe önemli bir
