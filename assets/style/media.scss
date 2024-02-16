@@ -68,7 +68,7 @@
     }
   }
 }
-@media screen and (max-width: 1110px) { 
+@media screen and (max-width: 1110px) {
   body {
     zoom: 1;
   }
@@ -265,6 +265,7 @@
       .slides {
         .slide {
           gap: 20px;
+          flex-wrap: wrap;
 
           .img {
             flex-direction: row;

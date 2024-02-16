@@ -200,7 +200,6 @@
       }
     }
   }
-
 }
 
 .footer-fillform {
@@ -1697,13 +1696,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         gap: 100px;
         .text {
-          max-width: 850px;
+          max-width: 450px;
           h2 {
             margin-bottom: 34px;
-            width: 140%;
+            white-space: nowrap;
             span {
               color: $orange;
             }

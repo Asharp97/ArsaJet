@@ -31,7 +31,7 @@
             ve destek sunmaktadır.
           </div>
         </div>
-        <nuxt-img loading="lazy" class="img" src="fabrika.png" />
+        <nuxt-img loading="lazy" class="img" src="fabrika.jpg" />
 
       </swiper-slide>
       <swiper-slide class="slide">
