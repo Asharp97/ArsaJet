@@ -1,6 +1,8 @@
 <template>
-  <div class="hero " :class="{ 'marginbot': mb }">
+  <div class="hero ">
+    
     <nuxt-img loading="lazy" v-if="img" :width="width" class="landing-image scale-down " :src="`${img}`" />
+
     <div class="video-hero">
       <video v-if="video" autoplay muted loop class="video-src scale-down" :src=video>
       </video>
@@ -24,18 +26,13 @@
         </swiper-slide>
       </swiper>
 
-
-
       <div v-if="text" class="hero-content container escape-up exit" :class="{ 'invest': invest }">
         <div class="text ">
           <!-- elastic-exit -->
           <div class="p1">LANDCLUB ile</div>
-          <div class="display" :class="'display' + n" v-for="(t, n) in text">{{ t }} <br></div>
+          <div class="display" :class="'display' + n" v-for="(t, n) in text">{{ t }}</div> <br>
         </div>
       </div>
-
-      <!-- <img src="../assets/WP.svg" class="whatsapp" alt=""> -->
-
 
       <Wellcall />
 
@@ -49,9 +46,9 @@
 import { useWindowSize } from '@vueuse/core'
 const { width, height } = useWindowSize()
 
-const props = defineProps(['text', 'img', 'mb', 'video', 'slides', 'invest']);
+const props = defineProps(['text', 'img', 'video', 'slides', 'invest']);
 
-// import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
@@ -63,14 +60,8 @@ const modules = [Pagination, Autoplay]
 @import '../assets/style/variables.scss';
 @import '../assets/style/animations.scss';
 
-.marginbot {
-  margin-bottom: $sectionGap;
-}
-
 .invest {
   color: $darkGray !important;
-  // color: black !important;
-
   justify-content: flex-end;
 
   .text {

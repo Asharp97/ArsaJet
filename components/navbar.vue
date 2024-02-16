@@ -72,10 +72,6 @@
           </ul>
         </nav>
 
-        <div class="login" @click="showLogin = !showLogin" v-if="false">
-          Giriş Yap
-        </div>
-
         <div class="mobile-show" ref="el">
           <nav class="mobile-menu" :class="{ 'hide-menu': !showMenu }">
             <button @click="showMenu = !showMenu" class="close">
@@ -101,6 +97,11 @@
               <NuxtLink to="/invest">
                 <li>
                   Nasıl yatırım yapabilirim?
+                </li>
+              </NuxtLink>
+              <NuxtLink to="/whyeskisehir">
+                <li>
+                  Neden Eskişehir
                 </li>
               </NuxtLink>
               <NuxtLink to="/aboutus">
@@ -142,38 +143,6 @@
 
       </div>
     </div>
-    <div class="login-screen" ref="loginScreen" :class="showLogin ? 'showLogin' : 'hideLogin'" v-if="false">
-      <nuxt-img loading="lazy" class="img-bg" src="forest-bg.jpg" />
-      <div class="login-inner container">
-
-        <Icon @click="showLogin = !showLogin" name="material-symbols:close-rounded" class="close" />
-        <div class="display">
-          <img src="../assets/Logo.svg" alt="">
-          <span> LandClub </span>
-        </div>
-        <h2>Değerini kaybetmeyen yatırım : Toprak</h2>
-        <div class="p3sb">Lorem ipsum dolor sit amet consectetur. Dui morbi elit sed vel placerat. Mollis sapien vulputate
-          at suscipit eget lectus dictum senectus eu. Sit commodo facilisi consequat eget. Quis mauris semper turpis etiam
-          morbi ac nunc lorem. Mauris elementum varius proin erat neque nunc aliquam blandit. Magna a pharetra nunc odiom.
-        </div>
-        <form action="">
-          <input type="text" placeholder="Mail Adresiniz Giriniz">
-          <input type="password" placeholder="Şifrenizi Giriniz">
-        </form>
-        <div class="action">
-          <button>
-            <div class="p3">Giriş Yap</div>
-          </button>
-          <div class="p4">Şifremi unuttum</div>
-        </div>
-        <button class="reference">Referans Kodum Var</button>
-        <div class="socials">
-          <div class="social" v-for="x in socials">
-            <Icon :name="x.name" class="icon" />
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -182,9 +151,6 @@ const showLogin = ref(false)
 const showMenu = ref(false)
 
 const route = useRoute()
-
-// const loginScreen = ref(null)
-// const scrollLock = useScrollLock(loginScreen)
 
 watch(
   () => showLogin.value,
@@ -199,23 +165,5 @@ watch(
   () => { showMenu.value = false }
 )
 
-import content from "../../assets/content.json"
-const socials = content.socials
-
-
 </script>
 
-
-<style lang="scss" scoped>
-.navbar {
-  .showLogin {
-    animation: circle-up-enter 1s cubic-bezier(1, 0.04, 0, 1);
-    visibility: visible;
-  }
-
-  .hideLogin {
-    animation: circle-up-exit 1s forwards;
-    visibility: visible;
-  }
-}
-</style>

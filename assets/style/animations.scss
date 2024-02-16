@@ -41,51 +41,6 @@
   }
 }
 
-@keyframes slide-out {
-  0% {
-    scale: 1;
-    transform: translateX(0);
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(3px);
-  }
-  30% {
-    scale: 1;
-    backdrop-filter: blur(0px);
-    background-color: rgba(0, 0, 0, 0);
-  }
-  50% {
-    scale: 0.9;
-    transform: translateX(0);
-  }
-  70% {
-    transform: translateX(110%);
-  }
-
-  100% {
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(0px);
-    transform: translateX(110%);
-    scale: 0.9;
-  }
-}
-
-@keyframes circle-up-enter {
-  0% {
-    clip-path: circle(0 at 50% 50%);
-  }
-  100% {
-    clip-path: circle(100% at 50% 50%);
-  }
-}
-@keyframes circle-up-exit {
-  0% {
-    clip-path: circle(90% at 50% 50%);
-  }
-
-  100% {
-    clip-path: circle(0 at 50% 50%);
-  }
-}
 
 @keyframes fade-in {
   from {
@@ -180,7 +135,7 @@
     border-radius: 50%;
   }
   80% {
-    scale: 1.1;
+    scale: 1 1.1;
   }
   100% {
     scale: 1;
