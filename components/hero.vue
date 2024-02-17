@@ -1,6 +1,6 @@
 <template>
-  <div class="hero ">
-    
+  <div class="hero " :class="{ 'invest': invest }">
+
     <nuxt-img loading="lazy" v-if="img" :width="width" class="landing-image scale-down " :src="`${img}`" />
 
     <div class="video-hero">
@@ -8,12 +8,8 @@
       </video>
 
 
-      <swiper v-if="slides" :pagination="{
-        clickable: true,
-      }" :loop="true" :autoplay="{
-  delay: 5000,
-  disableOnInteraction: false,
-}" :modules="modules" class="city-slider scale-down">
+      <swiper v-if="slides" :pagination="{ clickable: true }" :loop="true"
+        :autoplay="{ delay: 5000, disableOnInteraction: false }" :modules="modules" class="city-slider scale-down">
         <swiper-slide v-for="slide in slides" class="slide">
           <nuxt-img loading="lazy" class="img" :src=slide.img />
           <div class="container">
@@ -26,7 +22,7 @@
         </swiper-slide>
       </swiper>
 
-      <div v-if="text" class="hero-content container escape-up exit" :class="{ 'invest': invest }">
+      <div v-if="text" class="hero-content container escape-up exit">
         <div class="text ">
           <!-- elastic-exit -->
           <div class="p1">LANDCLUB ile</div>
@@ -61,11 +57,19 @@ const modules = [Pagination, Autoplay]
 @import '../assets/style/animations.scss';
 
 .invest {
-  color: $darkGray !important;
-  justify-content: flex-end;
+  .landing-image {
+    object-position: -90px;
+    filter: brightness(1);
+  }
 
-  .text {
-    max-width: 600px;
+  .hero-content {
+    color: $darkGray !important;
+    justify-content: flex-end;
+
+    .text {
+      max-width: 600px;
+    }
+
   }
 
 }
