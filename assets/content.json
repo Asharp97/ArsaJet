@@ -466,16 +466,16 @@
   ],
   "choice": [
     {
-      "img": "gold.png",
-      "choose": "Altın mı Arazi mi?",
-      "text": "Altın doğrudan topraktan çıkan bir madendir. Topraktan çıkan bu değerli maden yatırım araçlarından biridir. Ama uzun vadede, tarım arazilerine yapılan yatırımların, uzun vadede daha fazla kazanç potansiyeli sunabilir.",
-      "change": [568, 321, 4323, 342, 900, 324]
-    },
-    {
       "img": "dolar.png",
       "choose": "Dolar mı Arazi mi?",
       "text": "Altın doğrudan topraktan çıkan bir madendir. Topraktan çıkan bu değerli maden yatırım araçlarından biridir. Ama uzun vadede, tarım arazilerine yapılan yatırımların, uzun vadede daha fazla kazanç potansiyeli sunabilir.",
       "change": [568, 321, 4323, 342, 9090, 324]
+    },
+    {
+      "img": "gold.png",
+      "choose": "Altın mı Arazi mi?",
+      "text": "Altın doğrudan topraktan çıkan bir madendir. Topraktan çıkan bu değerli maden yatırım araçlarından biridir. Ama uzun vadede, tarım arazilerine yapılan yatırımların, uzun vadede daha fazla kazanç potansiyeli sunabilir.",
+      "change": [568, 321, 4323, 342, 900, 324]
     },
     {
       "img": "euro.png",

@@ -79,9 +79,9 @@
       </section>
 
       <section class="of-hide">
-        <div class="container">
+        <div>
           <SmoothImgSlide folder="home-smooth" />
-          <div class="p1 gray" style="margin-top: 20px;">LANDCLUB ile Yaşam Kalitenizi Arttırın.</div>
+          <div class="p1 gray container" style="margin-top: 20px;">LANDCLUB ile Yaşam Kalitenizi Arttırın.</div>
         </div>
       </section>
 
@@ -102,8 +102,8 @@
           <div class="p1">LANDCLUB olarak kaygılarınızı anlıyoruz. </div>
           <h1 class="cover-remove">Ne Zaman Değerlenir? Ne kadar Değerlenir? </h1>
           <div class="ro">
-            <div class="text">
-              <div class="num"> 01 </div>
+            <div class="text from-below">
+              <div class="num "> 01 </div>
               <h2>Kaygılarınızı Anlıyoruz.</h2>
 
               <div class="p3m">Hisseli arazi yatırımlarını önermiyoruz çünkü orta ve uzun vadede diğer hissedarların
@@ -113,7 +113,7 @@
                 neden olabilir.
               </div>
             </div>
-            <div class="text">
+            <div class="text from-below" style="animation-range: cover 35% cover 45%;">
               <div class="num"> 02 </div>
               <h2>Ne Zaman Değerlenir?</h2>
               <div class="p3m">
@@ -125,17 +125,15 @@
           </div>
 
           <div class="ro">
-            <div class="text">
-              <div class="num">
-                03
-              </div>
+            <div class="text from-below">
+              <div class="num "> 03 </div>
 
               <h2>Ne Kadar Değerlenir?</h2>
               <div class="p3m">Aldığımız arazi, doğru yerden ve doğru fiyattan alındığında, orta ve uzun vadede yıllık
                 enflasyon, döviz ve altın bazında 1x1 ile 1x3 arasında değişkenlik gösteriyor.
               </div>
             </div>
-            <div class="text">
+            <div class="text from-below" style="animation-range: cover 35% cover 45%;">
               <div class="num">
                 04
               </div>
