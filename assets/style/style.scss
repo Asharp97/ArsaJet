@@ -263,6 +263,7 @@
   .video-hero {
     position: relative;
     display: flex;
+    align-items: flex-end;
     height: 100%;
     width: 100%;
 
@@ -314,9 +315,8 @@
     .hero-content {
       display: flex;
       align-items: flex-end;
-      height: fit-content;
+      // height: fit-content;
       z-index: 2;
-      margin-top: auto;
       padding-bottom: 78px;
       color: white;
       .text {

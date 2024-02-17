@@ -1,7 +1,11 @@
 <template>
   <div class="hero " :class="{ 'invest': invest }">
 
-    <nuxt-img loading="lazy" v-if="img" :width="width" class="landing-image scale-down " :src="`${img}`" />
+    <!-- <nuxt-img loading="lazy" v-if="img"  class="landing-image scale-down " :src="`${img}`" /> -->
+    <!-- :width="width" -->
+
+    <img v-if="img" :src="`https://ik.imagekit.io/sharp/arsajet/${img}`" alt="" class="landing-image">
+    <!-- /tr:w-${width} -->
 
     <div class="video-hero">
       <video v-if="video" autoplay muted loop class="video-src scale-down" :src=video>
