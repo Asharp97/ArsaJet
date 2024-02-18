@@ -28,6 +28,7 @@ export default defineNuxtConfig({
       baseURL: "https://ik.imagekit.io/sharp/arsajet/",
       modifiers: {
         format: "webp",
+        fit: "cover",
       },
     },
   },

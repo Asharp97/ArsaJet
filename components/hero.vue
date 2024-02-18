@@ -1,21 +1,23 @@
 <template>
   <div class="hero " :class="{ 'invest': invest }">
+    <!-- xs:320px sm:640px md:768px  -->
+    <!-- xl:1280px xxl:1536px 2xl:1536px -->
+    <nuxt-img preload v-if="img" class="landing-image" :src="`${img}`" 
+    
+    sizes="lg:1024px 500px"
+    />
+    <!-- scale-down -->
 
-    <!-- <nuxt-img loading="lazy" v-if="img"  class="landing-image scale-down " :src="`${img}`" /> -->
-    <!-- :width="width" -->
-
-    <img v-if="img" :src="`https://ik.imagekit.io/sharp/arsajet/${img}`" alt="" class="landing-image">
-    <!-- /tr:w-${width} -->
+    <!-- <img v-if="img" :src="`https://ik.imagekit.io/sharp/arsajet/${img}/tr:w-${width}`" alt="" class="landing-image"> -->
 
     <div class="video-hero">
-      <video v-if="video" autoplay muted loop class="video-src scale-down" :src=video>
+      <video v-if="video" autoplay muted loop class="video-src " :src=video>
+        <!-- scale-down -->
       </video>
 
-      <!-- :pagination="{ clickable: true }" :loop="true"
-        :autoplay="{ delay: 5000, disableOnInteraction: false }" :modules="modules" -->
-
-      <swiper v-if="slides" 
-         class="city-slider scale-down">
+      <swiper v-if="slides" :pagination="{ clickable: true }" :loop="true"
+        :autoplay="{ delay: 5000, disableOnInteraction: false }" :modules="modules" class="city-slider ">
+        <!-- scale-down -->
         <swiper-slide v-for="slide in slides" class="slide">
           <nuxt-img loading="lazy" class="img" :src=slide.img />
           <div class="container">
@@ -28,7 +30,8 @@
         </swiper-slide>
       </swiper>
 
-      <div v-if="text" class="hero-content container escape-up exit">
+      <div v-if="text" class="hero-content container ">
+        <!-- escape-up exit -->
         <div class="text ">
           <!-- elastic-exit -->
           <div class="p1">LANDCLUB ile</div>
@@ -40,14 +43,10 @@
 
     </div>
 
-
   </div>
 </template>
 
 <script setup lang="ts">
-import { useWindowSize } from '@vueuse/core'
-const { width, height } = useWindowSize()
-
 const props = defineProps(['text', 'img', 'video', 'slides', 'invest']);
 
 import { Swiper, SwiperSlide } from 'swiper/vue';

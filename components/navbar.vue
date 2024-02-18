@@ -29,40 +29,34 @@
               <span>
                 <Icon name="ph:caret-down-light" class="icon" />
               </span>
-              <q-menu fit transition-show="jump-down" transition-hide="jump-up">
-                <q-list>
-                  <q-item clickable v-close-popup>
-                    <NuxtLink to="/whyeskisehir" style="display: flex;align-items: center;">
-                      <q-item-section>Eskişehir</q-item-section>
-                    </NuxtLink>
-                  </q-item>
-                </q-list>
-              </q-menu>
+              <div class="menu-bg">
+                <div class="menu">
+                  <NuxtLink to="/whyeskisehir" class="item">
+                    <q-item-section>Eskişehir</q-item-section>
+                  </NuxtLink>
+                </div>
+              </div>
+
             </li>
             <li>
               Kurumsal
               <span>
                 <Icon name="ph:caret-down-light" class="icon" />
               </span>
-              <q-menu fit transition-show="jump-down" transition-hide="jump-up">
-                <q-list>
-                  <q-item clickable v-close-popup>
-                    <NuxtLink to="/invest" style="display: flex;align-items: center;">
-                      <q-item-section>Nasıl yatırım yapabilirim?</q-item-section>
-                    </NuxtLink>
-                  </q-item>
-                  <q-item clickable v-close-popup>
-                    <NuxtLink to="/faq" style="display: flex;align-items: center;">
-                      <q-item-section>Aklınızda soru kalmasın</q-item-section>
-                    </NuxtLink>
-                  </q-item>
-                  <q-item clickable v-close-popup>
-                    <NuxtLink to="/aboutus" style="display: flex;align-items: center;">
-                      <q-item-section>Hakkımızda</q-item-section>
-                    </NuxtLink>
-                  </q-item>
-                </q-list>
-              </q-menu>
+              <div class="menu-bg">
+                <div class="menu">
+                  <NuxtLink to="/invest" class="item">
+                    <q-item-section>Nasıl yatırım yapabilirim?</q-item-section>
+                  </NuxtLink>
+                  <NuxtLink to="/faq" class="item">
+                    <q-item-section>Aklınızda soru kalmasın</q-item-section>
+                  </NuxtLink>
+
+                  <NuxtLink to="/aboutus" class="item">
+                    <q-item-section>Hakkımızda</q-item-section>
+                  </NuxtLink>
+                </div>
+              </div>
             </li>
             <li>
               <NuxtLink to="/contact">

@@ -14,6 +14,20 @@
   }
 }
 
+@keyframes pop {
+  from {
+    scale: 0;
+    border-radius: 50%;
+  }
+  90% {
+    border-radius: 10px;
+    scale: 1.1;
+  }
+  to {
+    scale: 1;
+  }
+}
+
 @keyframes slide-in {
   0% {
     scale: 0.9;
@@ -40,7 +54,6 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
-
 
 @keyframes fade-in {
   from {
