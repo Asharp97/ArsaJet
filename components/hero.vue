@@ -11,9 +11,11 @@
       <video v-if="video" autoplay muted loop class="video-src scale-down" :src=video>
       </video>
 
+      <!-- :pagination="{ clickable: true }" :loop="true"
+        :autoplay="{ delay: 5000, disableOnInteraction: false }" :modules="modules" -->
 
-      <swiper v-if="slides" :pagination="{ clickable: true }" :loop="true"
-        :autoplay="{ delay: 5000, disableOnInteraction: false }" :modules="modules" class="city-slider scale-down">
+      <swiper v-if="slides" 
+         class="city-slider scale-down">
         <swiper-slide v-for="slide in slides" class="slide">
           <nuxt-img loading="lazy" class="img" :src=slide.img />
           <div class="container">

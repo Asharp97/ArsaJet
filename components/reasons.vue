@@ -1,39 +1,7 @@
 <template>
   <div>
     <swiper @slideNextTransitionStart="next()" @slidePrevTransitionStart="prev()" class="slides">
-      <swiper-slide class="slide">
-        <div class="text">
-          <h2>
-            <span> Maden kaynakları </span> ile zengin şehir!
-          </h2>
-          <div class="p3m">Eskişehir, çeşitli maden kaynaklarıyla zenginleşmiş bir bölge olarak bilinir. Özellikle
-            linyit kömürü, bor, manyezit, talk, zeolit ve trona gibi madenlerle ön plana çıkan şehirde, 75 firma
-            faaliyet göstermekte ve yaklaşık 3.800 kişi istihdam edilmektedir.
-            <br>
-            <br>
-            Türkiye’de önemli tinkal yatakları Seyitgazi’ye bağlı Kırka’da bulunuyor.
-          </div>
-        </div>
-        <nuxt-img loading="lazy" class="img" src="kristal.png" />
-
-      </swiper-slide>
-      <swiper-slide class="slide">
-        <div class="text">
-          <h2> Eskişehir’in <span> Sanayisi </span> </h2>
-          <div class="p3m">
-
-            Eskişehir, son yıllarda hızla gelişen bir sanayi merkezi haline gelmiştir. Ülkemizin tek Uçak Motor
-            Fabrikası (TUSAŞ) ile Dizel Lokomotif motoru üreten tek fabrikası (TÜLOMSAŞ) Eskişehir’de bulunmaktadır.
-            Ayrıca şehrin ekonomisinin %39’unu şehrin sanayisi sağlamaktadır.
-            <br>
-            <br>
-            Ayrıca, Eskişehir'deki organize sanayi bölgeleri ve endüstriyel alanlar, yatırımcılar için uygun altyapı
-            ve destek sunmaktadır.
-          </div>
-        </div>
-        <nuxt-img loading="lazy" class="img" src="fabrika.jpg" />
-
-      </swiper-slide>
+      
       <swiper-slide class="slide">
         <div class="text">
           <h2> Eskişehir’in <span> Popülasyonu</span> </h2>
@@ -54,6 +22,42 @@
 
         </div>
       </swiper-slide>
+
+      <swiper-slide class="slide">
+        <div class="text">
+          <h2>
+            <span> Maden kaynakları </span> ile zengin şehir!
+          </h2>
+          <div class="p3m">Eskişehir, çeşitli maden kaynaklarıyla zenginleşmiş bir bölge olarak bilinir. Özellikle
+            linyit kömürü, bor, manyezit, talk, zeolit ve trona gibi madenlerle ön plana çıkan şehirde, 75 firma
+            faaliyet göstermekte ve yaklaşık 3.800 kişi istihdam edilmektedir.
+            <br>
+            <br>
+            Türkiye’de önemli tinkal yatakları Seyitgazi’ye bağlı Kırka’da bulunuyor.
+          </div>
+        </div>
+        <nuxt-img loading="lazy" class="img" src="kristal.png" />
+
+      </swiper-slide>
+
+      <swiper-slide class="slide">
+        <div class="text">
+          <h2> Eskişehir’in <span> Sanayisi </span> </h2>
+          <div class="p3m">
+
+            Eskişehir, son yıllarda hızla gelişen bir sanayi merkezi haline gelmiştir. Ülkemizin tek Uçak Motor
+            Fabrikası (TUSAŞ) ile Dizel Lokomotif motoru üreten tek fabrikası (TÜLOMSAŞ) Eskişehir’de bulunmaktadır.
+            Ayrıca şehrin ekonomisinin %39’unu şehrin sanayisi sağlamaktadır.
+            <br>
+            <br>
+            Ayrıca, Eskişehir'deki organize sanayi bölgeleri ve endüstriyel alanlar, yatırımcılar için uygun altyapı
+            ve destek sunmaktadır.
+          </div>
+        </div>
+        <nuxt-img loading="lazy" class="img" src="fabrika.jpg" />
+
+      </swiper-slide>
+
     </swiper>
     <div class="pagination">
       <div class="dots" v-for="(pag, n) in  3" :class="{ 'active-pagination': n == slideIndex }">
