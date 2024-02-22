@@ -5,7 +5,7 @@
     </div>
     <h1>Min. 160.000 Maks. 640.000 ₺’ye <br> Geleceğe Yatırım Yapabilirsiniz. Ya da İsterseniz...</h1>
 
-    <swiper @slideNextTransitionStart="next()" @slidePrevTransitionStart="prev()" class="mySwiper">
+    <swiper @slideNextTransitionStart="next()" @slidePrevTransitionStart="prev()" class="mySwiper" :spaceBetween="10">
       <swiper-slide class=" slide" v-for="x in choice2">
         <div class="imgWrapper">
           <nuxt-img loading="lazy" class="img" :src="x.img" />

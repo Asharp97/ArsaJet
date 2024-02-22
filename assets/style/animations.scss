@@ -173,18 +173,18 @@
 
 @keyframes floater {
   0% {
-    transform: translateY(50px);
+    transform: translateY(40px);
   }
   50% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(50px);
+    transform: translateY(40px);
   }
 }
 
 .float {
-  animation: floater 10s infinite;
+  animation: floater 5s infinite;
 }
 
 @keyframes from-above {

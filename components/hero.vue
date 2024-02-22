@@ -2,10 +2,7 @@
   <div class="hero " :class="{ 'invest': invest }">
     <!-- xs:320px sm:640px md:768px  -->
     <!-- xl:1280px xxl:1536px 2xl:1536px -->
-    <nuxt-img preload v-if="img" class="landing-image" :src="`${img}`" 
-    
-    sizes="lg:1024px 500px"
-    />
+    <nuxt-img preload v-if="img" class="landing-image" :src="`${img}`" sizes="lg:1024px 500px" />
     <!-- scale-down -->
 
     <!-- <img v-if="img" :src="`https://ik.imagekit.io/sharp/arsajet/${img}/tr:w-${width}`" alt="" class="landing-image"> -->
@@ -76,6 +73,19 @@ const modules = [Pagination, Autoplay]
     }
 
   }
+
+  @media screen and (max-width: 450px) {
+    .hero-content {
+      justify-content: center;
+
+      .text {
+        background-color: rgba(255, 255, 255, 0.369);
+        padding: 15px;
+        border-radius: 15px;
+      }
+    }
+  }
+
 
 }
 

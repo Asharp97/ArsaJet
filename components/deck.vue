@@ -8,7 +8,7 @@
           <div class="p2">{{ card.details }}</div>
         </swiper-slide>
       </swiper>
-      <div class="p2 subtitle">
+      <div class="p1 subtitle">
         <span>
           <Icon name="ic:baseline-star" class="icon star" />
         </span>
@@ -75,13 +75,13 @@ const clickHandle2 = () => {
 
     .subtitle {
       max-width: 418px;
-      margin-top: 70px;
+      margin-top: 30px;
     }
 
     .cards {
       .swiper-wrapper {
         // max-width: 500px;
-        width: 100%;
+        // width: 100%;
       }
 
       .card {
@@ -107,8 +107,14 @@ const clickHandle2 = () => {
         gap: 15px;
         padding: 30px;
 
+        
         .icon {
           font-size: 40px;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        .card {
+          height: fit-content
         }
       }
 

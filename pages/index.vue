@@ -58,7 +58,7 @@
       <section>
         <div class="increase-slide-bg from-below-blur enter-middle">
           <div class="increase-slide m-container">
-            <div v-for="( inc, n ) in   increase" :class="{ 'final': n == increase.length - 1 }">
+            <div v-for="( inc, n ) in   increase" :class="[{ 'final': n == increase.length - 1 }, { 'mobile-hide': n == 0 }]">
               <h3 v-if="n != increase.length - 1">
                 {{ 2019 + n }}
               </h3>
@@ -80,8 +80,7 @@
 
       <section class="of-hide">
         <div>
-          <SmoothImgSlide folder="home-smooth" />
-          <div class="p1 gray container" style="margin-top: 20px;">LANDCLUB ile Yaşam Kalitenizi Arttırın.</div>
+          <SmoothImgSlide folder="home-smooth" text="LANDCLUB ile Yaşam Kalitenizi Arttırın."/>
         </div>
       </section>
 

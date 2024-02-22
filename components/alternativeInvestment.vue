@@ -10,7 +10,7 @@
           <table>
             <thead>
               <tr>
-                <th v-for="n in 6">
+                <th v-for="n in 6" :class="{ 'mobile-hide': n == 1 }">
                   <h4 v-if="n < 6">{{ 2018 + n }}</h4>
                   <h4 v-else>Şu an</h4>
                 </th>
@@ -18,7 +18,7 @@
             </thead>
             <tbody>
               <tr>
-                <td v-for="n in x.change">
+                <td v-for="(n, x) in x.change" :class="{ 'mobile-hide': x == 0 }">
                   <div class="p1"> {{ n }} ₺ </div>
                 </td>
               </tr>

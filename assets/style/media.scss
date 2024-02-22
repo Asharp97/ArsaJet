@@ -10,6 +10,9 @@
   .smallScreenHide {
     display: none !important;
   }
+  .pagination {
+    margin-top: 10px;
+  }
 
   .listings {
     .filter-listing-row {
@@ -51,6 +54,9 @@
       }
     }
   }
+  .mobile-hide {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 830px) {
   .home {
@@ -82,7 +88,7 @@
   }
   //reusables
   .gap {
-    gap: 70px;
+    gap: 100px;
   }
   .logo {
     font-size: 21.8px;
@@ -102,9 +108,7 @@
       }
     }
   }
-  .mobile-hide {
-    display: none !important;
-  }
+
   .mobile-show {
     display: flex !important;
   }
@@ -360,6 +364,13 @@
   .listing-details {
     h4 {
       font-weight: 600;
+    }
+    .land-gallery{
+      .gallery{
+        .imgWrapper{
+          height: unset;
+        }
+      }
     }
     .details {
       gap: 35px;

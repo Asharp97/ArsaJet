@@ -26,7 +26,9 @@
               <div class="p3m">Sitemizde iletişim bölümünde bulunan formu doldurmanız sizinle iletişim kurmamız için
                 yeterli
                 olacaktır. Ardından zoom toplantısı planlayıp sizleri daha yakından tanıma fırsatı bulmuş olacağız.</div>
-              <img src="../assets/zoom.svg" alt="">
+                <NuxtLink to="https://zoom.us/">
+                  <img src="../assets/zoom.svg" alt="">
+                </NuxtLink>
             </div>
 
           </div>

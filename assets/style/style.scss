@@ -645,18 +645,21 @@
     transform: translateX(-100%);
   }
 }
-.smooth-img-slide-wrapper {
-  display: flex;
-  gap: 46px;
-  .smooth-img-slide {
+.smooth-img-slide-comp {
+  padding-block: 40px;
+  .smooth-img-slide-wrapper {
     display: flex;
     gap: 46px;
-    animation: 20s smooth-slider infinite linear;
+    .smooth-img-slide {
+      display: flex;
+      gap: 46px;
+      animation: 20s smooth-slider infinite linear;
 
-    .img {
-      max-width: 316px;
-      height: 404px;
-      object-fit: cover;
+      .img {
+        max-width: 316px;
+        height: 404px;
+        object-fit: cover;
+      }
     }
   }
 }
@@ -680,7 +683,7 @@
       margin-inline: auto;
       align-items: flex-start;
       .img {
-        margin-top: 2rem;
+        margin-block: 3rem;
         width: 100%;
         max-width: 700px;
         margin-inline: auto;
@@ -858,15 +861,16 @@
         color: $darkGray;
         margin-bottom: 18px;
       }
+      .swiper-wrapper {
+        // height: 450px;
+      }
       .imgWrapper {
         width: 100%;
         display: flex;
         justify-content: center;
         .img {
-          // width: 100%;
+          width: 100%;
           // max-width: 790px;
-          height: 450px;
-          object-fit: cover;
         }
       }
       .text {
@@ -1439,6 +1443,7 @@
     }
   }
   .closer-look {
+    text-align: center;
     .swiper {
       .slide {
         .img {
@@ -1557,6 +1562,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         padding-inline: 44px;
+        gap: 30px;
         margin-top: 51px;
         .half {
           width: 45%;
@@ -1600,7 +1606,7 @@
     .img {
       filter: brightness(0.5);
       width: 100%;
-      height: $heroHeight;
+      height: 700px;
       object-fit: cover;
     }
   }
@@ -2183,18 +2189,18 @@
   gap: $sectionGap;
 }
 .m-container {
-  width: 99%;
+  width: 90%;
   margin-inline: auto;
   max-width: 1014px;
 }
 
 .container {
-  width: 99%;
+  width: 90%;
   margin-inline: auto;
   max-width: 1193px;
 }
 .sm-container {
-  width: 99%;
+  width: 90%;
   margin-inline: auto;
   max-width: 900px;
 }

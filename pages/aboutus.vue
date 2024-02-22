@@ -24,8 +24,7 @@
       </section>
 
       <section class="of-hide old-images">
-        <SmoothImgSlide folder="home-smooth" />
-        <div class="p1 container">LandClub ile daha yatırımlarımıza bakın</div>
+        <SmoothImgSlide folder="home-smooth" text="LandClub ile daha yatırımlarımıza bakın"/>
       </section>
 
       <section class="white-bg">
