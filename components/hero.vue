@@ -5,10 +5,9 @@
     <nuxt-img preload v-if="img" class="landing-image" :src="`${img}`" sizes="lg:1024px 500px" />
     <!-- scale-down -->
 
-    <!-- <img v-if="img" :src="`https://ik.imagekit.io/sharp/arsajet/${img}/tr:w-${width}`" alt="" class="landing-image"> -->
-
     <div class="video-hero">
-      <video v-if="video" autoplay muted loop class="video-src " :src=video>
+      <video v-if="video" class="video-src" autoplay muted playsinline loop
+        src='https://res.cloudinary.com/dbkxdwfml/video/upload/g_center,vc_h264:main/v1708331115/hero-video.mp4'>
         <!-- scale-down -->
       </video>
 
@@ -36,7 +35,14 @@
         </div>
       </div>
 
-      <Wellcall />
+      <button @click="modal.toggleModal">
+        <div class="wellcall"> Sizi Arayalım </div>
+      </button>
+
+      <Teleport to="body">
+        <WellCallForm :show="modal.show.value" @close="modal.toggleModal" />
+      </Teleport>
+
 
     </div>
 
@@ -46,11 +52,14 @@
 <script setup lang="ts">
 const props = defineProps(['text', 'img', 'video', 'slides', 'invest']);
 
+const modal = useModal();
+
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 const modules = [Pagination, Autoplay]
+
 
 </script>
 

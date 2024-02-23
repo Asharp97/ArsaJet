@@ -164,6 +164,15 @@
           </ul>
 
         </div>
+        <div class="guide">
+          <span>
+            Maximum Add photos of
+          </span>
+          Resolution: 72 ppi  <br>
+          height: 500px <br>
+          width: 800px <br>
+          formate: JPG <br>
+        </div>
 
         <btn2 text="Ilan Ekle" @click="postAd()" />
       </div>
@@ -184,7 +193,7 @@
           </q-card-section>
           <q-card-actions align="right">
 
-              <btn2 :inv="true" text="Okay" @click="overlay = false" />
+            <btn2 :inv="true" text="Okay" @click="overlay = false" />
 
           </q-card-actions>
         </q-card>
@@ -419,9 +428,10 @@ const getImgURL = async (name, i) => {
 
 .clients,
 .ads {
-  th{
+  th {
     background-color: $offwhite;
   }
+
   tr {
     &:nth-child(odd) {
       background-color: white;

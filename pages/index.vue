@@ -2,7 +2,9 @@
   <div class="home">
     <section>
       <hero :text="['Değerini', 'Kaybetmeyen', 'Yatırım: Toprak!']"
-        :video="`https://ik.imagekit.io/sharp/arsajet/video.mp4`" />
+        :video="true" />
+        <!-- `https://res.cloudinary.com/dbkxdwfml/video/upload/g_center,vc_h264:main/v1708331115/hero-video.mp4` -->
+      <!-- :video="`https://ik.imagekit.io/sharp/arsajet/video.mp4`"  -->
       <!-- ?tr=w-${width} -->
     </section>
 
@@ -26,7 +28,7 @@
                 <br /> Ne Borsa <br />
                 Gelecekte En Kârlı Yatırım Arsa!
               </h1>
-              <Btn2 class="button" inv="true">
+              <Btn2 class="button" inv="true" @click="modal.toggleModal">
 
                 <div class="p1">
                   Detaylı Bilgi Alın
@@ -58,7 +60,8 @@
       <section>
         <div class="increase-slide-bg from-below-blur enter-middle">
           <div class="increase-slide m-container">
-            <div v-for="( inc, n ) in   increase" :class="[{ 'final': n == increase.length - 1 }, { 'mobile-hide': n == 0 }]">
+            <div v-for="( inc, n ) in   increase"
+              :class="[{ 'final': n == increase.length - 1 }, { 'mobile-hide': n == 0 }]">
               <h3 v-if="n != increase.length - 1">
                 {{ 2019 + n }}
               </h3>
@@ -80,7 +83,7 @@
 
       <section class="of-hide">
         <div>
-          <SmoothImgSlide folder="home-smooth" text="LANDCLUB ile Yaşam Kalitenizi Arttırın."/>
+          <SmoothImgSlide folder="home-smooth" text="LANDCLUB ile Yaşam Kalitenizi Arttırın." />
         </div>
       </section>
 
@@ -193,7 +196,7 @@
           <h1 class="cover-remove">Yatırım Yaparken Neleri Öneriyoruz?</h1>
           <deck />
 
-          <Btn2 class="button">
+          <Btn2 class="button" @click="modal.toggleModal">
             <div class="p1">
               Detaylı Bilgi Alın
               <Icon name="material-symbols:chevron-right-rounded" class="icon" />
@@ -217,6 +220,9 @@
 
     </div>
   </div>
+  <Teleport to="body">
+    <WellCallForm :show="modal.show.value" @close="modal.toggleModal" />
+  </Teleport>
 </template>
 
 <script setup>
@@ -230,6 +236,7 @@ const cityGrid = content.cityGrid
 import { useWindowSize } from '@vueuse/core'
 const { width, height } = useWindowSize()
 
+const modal = useModal();
 </script>
 
 <style lang="scss" scoped>

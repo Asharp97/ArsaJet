@@ -57,6 +57,9 @@
   .mobile-hide {
     display: none !important;
   }
+  .mobile-show {
+    display: flex !important;
+  }
 }
 @media screen and (max-width: 830px) {
   .home {
@@ -109,9 +112,7 @@
     }
   }
 
-  .mobile-show {
-    display: flex !important;
-  }
+
 
   .features {
     .swiper {
@@ -268,6 +269,11 @@
       }
     }
     .minerals {
+      .swiper-wrapper {
+        display: flex;
+        align-items: flex-start;
+      }
+
       .slides {
         .slide {
           gap: 20px;
@@ -365,9 +371,9 @@
     h4 {
       font-weight: 600;
     }
-    .land-gallery{
-      .gallery{
-        .imgWrapper{
+    .land-gallery {
+      .gallery {
+        .imgWrapper {
           height: unset;
         }
       }

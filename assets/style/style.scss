@@ -395,31 +395,6 @@
       top: 50%;
       font-size: 20px;
     }
-    .callyou-form {
-      transition: 500ms ease-in-out;
-      position: fixed;
-      z-index: 10;
-      top: 0;
-      bottom: 0;
-      height: 100%;
-      right: 0;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background-color: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(3px);
-
-      .form-bg {
-        border-radius: 14px;
-        padding: 24px 42px;
-        width: fit-content;
-        z-index: 9;
-        max-width: 451px;
-        background-color: $offwhite;
-      }
-    }
   }
 }
 
@@ -1990,6 +1965,15 @@
   td {
     text-align: start;
     border: 1px solid $offwhite;
+  }
+  .guide {
+    span {
+      font-size: 14px;
+    }
+    color: $darkGray;
+    font-size: 12px;
+    margin-block: 20px;
+    max-width: 200px;
   }
 
   .icon {

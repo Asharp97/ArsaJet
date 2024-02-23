@@ -24,7 +24,7 @@
                 <br /> Ne Borsa <br />
                 Gelecekte En Kârlı Yatırım Arsa!
               </h1>
-              <Btn2 class="button" :inv="true">
+              <Btn2 class="button" :inv="true" @click="modal.toggleModal">
                 <div class="p1">
                   <span> Detaylı Bilgi Alın </span>
                   <Icon name="material-symbols:chevron-right-rounded" class="icon" />
@@ -32,6 +32,9 @@
               </Btn2>
             </div>
           </div>
+          <Teleport to="body">
+            <WellCallForm :show="modal.show.value" @close="modal.toggleModal" />
+          </Teleport>
         </div>
       </section>
 
@@ -45,7 +48,7 @@
       </section>
 
       <section class="of-hide">
-        <SmoothImgSlide folder="eskisehir-smooth"  text="LANDCLUB ile Eskişehir Yatırım Fırsatı"/>
+        <SmoothImgSlide folder="eskisehir-smooth" text="LANDCLUB ile Eskişehir Yatırım Fırsatı" />
       </section>
 
       <section>
@@ -69,7 +72,7 @@
               fırsatı sunmaktadır.
             </div>
             <div class="graph">
-              <div class="chart" v-for="(x, n) in        graph       ">
+              <div class="chart" v-for="(x, n) in graph">
                 <div class="line scale-graph enter2" :class="'bg' + n" :style="{ height: x.height + 'px' }">
                   <div class="p3m"> {{ x.value }} ₺ </div>
                 </div>
@@ -96,12 +99,10 @@
               </div>
               <div class="listed-images mobile-hide">
                 <span id="scroll1" class="scrolled">
-                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="       n        in        7"
-                    :src='`listed-imgs/${n}.jfif`' />
+                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="n in 7" :src='`listed-imgs/${n}.jfif`' />
                 </span>
                 <span id="scroll2">
-                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="       n        in        7"
-                    :src='`listed-imgs/${n}.jfif`' />
+                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="n in 7" :src='`listed-imgs/${n}.jfif`' />
                 </span>
               </div>
             </div>
@@ -118,7 +119,7 @@
           <div class="text-graph">
             <div class="graph">
               <ChangePerYear class="mobile-show changeperyear" />
-              <div class="chart" v-for="(       x, n       ) in        graph2       ">
+              <div class="chart" v-for="( x, n ) in graph2 ">
                 <div class="p4"> {{ n + 2019 }} </div>
                 <div class="line scale-graph-h enter2" :class="'bg' + n" :style="{ width: x.height + 'px' }">
                   <div class="p3m"> {{ x.value }} ₺ </div>
@@ -126,33 +127,6 @@
               </div>
             </div>
             <div class="text">
-              <!-- <div class="change-per-year">
-                <button>
-                  <div class="p4">
-                    Minimum 1 Senelik Değişim
-                    <span>
-                      <Icon name="ph:caret-down-light" class="icon" />
-                    </span>
-                  </div>
-                  <q-menu fit transition-show="jump-down" transition-hide="jump-up">
-                    <q-list>
-                      <q-item clickable v-close-popup>
-                        Minimum 1 Senelik Değişim
-                      </q-item>
-                      <q-item clickable v-close-popup>
-                        Minimum 1 Senelik Değişim
-                      </q-item>
-                      <q-item clickable v-close-popup>
-                        Minimum 1 Senelik Değişim
-                      </q-item>
-                      <q-item clickable v-close-popup>
-                        Minimum 1 Senelik Değişim
-                      </q-item>
-                    </q-list>
-                  </q-menu>
-                </button>
-                <h1>%286,5</h1>
-              </div> -->
               <ChangePerYear class="mobile-hide" />
               <div class="p3m">
                 Son 4 yılda Türkiye genelinde arsa ve tarla fiyatları %1146 seviyesinde önemli bir artış gösterdi. Her yıl
@@ -197,6 +171,8 @@ const toggle = () => {
     scroll2.classList.remove('scrolled')
   }
 }
+
+const modal = useModal()
 
 </script>
 

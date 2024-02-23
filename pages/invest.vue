@@ -26,9 +26,9 @@
               <div class="p3m">Sitemizde iletişim bölümünde bulunan formu doldurmanız sizinle iletişim kurmamız için
                 yeterli
                 olacaktır. Ardından zoom toplantısı planlayıp sizleri daha yakından tanıma fırsatı bulmuş olacağız.</div>
-                <NuxtLink to="https://zoom.us/">
-                  <img src="../assets/zoom.svg" alt="">
-                </NuxtLink>
+              <NuxtLink to="https://zoom.us/">
+                <img src="../assets/zoom.svg" alt="">
+              </NuxtLink>
             </div>
 
           </div>
@@ -52,7 +52,7 @@
               <div class="p3m">Sitemizde iletişim bölümünde bulunan formu doldurmanız sizinle iletişim kurmamız için
                 yeterli
                 olacaktır. Ardından zoom toplantısı planlayıp sizleri daha yakından tanıma fırsatı bulmuş olacağız.</div>
-              <Btn2 text="Form Doldur" />
+              <Btn2 text="Form Doldur" @click="modal.toggleModal"/>
             </div>
 
           </div>
@@ -66,7 +66,7 @@
         </div>
         <deck />
 
-        <btn2 class="btn" destination="">
+        <btn2 class="btn" @click="modal.toggleModal">
           <div class="p1">
             Detaylı Bilgi Alın
             <span>
@@ -77,11 +77,14 @@
       </section>
     </div>
   </div>
+  <Teleport to="body">
+    <WellCallForm :show="modal.show.value" @close="modal.toggleModal" />
+  </Teleport>
 </template>
 
 <script setup>
 
-
+const modal = useModal()
 </script>
 
 <style lang="scss" scoped></style>

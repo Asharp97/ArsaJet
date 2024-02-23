@@ -22,12 +22,11 @@
     "@nuxt/image": "^1.0.0-rc.2",
     "@pinia/nuxt": "^0.5.1",
     "@quasar/extras": "^1.16.7",
+    "@studio-freight/lenis": "^1.0.27",
     "@supabase/supabase-js": "^2.38.0",
     "@vueuse/nuxt": "^10.6.1",
     "gsap": "^3.12.5",
     "nuxt-swiper": "^1.2.2",
-    "pinia": "^2.1.7",
-    "quasar": "^2.13.0",
-    "@studio-freight/lenis": "^1.0.27"
+    "pinia": "^2.1.7"
   }
 }
