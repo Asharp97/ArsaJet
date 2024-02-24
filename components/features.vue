@@ -15,28 +15,13 @@
           src="features.png" />
         <Swiper @swiper="onSwiper" :loopedSlides="4" :centeredSlides="true" :slideToClickedSlide="true" :slidesPerView="9"
           class="swiper" :loop="true" :breakpoints="{
-            '0': {
-              slidesPerView: 1,
-              loop: false
-            },
-            '350': {
-              slidesPerView: 3,
-              loop: false
-            },
-            '640': {
-              slidesPerView: 5,
-              loop: false
-            },
-            '700': {
-              slidesPerView: 7,
-              loop: false
-            },
-            '1300': {
-              slidesPerView: 9,
-              loop: false
-            },
+            '0': { slidesPerView: 1, },
+            '350': { slidesPerView: 3, },
+            '640': { slidesPerView: 5, },
+            '700': { slidesPerView: 7, },
+            '1300': { slidesPerView: 9, }
           }">
-          <SwiperSlide @click="activePagination = q" v-for="(x, n, q) in data" class="slide" :key="q">
+          <SwiperSlide v-for="(x, n, q) in data" class="slide" :key="q">
             <div class="frame">
               <div class="background">
                 <Icon :name="sliders[q].icon" class="icon" />
@@ -48,7 +33,7 @@
               <h2> {{ x }} KM</h2>
             </div>
           </SwiperSlide>
-          <SwiperSlide @click="activePagination = q" v-for="(x, n, q) in data" class="slide" :key="q">
+          <SwiperSlide v-for="(x, n, q) in data" class="slide" :key="q">
             <div class="frame">
               <div class="background">
                 <Icon :name="sliders[q].icon" class="icon" />
@@ -63,12 +48,6 @@
           <!-- <SwiperControls /> -->
         </Swiper>
 
-        <!-- <div class="pagination ">
-          <div class="dots" v-for="(pag, n) in 9" @click="paginationHanlde(n)"
-            :class="{ 'active-pagination': n == activePagination }">
-          </div>
-        </div> -->
-
       </div>
     </div>
   </div>
@@ -78,13 +57,6 @@
 let swiperInstance = ref()
 function onSwiper(swiper) {
   swiperInstance.value = swiper
-}
-
-let activePagination = ref(0)
-
-const paginationHanlde = (x) => {
-  swiperInstance.value.slideTo(x)
-  activePagination.value = x
 }
 
 defineProps(['data'])

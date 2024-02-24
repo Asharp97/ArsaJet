@@ -2,6 +2,7 @@
   <div>
     <!-- {{ land.imgURL }} -->
     <div class="listing-details gap ">
+      <q-inner-loading :showing="loading" />
       <section>
         <div class="white-bg">
           <div class="container">
@@ -74,7 +75,7 @@
           <btn2 class="button" :green="true" :destination="`listings/${id}/#fillform`">
             <div class="p1">Arazi fiyatı: {{ land.landPrice }}.00 €</div>
           </btn2>
-          <Btn2>
+          <Btn2 @click="modal.toggleModal">
             <div class="p1"> Detaylı Bilgi Alın
               <span>
                 <Icon name="material-symbols:chevron-right-rounded" class="icon" />
@@ -104,17 +105,22 @@
       </section>
     </div>
   </div>
+  <Teleport to="body">
+    <WellCallForm :show="modal.show.value" @close="modal.toggleModal" />
+  </Teleport>
 </template>
 
 <script setup>
-
+const modal = useModal()
 const id = useRoute().params.id
 const supabase = useSupabaseClient()
 const land = ref({ landPrice: '', imgURL: [] })
 const section1 = ref()
 const section2 = ref()
+const loading = ref(false)
 let img2;
 let details = async () => {
+  loading.value = true
   const { data, error } = await supabase
     .from('lands')
     .select()
@@ -126,6 +132,7 @@ let details = async () => {
     // if (land.value.imgURL.length > 4)
     img2 = [land.value.imgURL[land.value.imgURL.length - 3], land.value.imgURL[land.value.imgURL.length - 2]]
   }
+  loading.value = false
 }
 
 import content from "../../assets/content.json"
