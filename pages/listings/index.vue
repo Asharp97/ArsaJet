@@ -233,26 +233,27 @@ let clearFilter = () => {
 };
 
 let getIlanlar = async () => {
-  let query = supabase
-    .from("lands")
-    .select()
-    .gte("landPrice", price.value.min)
-    .gte("squareMeters", km.value.min)
-    .lte("landPrice", price.value.max)
-    .lte("squareMeters", km.value.max)
-    .range(adPerPage * (page.value - 1), page.value * adPerPage);
+  // let query = supabase
+  //   .from("lands")
+  //   .select()
+  //   .gte("landPrice", price.value.min)
+  //   .gte("squareMeters", km.value.min)
+  //   .lte("landPrice", price.value.max)
+  //   .lte("squareMeters", km.value.max)
+  //   .range(adPerPage * (page.value - 1), page.value * adPerPage);
 
-  if (city.value.length > 0) query = query.in("cityLocation", city.value);
+  // if (city.value.length > 0) query = query.in("cityLocation", city.value);
 
-  if (order.value)
-    query = query.order(order.value.obj.col, {
-      ascending: order.value.obj.asc,
-    });
+  // if (order.value)
+  //   query = query.order(order.value.obj.col, {
+  //     ascending: order.value.obj.asc,
+  //   });
 
-  loading.value = true;
-  let { data, error } = await query;
-  if (data) ilanlar.value = data;
-  loading.value = false;
+  // loading.value = true;
+  // let { data, error } = await query;
+  // if (data) ilanlar.value = data;
+  // loading.value = false;
+  return advert
 };
 
 onMounted(() => {

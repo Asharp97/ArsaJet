@@ -2,7 +2,12 @@
   {
     "id": 1,
     "imgURL": [
-      "https://images.pexels.com/photos/636342/pexels-photo-636342.jpeg"
+      "https://images.pexels.com/photos/1478420/pexels-photo-1478420.jpeg",
+      "https://images.pexels.com/photos/636342/pexels-photo-636342.jpeg",
+      "https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg",
+      "https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg",
+      "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg",
+      "https://images.pexels.com/photos/2789098/pexels-photo-2789098.jpeg"
     ],
     "imgName": ["land1.jpg"],
     "cityLocation": "Odunpazarı",
@@ -26,7 +31,12 @@
   {
     "id": 2,
     "imgURL": [
-      "https://images.pexels.com/photos/1478420/pexels-photo-1478420.jpeg"
+      "https://images.pexels.com/photos/171328/pexels-photo-171328.jpeg",
+      "https://images.pexels.com/photos/1478420/pexels-photo-1478420.jpeg",
+      "https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg",
+      "https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg",
+      "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg",
+      "https://images.pexels.com/photos/518415/pexels-photo-518415.jpeg"
     ],
     "imgName": ["land2.jpg"],
     "cityLocation": "Tepebaşı",
@@ -50,7 +60,12 @@
   {
     "id": 3,
     "imgURL": [
-      "https://images.pexels.com/photos/171328/pexels-photo-171328.jpeg"
+      "https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg",
+      "https://images.pexels.com/photos/171328/pexels-photo-171328.jpeg",
+      "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg",
+      "https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg",
+      "https://images.pexels.com/photos/636342/pexels-photo-636342.jpeg",
+      "https://images.pexels.com/photos/2789098/pexels-photo-2789098.jpeg"
     ],
     "imgName": ["land3.jpg"],
     "cityLocation": "Odunpazarı",
@@ -74,7 +89,12 @@
   {
     "id": 4,
     "imgURL": [
-      "https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg"
+      "https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg",
+      "https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg",
+      "https://images.pexels.com/photos/2789098/pexels-photo-2789098.jpeg",
+      "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg",
+      "https://images.pexels.com/photos/518415/pexels-photo-518415.jpeg",
+      "https://images.pexels.com/photos/347148/pexels-photo-347148.jpeg"
     ],
     "imgName": ["land4.jpg"],
     "cityLocation": "Tepebaşı",
@@ -98,7 +118,12 @@
   {
     "id": 5,
     "imgURL": [
-      "https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg"
+      "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg",
+      "https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg",
+      "https://images.pexels.com/photos/518415/pexels-photo-518415.jpeg",
+      "https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg",
+      "https://images.pexels.com/photos/2789098/pexels-photo-2789098.jpeg",
+      "https://images.pexels.com/photos/347148/pexels-photo-347148.jpeg"
     ],
     "imgName": ["land5.jpg"],
     "cityLocation": "Odunpazarı",
@@ -122,7 +147,12 @@
   {
     "id": 6,
     "imgURL": [
-      "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg"
+      "https://images.pexels.com/photos/2789098/pexels-photo-2789098.jpeg",
+      "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg",
+      "https://images.pexels.com/photos/347148/pexels-photo-347148.jpeg",
+      "https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg",
+      "https://images.pexels.com/photos/518415/pexels-photo-518415.jpeg",
+      "https://images.pexels.com/photos/4303919/pexels-photo-4303919.jpeg"
     ],
     "imgName": ["land6.jpg"],
     "cityLocation": "Tepebaşı",
@@ -146,7 +176,12 @@
   {
     "id": 7,
     "imgURL": [
-      "https://images.pexels.com/photos/2789098/pexels-photo-2789098.jpeg"
+      "https://images.pexels.com/photos/518415/pexels-photo-518415.jpeg",
+      "https://images.pexels.com/photos/2789098/pexels-photo-2789098.jpeg",
+      "https://images.pexels.com/photos/347148/pexels-photo-347148.jpeg",
+      "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg",
+      "https://images.pexels.com/photos/4303919/pexels-photo-4303919.jpeg",
+      "https://images.pexels.com/photos/636342/pexels-photo-636342.jpeg"
     ],
     "imgName": ["land7.jpg"],
     "cityLocation": "Odunpazarı",
@@ -170,7 +205,12 @@
   {
     "id": 8,
     "imgURL": [
-      "https://images.pexels.com/photos/518415/pexels-photo-518415.jpeg"
+      "https://images.pexels.com/photos/347148/pexels-photo-347148.jpeg",
+      "https://images.pexels.com/photos/518415/pexels-photo-518415.jpeg",
+      "https://images.pexels.com/photos/4303919/pexels-photo-4303919.jpeg",
+      "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg",
+      "https://images.pexels.com/photos/636342/pexels-photo-636342.jpeg",
+      "https://images.pexels.com/photos/171328/pexels-photo-171328.jpeg"
     ],
     "imgName": ["land8.jpg"],
     "cityLocation": "Tepebaşı",
@@ -194,7 +234,12 @@
   {
     "id": 9,
     "imgURL": [
-      "https://images.pexels.com/photos/347148/pexels-photo-347148.jpeg"
+      "https://images.pexels.com/photos/4303919/pexels-photo-4303919.jpeg",
+      "https://images.pexels.com/photos/347148/pexels-photo-347148.jpeg",
+      "https://images.pexels.com/photos/636342/pexels-photo-636342.jpeg",
+      "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg",
+      "https://images.pexels.com/photos/518415/pexels-photo-518415.jpeg",
+      "https://images.pexels.com/photos/171328/pexels-photo-171328.jpeg"
     ],
     "imgName": ["land9.jpg"],
     "cityLocation": "Odunpazarı",
@@ -218,7 +263,12 @@
   {
     "id": 10,
     "imgURL": [
-      "https://images.pexels.com/photos/4303919/pexels-photo-4303919.jpeg"
+      "https://images.pexels.com/photos/636342/pexels-photo-636342.jpeg",
+      "https://images.pexels.com/photos/4303919/pexels-photo-4303919.jpeg",
+      "https://images.pexels.com/photos/171328/pexels-photo-171328.jpeg",
+      "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg",
+      "https://images.pexels.com/photos/518415/pexels-photo-518415.jpeg",
+      "https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg"
     ],
     "imgName": ["land10.jpg"],
     "cityLocation": "Tepebaşı",

@@ -80,7 +80,7 @@ const getPopularIlan = async () => {
   //   .select()
   //   .limit(10)
   // if (data)
-    ilanlar.value = advert.splice(0, 5)
+    ilanlar.value = advert
 }
 
 import { Swiper, SwiperSlide } from 'swiper/vue';
