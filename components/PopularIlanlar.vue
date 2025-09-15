@@ -70,16 +70,17 @@
 onMounted(() => {
   getPopularIlan()
 })
+import advert from '@/assets/dummy-lands.json'
 
 const supabase = useSupabaseClient()
 let ilanlar = ref()
 const getPopularIlan = async () => {
-  const { data, error } = await supabase
-    .from('lands')
-    .select()
-    .limit(10)
-  if (data)
-    ilanlar.value = data
+  // const { data, error } = await supabase
+  //   .from('lands')
+  //   .select()
+  //   .limit(10)
+  // if (data)
+    ilanlar.value = advert.splice(0, 5)
 }
 
 import { Swiper, SwiperSlide } from 'swiper/vue';
