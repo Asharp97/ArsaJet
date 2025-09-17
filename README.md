@@ -1,4 +1,3 @@
-````markdown
 # 🏡 Arsa Jet – E-Commerce for Land
 
 Arsa Jet is an **e-commerce platform for land**, designed to make it easy to browse, list, and purchase land plots online.  
@@ -20,9 +19,9 @@ The project focuses on creating a smooth and modern user experience for buying a
 ## 🛠️ Tech Stack
 
 - **Frontend**: Vue.js + TypeScript + SCSS  
-- **Backend**: *(add framework you used, e.g. Node.js, Express, NestJS, etc.)*  
-- **Database**: *(add your DB here, e.g. MongoDB, PostgreSQL, MySQL)*  
-- **Build Tools**: Vite / Webpack *(whichever applies)*  
+- **Backend**: Fastify + Node.js + TypeScript
+- **Database**: PostgreSQL
+- **Build Tools**: Vite
 
 ---
 
@@ -36,11 +35,7 @@ arsa-jet/
 ├── public/            # Static assets
 ├── package.json
 └── README.md
-````
-
-*(Adjust this based on your actual repo structure)*
-
----
+```
 
 ## ⚙️ Installation & Setup
 
@@ -48,9 +43,9 @@ Make sure you have **Node.js (>=16)** and **npm** or **yarn** installed.
 
 ```bash
 # Clone the repository
-git clone https://github.com/asharp97/arsa-jet.git
+git clone https://github.com/Asharp97/ArsaJet.git
 
-cd arsa-jet
+cd arsajet
 
 # Install dependencies
 npm install
@@ -97,5 +92,3 @@ Developed by **Ali Elsayed**
 
 ```
 
-Do you want me to also make a **short project tagline** (like “The Amazon of Land” or “Your marketplace for land plots”)? It could make the README feel more polished.
-```
