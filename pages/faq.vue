@@ -25,7 +25,7 @@
 
             <div class="p3m"> Evrak işlemleri ile ilgili </div>
           </NuxtLink>
-          <NuxtLink to="#eksland">
+          <NuxtLink to="#arsajet">
             <div class="p3m"> EKSLAND ile ilgili </div>
           </NuxtLink>
           <NuxtLink to="#other">
@@ -49,7 +49,7 @@
         <FaqComponent :faq="faq" class="FaqComponent " />
       </section>
 
-      <section class="faq-bg gray-bg m-container" id="eksland">
+      <section class="faq-bg gray-bg m-container" id="arsajet">
         <h2>EKSLAND ile ilgili</h2>
         <FaqComponent :faq="faq" class="FaqComponent " />
       </section>

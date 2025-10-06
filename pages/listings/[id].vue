@@ -7,7 +7,7 @@
         <div class="white-bg">
           <div class="container">
             <div class="p1 gray">İlan detaylarını öğrenin</div>
-            <h1>LandClub Güvencesiyle Yatırım Gerçekleştirin</h1>
+            <h1>Arsajet Güvencesiyle Yatırım Gerçekleştirin</h1>
             <div class="details">
               <div class="imgDiv">
                 <!-- <nuxt-img loading="lazy"  sizes="xs:640px sm:768px md:784px lg:877px" class="img" src="listing-img.png" /> -->

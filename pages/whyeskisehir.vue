@@ -1,6 +1,5 @@
 <template>
   <div class="whyeskisehir">
-
     <section>
       <hero :slides="eskisehirHero" />
     </section>
@@ -8,26 +7,31 @@
       <section>
         <div class="bg-feature-future">
           <div class="feature-future m-container mpi">
-
             <div class="text">
-              <div class="p1">LandClub ile</div>
+              <div class="p1">Arsajet ile</div>
               <h1>Eskişehir’i Keşfedin</h1>
               <div class="p3m">
-                Lorem ipsum dolor sit amet consectetur. Sed commodo arcu pulvinar quisque tempor vel massa
-                nulla. Eget justo quam sit proin in viverra tincidunt.Lorem ipsum dolor sit amet consectetur. Sed commodo
-                arcu pulvinar quisque tempor vel massa nulla. Eget justo quam sit proin in viverra tincidunt.</div>
+                Lorem ipsum dolor sit amet consectetur. Sed commodo arcu
+                pulvinar quisque tempor vel massa nulla. Eget justo quam sit
+                proin in viverra tincidunt.Lorem ipsum dolor sit amet
+                consectetur. Sed commodo arcu pulvinar quisque tempor vel massa
+                nulla. Eget justo quam sit proin in viverra tincidunt.
+              </div>
             </div>
 
             <div class="future">
               <div class="p1">LANDCLUB ile</div>
-              <h1>Ne Döviz, Ne Altın,
-                <br /> Ne Borsa <br />
+              <h1>
+                Ne Döviz, Ne Altın, <br />
+                Ne Borsa <br />
                 Gelecekte En Kârlı Yatırım Arsa!
               </h1>
               <Btn2 class="button" :inv="true" @click="modal.toggleModal">
                 <div class="p1">
                   <span> Detaylı Bilgi Alın </span>
-                  <Icon name="material-symbols:chevron-right-rounded" class="icon" />
+                  <Icon
+                    name="material-symbols:chevron-right-rounded"
+                    class="icon" />
                 </div>
               </Btn2>
             </div>
@@ -38,17 +42,17 @@
         </div>
       </section>
 
-
       <section class="minerals m-container">
         <div class="p1">Şehrin öne çıkanları</div>
         <h1>Neden Eskişehir’i öneriyoruz</h1>
 
         <Reasons />
-
       </section>
 
       <section class="of-hide">
-        <SmoothImgSlide folder="eskisehir-smooth" text="LANDCLUB ile Eskişehir Yatırım Fırsatı" />
+        <SmoothImgSlide
+          folder="eskisehir-smooth"
+          text="LANDCLUB ile Eskişehir Yatırım Fırsatı" />
       </section>
 
       <section>
@@ -57,30 +61,33 @@
           <h1>Arsa Değerlerinde <span class="orange"> %1146 </span> Artış</h1>
           <div class="text-graph">
             <div class="p3m">
-              Son 4 yılda Türkiye genelinde arsa ve tarla fiyatları <b> %1146 </b>seviyesinde önemli bir artış gösterdi.
-              Her
-              yıl en
-              az <b> %286'lık</b> bir yükseliş yaşandı. Bu istatistikler, Türkiye'nin gayrimenkul sektöründe önemli bir
-              büyüme
-              yaşadığını gösteriyor. Artan talep, arsa fiyatlarını olumlu yönde etkilemesiyle yatırımcılara kârlı
-              getiriler
-              sunmaktadır. Ayrıca, arazi sahibi olmak uzun vadeli bir yatırım stratejisi sunarak gelecekteki planlarınızı
-              gerçekleştirmeniz için size özgü bir mülkiyet avantajı sağlamaktadır.
-              <br>
-              <br>
-              Türkiye'deki arsa yatırımları, değer artışı potansiyeli ve ekonomik getiriler açısından güçlü bir yatırım
-              fırsatı sunmaktadır.
+              Son 4 yılda Türkiye genelinde arsa ve tarla fiyatları
+              <b> %1146 </b>seviyesinde önemli bir artış gösterdi. Her yıl en az
+              <b> %286'lık</b> bir yükseliş yaşandı. Bu istatistikler,
+              Türkiye'nin gayrimenkul sektöründe önemli bir büyüme yaşadığını
+              gösteriyor. Artan talep, arsa fiyatlarını olumlu yönde
+              etkilemesiyle yatırımcılara kârlı getiriler sunmaktadır. Ayrıca,
+              arazi sahibi olmak uzun vadeli bir yatırım stratejisi sunarak
+              gelecekteki planlarınızı gerçekleştirmeniz için size özgü bir
+              mülkiyet avantajı sağlamaktadır.
+              <br />
+              <br />
+              Türkiye'deki arsa yatırımları, değer artışı potansiyeli ve
+              ekonomik getiriler açısından güçlü bir yatırım fırsatı
+              sunmaktadır.
             </div>
             <div class="graph">
               <div class="chart" v-for="(x, n) in graph">
-                <div class="line scale-graph enter2" :class="'bg' + n" :style="{ height: x.height + 'px' }">
-                  <div class="p3m"> {{ x.value }} ₺ </div>
+                <div
+                  class="line scale-graph enter2"
+                  :class="'bg' + n"
+                  :style="{ height: x.height + 'px' }">
+                  <div class="p3m">{{ x.value }} ₺</div>
                 </div>
-                <div class="p4"> {{ n + 2018 }} </div>
+                <div class="p4">{{ n + 2018 }}</div>
               </div>
 
               <ChangePerYear />
-
             </div>
           </div>
         </div>
@@ -95,14 +102,27 @@
           <div class="white-bg container">
             <div class="content">
               <div class="faqwrapper">
-                <faqComponent :faq="faq" class="Faqcontainer" @toggle="toggle" />
+                <faqComponent
+                  :faq="faq"
+                  class="Faqcontainer"
+                  @toggle="toggle" />
               </div>
               <div class="listed-images mobile-hide">
                 <span id="scroll1" class="scrolled">
-                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="n in 7" :src='`listed-imgs/${n}.jfif`' />
+                  <nuxt-img
+                    loading="lazy"
+                    sizes="200px"
+                    class="img"
+                    v-for="n in 7"
+                    :src="`listed-imgs/${n}.jfif`" />
                 </span>
                 <span id="scroll2">
-                  <nuxt-img loading="lazy" sizes="200px" class="img" v-for="n in 7" :src='`listed-imgs/${n}.jfif`' />
+                  <nuxt-img
+                    loading="lazy"
+                    sizes="200px"
+                    class="img"
+                    v-for="n in 7"
+                    :src="`listed-imgs/${n}.jfif`" />
                 </span>
               </div>
             </div>
@@ -114,30 +134,37 @@
         <div class="price-index m-container">
           <div class="p1 gray">Türkiye’de arsa yatırımı</div>
           <h1>Metrekare Başına Arsa Fiyat Endeksi</h1>
-          <div class="p3m">Metrekare başına arsa fiyat endeksi, her sene artış gösteren bu özel araziyi yatırımcılar için
-            vazgeçilmez kılıyor. Bu dinamik endeks, yatırımınızın gelecekteki getirisini garanti altına alıyor.</div>
+          <div class="p3m">
+            Metrekare başına arsa fiyat endeksi, her sene artış gösteren bu özel
+            araziyi yatırımcılar için vazgeçilmez kılıyor. Bu dinamik endeks,
+            yatırımınızın gelecekteki getirisini garanti altına alıyor.
+          </div>
           <div class="text-graph">
             <div class="graph">
               <ChangePerYear class="mobile-show changeperyear" />
-              <div class="chart" v-for="( x, n ) in graph2 ">
-                <div class="p4"> {{ n + 2019 }} </div>
-                <div class="line scale-graph-h enter2" :class="'bg' + n" :style="{ width: x.height + 'px' }">
-                  <div class="p3m"> {{ x.value }} ₺ </div>
+              <div class="chart" v-for="(x, n) in graph2">
+                <div class="p4">{{ n + 2019 }}</div>
+                <div
+                  class="line scale-graph-h enter2"
+                  :class="'bg' + n"
+                  :style="{ width: x.height + 'px' }">
+                  <div class="p3m">{{ x.value }} ₺</div>
                 </div>
               </div>
             </div>
             <div class="text">
               <ChangePerYear class="mobile-hide" />
               <div class="p3m">
-                Son 4 yılda Türkiye genelinde arsa ve tarla fiyatları %1146 seviyesinde önemli bir artış gösterdi. Her yıl
-                en az %286'lık bir yükseliş yaşandı. Bu istatistikler, Türkiye'nin gayrimenkul sektöründe önemli bir
-                büyüme yaşadığını gösteriyor. Artan talep, arsa fiyatlarını olumlu yönde etkilemesiyle yatırımcılara kârlı
+                Son 4 yılda Türkiye genelinde arsa ve tarla fiyatları %1146
+                seviyesinde önemli bir artış gösterdi. Her yıl en az %286'lık
+                bir yükseliş yaşandı. Bu istatistikler, Türkiye'nin gayrimenkul
+                sektöründe önemli bir büyüme yaşadığını gösteriyor. Artan talep,
+                arsa fiyatlarını olumlu yönde etkilemesiyle yatırımcılara kârlı
                 getiriler sunmaktadır.
               </div>
             </div>
           </div>
         </div>
-
       </section>
       <section>
         <!-- <div class="youtube-videos container">
@@ -151,29 +178,28 @@
 </template>
 
 <script setup>
-import content from "../assets/content.json"
-const eskisehirHero = content.eskisehirHero
-const graph = content.graph
-const graph2 = content.graph2
-const faq = content.honorableMentions
+import content from "../assets/content.json";
+const eskisehirHero = content.eskisehirHero;
+const graph = content.graph;
+const graph2 = content.graph2;
+const faq = content.honorableMentions;
 
-let switcher = false
+let switcher = false;
 
 const toggle = () => {
-  const scroll1 = document.getElementById('scroll1')
-  const scroll2 = document.getElementById('scroll2')
-  switcher = !switcher
+  const scroll1 = document.getElementById("scroll1");
+  const scroll2 = document.getElementById("scroll2");
+  switcher = !switcher;
   if (switcher) {
-    scroll1.classList.remove('scrolled')
-    scroll2.classList.add('scrolled')
+    scroll1.classList.remove("scrolled");
+    scroll2.classList.add("scrolled");
   } else {
-    scroll1.classList.add('scrolled')
-    scroll2.classList.remove('scrolled')
+    scroll1.classList.add("scrolled");
+    scroll2.classList.remove("scrolled");
   }
-}
+};
 
-const modal = useModal()
-
+const modal = useModal();
 </script>
 
 <style lang="scss" scoped></style>

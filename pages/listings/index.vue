@@ -122,7 +122,7 @@
                     <!-- #Eskisehir -->
                     #{{ ilan.cityLocation }}
                   </div>
-                  <div class="p3m">Eksland güvencesiyle satılık arsa</div>
+                  <div class="p3m">Arsajet güvencesiyle satılık arsa</div>
                   <div class="details">
                     <div class="param p4">
                       {{ ilan.squareMeters }}m&sup2;
@@ -203,7 +203,7 @@ let totalPages = ref();
 
 let order = ref(null);
 
-const supabase = useSupabaseClient();
+// const supabase = useSupabaseClient();
 
 const sortBy = () => {
   if (order.value) return order.value.text;
@@ -211,13 +211,13 @@ const sortBy = () => {
 };
 
 let getCount = async () => {
-  let query = supabase
-    .from("lands")
-    .select("*", { count: "exact", head: true })
-    .gte("landPrice", price.value.min)
-    .gte("squareMeters", km.value.min)
-    .lte("landPrice", price.value.max)
-    .lte("squareMeters", km.value.max);
+  // let query = supabase
+  //   .from("lands")
+  //   .select("*", { count: "exact", head: true })
+  //   .gte("landPrice", price.value.min)
+  //   .gte("squareMeters", km.value.min)
+  //   .lte("landPrice", price.value.max)
+  //   .lte("squareMeters", km.value.max);
 
   if (city.value.length > 0) query = query.in("cityLocation", city.value);
 
@@ -253,7 +253,7 @@ let getIlanlar = async () => {
   // let { data, error } = await query;
   // if (data) ilanlar.value = data;
   // loading.value = false;
-  return advert
+  return advert;
 };
 
 onMounted(() => {

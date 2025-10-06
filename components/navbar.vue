@@ -3,26 +3,22 @@
     <div class="header-bg">
       <div class="header container">
         <button class="hamburger">
-          <Icon name="game-icons:hamburger-menu" @click="showMenu = !showMenu" />
+          <Icon
+            name="game-icons:hamburger-menu"
+            @click="showMenu = !showMenu" />
         </button>
 
         <NuxtLink to="/">
-          <div class="logo">
-            LandClub
-          </div>
+          <div class="logo">Arsajet</div>
         </NuxtLink>
 
         <nav class="mobile-hide desktop-menu">
           <ul>
             <li>
-              <NuxtLink to="/">
-                Anasayfa
-              </NuxtLink>
+              <NuxtLink to="/"> Anasayfa </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/listings">
-                İlanlar
-              </NuxtLink>
+              <NuxtLink to="/listings"> İlanlar </NuxtLink>
             </li>
             <li>
               Şehirler
@@ -36,7 +32,6 @@
                   </NuxtLink>
                 </div>
               </div>
-
             </li>
             <li>
               Kurumsal
@@ -59,9 +54,7 @@
               </div>
             </li>
             <li>
-              <NuxtLink to="/contact">
-                Bize Ulaşın
-              </NuxtLink>
+              <NuxtLink to="/contact"> Bize Ulaşın </NuxtLink>
             </li>
           </ul>
         </nav>
@@ -79,85 +72,66 @@
             </NuxtLink> -->
             <ul>
               <NuxtLink to="/">
-                <li>
-                  Anasayfa
-                </li>
+                <li>Anasayfa</li>
               </NuxtLink>
               <NuxtLink to="/listings">
-                <li>
-                  İlanlar
-                </li>
+                <li>İlanlar</li>
               </NuxtLink>
               <NuxtLink to="/invest">
-                <li>
-                  Nasıl yatırım yapabilirim?
-                </li>
+                <li>Nasıl yatırım yapabilirim?</li>
               </NuxtLink>
               <NuxtLink to="/whyeskisehir">
-                <li>
-                  Neden Eskişehir
-                </li>
+                <li>Neden Eskişehir</li>
               </NuxtLink>
               <NuxtLink to="/aboutus">
-                <li>
-                  Hakkımızda
-                </li>
+                <li>Hakkımızda</li>
               </NuxtLink>
               <NuxtLink to="/faq">
-                <li>
-                  Sıkça Sorulan Sorular
-                </li>
+                <li>Sıkça Sorulan Sorular</li>
               </NuxtLink>
               <NuxtLink to="/contact">
-                <li>
-                  Bize Ulaşın
-                </li>
+                <li>Bize Ulaşın</li>
               </NuxtLink>
             </ul>
             <div class="contact">
               <div class="method">
                 <NuxtLink to="Tel:+90 555 055 55 01">
                   <Icon name="material-symbols:call" />
-                  <span>
-                    +90 555 055 55 01
-                  </span>
+                  <span> +90 555 055 55 01 </span>
                 </NuxtLink>
               </div>
               <div class="method">
                 <NuxtLink to="https://maps.app.goo.gl/7dU1hVySNx1nTdPJ6">
                   <Icon name="material-symbols:location-on" />
-                  <span>
-                    İstanbul Türkiye
-                  </span>
+                  <span> İstanbul Türkiye </span>
                 </NuxtLink>
               </div>
             </div>
           </nav>
         </div>
-
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-const showLogin = ref(false)
-const showMenu = ref(false)
+const showLogin = ref(false);
+const showMenu = ref(false);
 
-const route = useRoute()
+const route = useRoute();
 
 watch(
   () => showLogin.value,
   () => {
-    scrollLock.value = showLogin.value
-    console.log(scrollLock.value)
+    scrollLock.value = showLogin.value;
+    console.log(scrollLock.value);
   }
-)
+);
 
 watch(
   () => route.params,
-  () => { showMenu.value = false }
-)
-
+  () => {
+    showMenu.value = false;
+  }
+);
 </script>
-

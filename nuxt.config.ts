@@ -4,7 +4,6 @@ export default defineNuxtConfig({
     "nuxt-swiper",
     "nuxt-icon",
     "@nuxt/image",
-    "@nuxtjs/supabase",
     "nuxt-quasar-ui",
     "@vueuse/nuxt",
     "@pinia/nuxt",
@@ -13,9 +12,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ["pinia-plugin-persistedstate"],
   },
-  supabase: {
-    redirect: false,
-  },
+
   css: [
     "@/assets/style/design-system.scss",
     "@/assets/style/style.scss",

@@ -7,10 +7,12 @@
       <div div class="footer-bg">
         <footer class="container mpi">
           <div class="text mpb">
-            <div class="logo"> Land<span>Club</span></div>
-            <div class="p2">Geleceğinizi inşa ederken, Eksland ile her adımınızda emin ellerde olduğunuzu unutmayın.
-              Hayallerinizi
-              gerçeğe dönüştürmenin güvencesiyiz.</div>
+            <div class="logo">Land<span>Club</span></div>
+            <div class="p2">
+              Geleceğinizi inşa ederken, Arsajet ile her adımınızda emin ellerde
+              olduğunuzu unutmayın. Hayallerinizi gerçeğe dönüştürmenin
+              güvencesiyiz.
+            </div>
             <div class="socials">
               <NuxtLink v-for="social in socials" :to="`${social.url}`">
                 <Icon :name="social.name" class="icon" />
@@ -29,12 +31,9 @@
               </div>
             </div>
           </div>
-
         </footer>
         <div class="copyright container">
-          <div class="subtext">
-            Copyright © 2000-2023 Eksland.com
-          </div>
+          <div class="subtext">Copyright © 2000-2023 Arsajet.com</div>
         </div>
       </div>
     </section>
@@ -42,9 +41,9 @@
 </template>
 
 <script setup>
-import content from "../assets/content.json"
-const footer = content.footer
-const socials = content.socials
+import content from "../assets/content.json";
+const footer = content.footer;
+const socials = content.socials;
 </script>
 
 <style lang="scss" scoped></style>

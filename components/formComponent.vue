@@ -103,40 +103,41 @@ const emailCheck = () => {
     return false
 }
 
-const supabase = useSupabaseClient()
+// const supabase = useSupabaseClient()
 const postInfo = async () => {
-  try {
-    if (name && email && telephone && country)
-      loading.value = true
+  // try {
+  //   if (name && email && telephone && country)
+  //     loading.value = true
 
-    const { status, error } = await supabase
-      .from('contact')
-      .insert({
-        name: name.value,
-        email: email.value,
-        telephone: code.value.concat(telephone.value),
-        country: country.value
-      })
-    if (status == 201) {
-      dialog.value = true
-      name.value = ''
-      email.value = ''
-      code.value = null
-      telephone.value = ''
-      country.value = null
-      errorMsg.value = false
-      emit('submit')
-    }
-    if (error) throw error
-  }
-  catch (e) {
-    errorMsg.value = true
-    setTimeout(() => { errorMsg.value = false }, 3000);
-    console.log(e)
-  }
-  finally {
-    loading.value = false
-  }
+  //   const { status, error } = await supabase
+  //     .from('contact')
+  //     .insert({
+  //       name: name.value,
+  //       email: email.value,
+  //       telephone: code.value.concat(telephone.value),
+  //       country: country.value
+  //     })
+  //   if (status == 201) {
+  //     dialog.value = true
+  //     name.value = ''
+  //     email.value = ''
+  //     code.value = null
+  //     telephone.value = ''
+  //     country.value = null
+  //     errorMsg.value = false
+  //     emit('submit')
+  //   }
+  //   if (error) throw error
+  // }
+  // catch (e) {
+  //   errorMsg.value = true
+  //   setTimeout(() => { errorMsg.value = false }, 3000);
+  //   console.log(e)
+  // }
+  // finally {
+  //   loading.value = false
+  // }
+  console.log('info posted')
 }
 
 const sendEmail = () => {
