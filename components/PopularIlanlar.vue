@@ -72,7 +72,7 @@ onMounted(() => {
 })
 import advert from '@/assets/dummy-lands.json'
 
-const supabase = useSupabaseClient()
+// const supabase = useSupabaseClient()
 let ilanlar = ref()
 const getPopularIlan = async () => {
   // const { data, error } = await supabase
