@@ -2,7 +2,7 @@
   <div class="admin container">
     <form v-if="!store.user" action="" class="form ">
       <input type="email" v-model="mail" placeholder="email" name="email" />
-      <input type="password" v-model="pass" placeholder="pass" name="password" />
+      <input type="password" v-model="pass" placeholder="password" name="password" />
       <btn2 text="sign in" @click="signin" />
     </form>
     <div v-if="store.user" class="content">
@@ -222,6 +222,9 @@
 
 <script setup>
 let loading = ref(false)
+definePageMeta({
+  layout: 'admin',
+})
 
 //JSON
 import content from '../assets/content.json'
@@ -233,16 +236,7 @@ const fullParams = content.fullParams
 let overlay = ref(false)
 let ilan = ref({})
 const getIlan = async (id) => {
-  overlay.value = true
-  loading.value = true
-  const { data, error } = await supabase
-    .from('lands')
-    .select()
-    .eq('id', id)
-  if (data)
-    ilan.value = data[0]
-  loading.value = false
-  console.log(ilan.value)
+
 }
 
 //User
@@ -252,23 +246,11 @@ const store = useStore()
 const mail = ref('')
 const pass = ref('')
 
-const supabase = useSupabaseClient()
 const signin = async () => {
-  const { data, error } = await supabase.auth.signInWithPassword({
-    email: mail.value,
-    password: pass.value,
-  })
-  if (data) {
-    store.token = data.session.access_token
-    store.user = true
-  }
-  else
-    console.log(error)
+
 }
 const signout = async () => {
-  await supabase.auth.signOut()
-  store.token = ''
-  store.user = false
+
 }
 
 //Tabs
@@ -290,86 +272,37 @@ const toggleTabs = (x) => {
 //Contacts
 const clients = ref({})
 const getClients = async () => {
-  const { data, error } = await supabase
-    .from('contact')
-    .select()
-  if (data)
-    clients.value = data
+
 
 }
 const deleteClients = async (id) => {
-  const { error } = await supabase
-    .from('contact')
-    .delete()
-    .eq('id', id)
-  getClients()
-  if (error)
-    console.log(error)
+
 }
 
 //Ads
 const ilanlar = ref('')
 const getIlanlar = async () => {
-  const { data, error } = await supabase
-    .from('lands')
-    .select()
-  if (data)
-    ilanlar.value = data
 
 }
 const deleteIlan = async (id) => {
 
-  const { data, error } = await supabase
-    .from('lands')
-    .select()
-    .eq('id', id)
-  if (data) {
-    ilan.value = data
-    deleteImage(toRaw(ilan.value[0].imgName))
-    getImageNameForDelete(id)
-  }
 }
 
 const getImageNameForDelete = async (id) => {
-  const { status, error } = await supabase
-    .from('lands')
-    .delete()
-    .eq('id', id)
-  getIlanlar()
-  if (error)
-    console.log(error)
 
 }
 
 const deleteImage = async (x) => {
-  const { data, error } = await supabase
-    .storage
-    .from('images')
-    .remove(x)
-  // if (data)
-  //   console.log(data)
+
 }
 //New Ad
 const newAd = { imgURL: [], imgName: [] }
 const success = ref(false)
 const postAd = () => {
-  loading.value = true
-  if (imgFile[0])
-    imgUpload()
-  else {
-    postAdData()
-  }
+
 }
 
 const postAdData = async () => {
-  const { data, error } = await supabase
-    .from('lands')
-    .insert(newAd)
-    .select()
-  if (data) {
-    success.value = true
-  }
-  loading.value = false
 
 }
 
@@ -395,27 +328,10 @@ const clearImages = () => {
 // New Image to Database
 const imgDBName = []
 const imgUpload = async () => {
-  for (let i = 0; i < imgFile.length; i++) {
-    imgExt[i] = imgName.value[i].split(".").pop()
-    imgDBName[i] = `img_${Date.now()}_${i}.${imgExt[i]}`
-    newAd.imgName[i] = imgDBName[i]
-    const { data, error } = await supabase.storage
-      .from('images')
-      .upload(imgDBName[i], imgFile[i])
-    if (data) {
-      getImgURL(imgDBName[i], i)
-    }
-  }
+
 }
 const getImgURL = async (name, i) => {
-  const { data } = supabase.storage
-    .from('images')
-    .getPublicUrl(name)
-  if (data) {
-    newAd.imgURL[i] = data.publicUrl
-    if (i == imgFile.length - 1)
-      postAdData()
-  }
+
 }
 </script>
 

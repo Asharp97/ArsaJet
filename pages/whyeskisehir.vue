@@ -20,7 +20,7 @@
             </div>
 
             <div class="future">
-              <div class="p1">LANDCLUB ile</div>
+              <div class="p1">ARSAJET ile</div>
               <h1>
                 Ne Döviz, Ne Altın, <br />
                 Ne Borsa <br />
@@ -52,7 +52,7 @@
       <section class="of-hide">
         <SmoothImgSlide
           folder="eskisehir-smooth"
-          text="LANDCLUB ile Eskişehir Yatırım Fırsatı" />
+          text="ARSAJET ile Eskişehir Yatırım Fırsatı" />
       </section>
 
       <section>

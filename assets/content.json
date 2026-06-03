@@ -497,5 +497,113 @@
       "also": "Ayrıca aldığınız araç ile yatırım yaparken aracınızın sigorta, kasko, vergi, yakıt, bakımları, değer kayıplarını da unutmayınız.",
       "accent": "212.000 ₺"
     }
+  ],
+  "adminFormField": [
+    [
+      {
+        "key": "landPrice",
+        "label": "Arazi Fiyatı",
+        "type": "number",
+        "placeholder": "Arazi Fiyatı"
+      },
+      {
+        "key": "cityLocation",
+        "label": "Bulunduğu Şehir",
+        "type": "text",
+        "placeholder": "Bulunduğu Şehir"
+      },
+      {
+        "key": "districtLocation",
+        "label": "Bulunduğu İlçe",
+        "type": "text",
+        "placeholder": "Bulunduğu İlçe"
+      },
+      {
+        "key": "squareMeters",
+        "label": "Metrekare",
+        "type": "number",
+        "placeholder": "Metrekare"
+      },
+      {
+        "key": "pricePerSquareMeter",
+        "label": "Metrekare fiyatı",
+        "type": "number",
+        "placeholder": "Metrekare fiyatı"
+      },
+      {
+        "key": "islandNo",
+        "label": "Ada no",
+        "type": "number",
+        "placeholder": "Ada no"
+      },
+      {
+        "key": "sheetNo",
+        "label": "Pafta no",
+        "type": "number",
+        "placeholder": "Pafta no"
+      },
+      {
+        "key": "plotNumber",
+        "label": "Parsel no",
+        "type": "number",
+        "placeholder": "Parsel no"
+      }
+    ],
+    [
+      {
+        "key": "istanbulDistance",
+        "label": "İstanbul'a olan uzaklık",
+        "type": "number",
+        "placeholder": "İstanbul'a olan uzaklık"
+      },
+      {
+        "key": "ankaraDistance",
+        "label": "Ankaraya olan uzaklık",
+        "type": "number",
+        "placeholder": "Ankaraya olan uzaklık"
+      },
+      {
+        "key": "cityCenterDistance",
+        "label": "Şehir Merkezine olan uzaklık",
+        "type": "number",
+        "placeholder": "Şehir Merkezine olan uzaklık"
+      },
+      {
+        "key": "nearestSettlementDistance",
+        "label": "En yakın yerleşim yerine olan uzaklık",
+        "type": "number",
+        "placeholder": "En yakın yerleşim yerine olan uzaklık"
+      },
+      {
+        "key": "airportDistance",
+        "label": "Havaalanına olan uzaklık",
+        "type": "number",
+        "placeholder": "Havaalanına olan uzaklık"
+      },
+      {
+        "key": "landSalesRate",
+        "label": "Bölgenin arsa satış oranı",
+        "type": "number",
+        "placeholder": "Bölgenin arsa satış oranı"
+      },
+      {
+        "key": "realEstateValueLast5Years",
+        "label": "Son 5 Yıldaki bölge emlak değeri",
+        "type": "number",
+        "placeholder": "Son 5 Yıldaki bölge emlak değeri"
+      },
+      {
+        "key": "regionalLandsValuationRate",
+        "label": "Bölge arazilerinin değerlenme oranı (Yıllık)",
+        "type": "number",
+        "placeholder": "Bölge arazilerinin değerlenme oranı (Yıllık)"
+      },
+      {
+        "key": "landToIndustrialZoneDistance",
+        "label": "Arsanın sanayı bölgesine uzaklığı",
+        "type": "number",
+        "placeholder": "Arsanın sanayı bölgesine uzaklığı"
+      }
+    ]
   ]
 }

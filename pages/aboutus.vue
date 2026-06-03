@@ -45,7 +45,7 @@
         <div class="Millionaires big-container">
           <nuxt-img loading="lazy" src="tower.png" class="img" />
           <div class="text">
-            <div class="p1">LANDCLUB ile</div>
+            <div class="p1">ARSAJET ile</div>
             <div class="display">
               %90 Of All Millionaires Become so Through of Owning Real Estate
             </div>

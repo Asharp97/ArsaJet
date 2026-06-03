@@ -115,7 +115,7 @@
       </section>
 
       <section class="m-container">
-        <div class="p1 gray">LANDCLUB olarak</div>
+        <div class="p1 gray">ARSAJET olarak</div>
         <h1>Yatırım Yaparken Neleri Öneriyoruz?</h1>
         <deck />
       </section>
